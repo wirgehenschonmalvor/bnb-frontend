@@ -1,0 +1,30 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('b-n-b-input') {
+	display: flex;
+	flex-direction: column;
+	font-family: $font-family-regular;
+
+	.input__wrapper {
+		width: $input-width;
+	}
+
+	label {
+		position: absolute;
+		left: 10px;
+	}
+
+	input {
+		width: 100%;
+	}
+
+	input:focus ~ label {
+		font-size: 10px;
+		color: grey;
+	}
+
+	input:disabled ~ label {
+		color: grey;
+	}
+}
