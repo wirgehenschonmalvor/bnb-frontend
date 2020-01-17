@@ -1,0 +1,14 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('b-n-b-error-message') {
+	display: block;
+	p {
+		color: red;
+		font-weight: $font-weight-bold;
+		font-size: 10px;
+		width: $input-width;
+		text-align: center;
+		margin: 0;
+	}
+}
