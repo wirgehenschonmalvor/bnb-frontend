@@ -1,0 +1,15 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+
+@include host('b-n-b-link') {
+	a {
+		text-decoration: none;
+		color: cornflowerblue;
+		transition: all 0.6s ease;
+		cursor: pointer;
+
+		&:hover {
+			color: teal;
+			transition: all 0.3s ease;
+		}
+	}
+}
