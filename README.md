@@ -1,54 +1,49 @@
+![GitHub tag](https://img.shields.io/github/tag/karlbaumhauer/BNB.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/karlbaumhauer/BNB.svg) ![GitHub PRs](https://img.shields.io/github/issues-pr-raw/karlbaumhauer/BNB.svg)
+![GitHub](https://img.shields.io/github/license/karlbaumhauer/BNB.svg)
+![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/karlbaumhauer/BNB.svg)
 
-![GitHub tag](https://img.shields.io/github/tag/biotope/biotope-boilerplate.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/biotope/biotope-boilerplate.svg) ![GitHub PRs](https://img.shields.io/github/issues-pr-raw/biotope/biotope-boilerplate.svg)
-![GitHub](https://img.shields.io/github/license/biotope/biotope-boilerplate.svg)
-![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/biotope/biotope-boilerplate.svg)
+# BNB is a Website for the project "Brand New Bundestag"
 
+## Overall:
 
-# Biotope is a framework which enables you to develop scalabale, platform-agnostic frontend component ecosystems
+-   we want to stick to the idea of [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) as consistent as possible
+-   we develop this website with the idea of MOBILE FIRST
+-   we work with [BEM!](http://getbem.com/introduction/) and try to stick to the [clean code](https://clean-code-developer.com) achievement as much as possible!
 
-## Definition Ecosystem vs. Ecosystem Framework:
+## Framework:
 
-- A component ecosystem is a pool of components which can be used in any combination to build your websites or web applications user interface. The same components can be used in 1-n projects.
+-   BNB is built with the fresh open source biotope framwork. For informations and help, please visit [biotope.sh](www.biotope.sh)
 
-- An ecosystem framework helps you building such an ecosystem and makes sure all components play well with each other, you get an overview over all components in the pooland information how to use them.
+## Branches:
 
-## It helps developers to:
-- Build your UI components once and use them together with vanilla javascript or the js framework of your choice, in single page applications as well as in traditional server side rendered cms projects.
-- Keep focus on developing components, the architecture and dev environment is provided by Biotope.
-- Easy start, love to use it.
-- Build projects and design system styleguides with a single code source.
-- Easily ensure high quality standards for the whole library even when developed by multiple suppliers.
-- Make it easy to work with a team of many developers, all providing components to the library.
-- Create your own ui library to choose from in your projects.
+-   `master` should be used for the live system
+-   `staging` should be used to implement in the CMS
+-   `develop` should be used to hand over components to implementation and is the DEFAULT branch
+-   `feature/[feature description]` should be used for new features
+-   `bug/[bug description]` should be used for new bugs
+-   `refactor/[refactor description]` should be used for refactoring issues
 
+## Commits:
 
-## It helps companies to:
-- Create a UI component library which can be maintained in a central place.
-- Versioning enables you to use all ui-components independently in different projects.
-- Ensure a consistent UI across all your projects.
-- Let multiple partners contribute to the ui library without compatiblity & quality issues. Bring their design system to live. Real usable code, no dummy html components in a seperate styleguide tool.
-- Doesnt matter how big the component library gets. Projects only use components they need. So performance stays high.
-- Maintain and extend the ui library over years to avoid getting out-of-date and having to start from scratch again.
+-   if possible use `git-cz` for commit messages [commitizen](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen)
 
+## Pull Requests:
 
-## It helps designers to:
-- Showcase their design systems in an always up to date living styleguide.
-- Have a single point of truth for the components available how they work and how they look.
+-   PRs should only go from feature, bug or refactor-branches to develop. NEVER directly to `staging` or `master`
+-   should not be reviewed and merge by the contributor of the code changes
+-   should only be merged before requested changes are reviewed on the second turn
 
+## Basic-Components:
 
-## Developing Biotope
-- We keep focus on our vision.
-- Our goal is to ensure things are interoperable between Biotope instances, beside that Biotope should be as flexible as possible.
-- Instead of one monolythic framework we try to split up Biotope in lightweight services each with a dedicated goal.
+-   defining a single design element inside the website as buttons, headlines or input fields
+-   should work in its own in design and function
 
+## CMS-components:
 
-## Installation
-You can install the biotope boilerplate with it's cli using npx:
-`npx @biotope/cli init <your-project-name>` then change directories with to `./<your-project-name>`
+-   components which Brand New Bundestag will be able to edit and use in the CMS
+-   usually containing several Basic-Components
 
-Or cloning this repo and run `npm install`
+## Naming:
 
-## Documentation
-You can find the documentation [here](https://boilerplate.biotope.sh).
-
-In order to contribute to the documentation you have to start a local server in `./docs`, then start editing the files in docs.
+-   `branch` names should be named with kebab-case
+-   `component` names should be named with CamelCase
