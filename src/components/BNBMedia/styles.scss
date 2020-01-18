@@ -1,0 +1,31 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('b-n-b-media') {
+	figure {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	img,
+	video,
+	figcaption,
+	iframe {
+		max-width: 100%;
+	}
+
+	figcaption,
+	footer {
+		padding: 5px 0;
+		@include fontCaption;
+	}
+
+	footer {
+		padding-right: 10px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		opacity: 0.6;
+	}
+}
