@@ -33,7 +33,7 @@ class BNBMedia extends Component<BNBMediaProps, BNBMediaState> {
 
 	protected readonly defaultProps: BNBMediaProps = {
 		alt: '',
-		imageUrl: 'https://dummyimage.com/16:9x1080.png',
+		imageUrl: '',
 		videoUrl: '',
 		audioUrl: '',
 		youtubeId: '',
