@@ -6,14 +6,14 @@
  * Props
  */
 interface BNBMediaProps {
-	url: string;
+	imageUrl: string;
+	videoUrl: string;
+	audioUrl: string;
+	youtubeId: string;
 	alt: string;
 	caption: string;
 	poster: string;
 	copyright: string;
-	youtubeId: string;
-	video: boolean;
-	youtube: boolean;
 	controls: boolean;
 	autoplay: boolean;
 	loop: boolean;

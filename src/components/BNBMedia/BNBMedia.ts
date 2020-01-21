@@ -3,22 +3,16 @@ import { template } from './template';
 import { BNBMediaProps, BNBMediaState } from './defines';
 
 class BNBMedia extends Component<BNBMediaProps, BNBMediaState> {
-	public static componentName = 'b-n-b-media';
+	public static componentName = 'bnb-media';
 	public static attributes = [
 		'alt',
-		'url',
+		'image-url',
+		'video-url',
+		'audio-url',
+		'youtube-id',
 		'caption',
 		'poster',
 		'copyright',
-		'youtube-id',
-		{
-			name: 'video',
-			type: 'boolean',
-		},
-		{
-			name: 'youtube',
-			type: 'boolean',
-		},
 		{
 			name: 'controls',
 			type: 'boolean',
@@ -39,17 +33,17 @@ class BNBMedia extends Component<BNBMediaProps, BNBMediaState> {
 
 	protected readonly defaultProps: BNBMediaProps = {
 		alt: '',
-		url: 'https://dummyimage.com/16:9x1080.png',
+		imageUrl: 'https://dummyimage.com/16:9x1080.png',
+		videoUrl: '',
+		audioUrl: '',
+		youtubeId: '',
 		caption: '',
 		poster: '',
 		copyright: '',
-		youtubeId: '',
-		video: false,
-		youtube: false,
-		autoplay: false,
 		controls: false,
 		loop: false,
 		muted: false,
+		autoplay: false,
 	};
 
 	protected readonly defaultState: BNBMediaState = {};

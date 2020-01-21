@@ -1,7 +1,7 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
-@include host('b-n-b-media') {
+@include host('bnb-media') {
 	figure {
 		display: flex;
 		flex-direction: column;
