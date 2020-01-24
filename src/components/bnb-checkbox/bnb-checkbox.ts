@@ -1,12 +1,12 @@
 import Component, { HTMLFragment } from '@biotope/element';
 import { template } from './template';
-import { BNBCheckboxProps } from './defines';
+import { BnbCheckboxProps } from './defines';
 
-class BNBCheckbox extends Component<BNBCheckboxProps, null> {
-	public static componentName = 'b-n-b-checkbox';
+class BnbCheckbox extends Component<BnbCheckboxProps, null> {
+	public static componentName = 'bnb-checkbox';
 	public static attributes = ['id', 'label', { name: 'checked', type: 'boolean' }];
 
-	protected readonly defaultProps: BNBCheckboxProps = {
+	protected readonly defaultProps: BnbCheckboxProps = {
 		id: '',
 		label: '',
 		checked: false,
@@ -17,4 +17,4 @@ class BNBCheckbox extends Component<BNBCheckboxProps, null> {
 	}
 }
 
-export default BNBCheckbox;
+export default BnbCheckbox;

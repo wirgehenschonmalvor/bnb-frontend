@@ -5,10 +5,10 @@
 /**
  * Props
  */
-interface BNBCheckboxProps {
+interface BnbCheckboxProps {
 	id: string;
 	label: string;
 	checked: boolean;
 }
 
-export { BNBCheckboxProps };
+export { BnbCheckboxProps };
