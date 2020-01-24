@@ -2,13 +2,13 @@ import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
 
 import {
-	BNBButtonCTAProps,
-	BNBButtonCTAState,
-	BNBButtonCTAMethods,
+	BnbButtonCTAProps,
+	BnbButtonCTAState,
+	BnbButtonCTAMethods,
 } from './defines';
 
 export const template = (
-	data: BNBButtonCTAProps & BNBButtonCTAState & BNBButtonCTAMethods,
+	data: BnbButtonCTAProps & BnbButtonCTAState & BnbButtonCTAMethods,
 ): HTMLFragment => {
 	return html`
 		<a
