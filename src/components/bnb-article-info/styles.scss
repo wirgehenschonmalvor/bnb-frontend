@@ -1,0 +1,63 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-article-info') {
+	@include fontCopy;
+	display: flex;
+
+	img {
+		height: 70px;
+		width: 70px;
+		margin-right: 17px;
+		border-radius: 50%;
+	}
+
+	.bnb-article-info {
+		&__info {
+			line-height: 18px;
+
+			&-name,
+			&-title,
+			&-date {
+				margin: 0;
+				max-width: 192px;
+				flex-wrap: wrap;
+			}
+
+			&-name {
+				font-weight: $font-weight-bold;
+				font-size: 16px;
+				margin-top: 3px;
+			}
+
+			&-title,
+			&-date {
+				font-size: 14px;
+			}
+
+			&-date {
+				margin-top: 5px;
+				color: $grey;
+				opacity: 0.8;
+			}
+
+			@include fromBreakpointM {
+				line-height: 20px;
+
+				&-name,
+				&-title,
+				&-date {
+					max-width: 614px;
+				}
+
+				&-name {
+					font-size: 18px;
+				}
+
+				&-title {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
