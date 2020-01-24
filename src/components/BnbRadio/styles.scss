@@ -1,5 +1,24 @@
 @import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/styles";
 
-@include host('bnb-radio') {
+@include host("bnb-radio") {
+  .input__wrapper {
+    display: flex;
+    align-items: baseline;
+    font-family: $font-family-regular;
+  }
 
+  input[type="radio"] {
+    cursor: pointer;
+  }
+
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+    line-height: 48px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
 }
