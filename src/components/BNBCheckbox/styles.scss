@@ -1,0 +1,53 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import "../../resources/scss/styles";
+
+@include host("b-n-b-checkbox") {
+  .input__wrapper {
+    display: flex;
+    font-family: $font-family-regular;
+    min-height: 48px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 48px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6cc0e5;
+    position: absolute;
+    left: 0;
+    top: 14px;
+    opacity: 0.6;
+    -webkit-transition: all 0.12s, border-color 0.08s;
+    transition: all 0.12s, border-color 0.08s;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: 10px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
