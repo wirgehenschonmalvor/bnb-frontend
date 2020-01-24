@@ -1,0 +1,17 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-list') {
+	list-style: none;
+	display: block;
+	counter-reset: item;
+	@include fontCopy();
+
+	@include slotted('bnb-list-item') {
+		margin-top: 15px;
+	}
+
+	@include slotted('bnb-list-item:first-of-type') {
+		margin-top: 0;
+	}
+}

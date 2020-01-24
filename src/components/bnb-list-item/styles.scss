@@ -1,0 +1,26 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles.scss';
+
+@include host('bnb-list-item') {
+	display: block;
+	@include fontCopy;
+
+	&:before {
+		content: '\2022';
+		display: inline-block;
+		width: 30px;
+		margin-left: 30px;
+		line-height: 0;
+		font-size: 25px;
+	}
+}
+
+@include addAttributeStyles('bnb-list-item', 'ordered') {
+	&::before {
+		content: counter(item) '.';
+		counter-increment: item;
+		color: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+}
