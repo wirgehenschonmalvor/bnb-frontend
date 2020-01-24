@@ -1,0 +1,12 @@
+$z-index-link: 'z-index-link';
+
+$z-indexes: ($z-index-link);
+
+@function z($name) {
+  @if index($z-indexes, $name) {
+    @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+  } @else {
+    @warn 'there is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+    @return null;
+  }
+}
