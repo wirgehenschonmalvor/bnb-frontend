@@ -1,6 +1,0 @@
-@import "node_modules/@biotope/element/lib/host.mixin";
-@import '../../resources/scss/styles.scss';
-
-@include host('b-n-b-headline') {
-    @include fontHeadlineM;
-}

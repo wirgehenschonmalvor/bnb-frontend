@@ -1,9 +1,9 @@
 import Component, { HTMLFragment } from "@biotope/element";
 import { template } from "./template";
-import { BNBHeadlineProps } from "./defines";
+import { BnbHeadlineProps } from "./defines";
 
-class BNBHeadline extends Component<BNBHeadlineProps, null> {
-	public static componentName = "b-n-b-headline";
+class BnbHeadline extends Component<BnbHeadlineProps, null> {
+	public static componentName = "bnb-headline";
 	public static attributes = [
 		{
 			name: "level",
@@ -11,7 +11,7 @@ class BNBHeadline extends Component<BNBHeadlineProps, null> {
 		}
 	];
 
-	protected readonly defaultProps: BNBHeadlineProps = {
+	protected readonly defaultProps: BnbHeadlineProps = {
 		level: 1
 	};
 
@@ -20,4 +20,4 @@ class BNBHeadline extends Component<BNBHeadlineProps, null> {
 	}
 }
 
-export default BNBHeadline;
+export default BnbHeadline;
