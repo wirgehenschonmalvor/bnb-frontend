@@ -1,0 +1,18 @@
+<bnb-select name="Dropdown" label="Dropdown"
+    options='[{"value": "Option 1", "content": "content 1"}, {"value": "Option 2", "content": "content 2"}, {"value": "Option 3", "content": "content 3", "disabled": "true"}]'
+    data-resources="[{paths: ['components/bnb-select/index.js']}]">
+</bnb-select>
+<br>
+<bnb-select name="disabled-dropdown" label="Disabled dropdown" disabled
+    options='[{"value": "Option 1", "content": "content 1"}, {"value": "Option 2", "content": "content 2", "selected": "true"}, {"value": "Option 3", "content": "content 3", "disabled": "true"}]'
+    data-resources="[{paths: ['components/bnb-select/index.js']}]">
+</bnb-select>
+<br>
+<bnb-select name="required-dropdown" label="Required dropdown" required error error-message="Dies ist ein Fehler"
+    options='[{"value": "placeholder", "content": "--- bitte wählen ---", "disabled": "true", "selected": "true"}, {"value": "Option 1", "content": "content 1"}, {"value": "Option 2", "content": "content 2"}, {"value": "Option 3", "content": "content 3", "disabled": "true"}]'
+    data-resources="[{paths: ['components/bnb-select/index.js']}]">
+</bnb-select>
+<bnb-select name="required-dropdown" label="Required dropdown" required error-message="Dies ist ein Fehler"
+    options='[{"value": "Option 1", "content": "content 1"}, {"value": "Option 2", "content": "content 2", "selected": "true"}, {"value": "Option 3", "content": "content 3", "disabled": "true"}]'
+    data-resources="[{paths: ['components/bnb-select/index.js']}]">
+</bnb-select>

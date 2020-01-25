@@ -1,0 +1,23 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-select') {
+	display: flex;
+	@include fontCopy;
+	label {
+		margin-right: 15px;
+		line-height: calc(#{$line-height-font-copy} + 5px);
+	}
+	select {
+		@include fontCopy;
+		width: $select-input-width;
+		// box-sizing: border-box;
+	}
+	bnb-error-message {
+		display: none;
+
+		&.error {
+			display: block;
+		}
+	}
+}
