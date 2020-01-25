@@ -16,7 +16,13 @@ export const template = (data: BnbInputProps & BnbInputState): HTMLFragment => {
 				>${data.label}${data.required ? `*` : ''}</label
 			>
 		</div>
-		<bnb-error-message message="${data.error}"></bnb-error-message>
+		${data.required
+			? html`
+					<bnb-error-message
+						message="${data.error}"
+					></bnb-error-message>
+			  `
+			: ''}
 		${createStyle(styles)}
 	`;
 };
