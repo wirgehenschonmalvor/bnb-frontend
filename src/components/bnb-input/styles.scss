@@ -1,7 +1,7 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
-@include host('b-n-b-input') {
+@include host('bnb-input') {
 	display: flex;
 	flex-direction: column;
 	font-family: $font-family-regular;

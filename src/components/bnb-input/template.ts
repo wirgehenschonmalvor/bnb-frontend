@@ -1,9 +1,9 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
 
-import { BNBInputProps, BNBInputState } from './defines';
+import { BnbInputProps, BnbInputState } from './defines';
 
-export const template = (data: BNBInputProps & BNBInputState): HTMLFragment => {
+export const template = (data: BnbInputProps & BnbInputState): HTMLFragment => {
 	return html`
 		<div class="input__wrapper">
 			<input
@@ -16,7 +16,7 @@ export const template = (data: BNBInputProps & BNBInputState): HTMLFragment => {
 				>${data.label}${data.required ? `*` : ''}</label
 			>
 		</div>
-		<b-n-b-error-message message="${data.error}"></b-n-b-error-message>
+		<bnb-error-message message="${data.error}"></bnb-error-message>
 		${createStyle(styles)}
 	`;
 };

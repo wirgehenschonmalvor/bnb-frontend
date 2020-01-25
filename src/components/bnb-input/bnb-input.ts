@@ -1,11 +1,11 @@
 import Component, { HTMLFragment } from '@biotope/element';
 import { template } from './template';
-import { BNBInputProps, BNBInputState } from './defines';
-import BNBErrorMessage from '../BNBErrorMessage/BNBErrorMessage';
+import { BnbInputProps, BnbInputState } from './defines';
+import BnbErrorMessage from '../bnb-error-message/bnb-error-message';
 
-class BNBInput extends Component<BNBInputProps, BNBInputState> {
-	public static componentName = 'b-n-b-input';
-	static dependencies = [BNBErrorMessage as any];
+class BnbInput extends Component<BnbInputProps, BnbInputState> {
+	public static componentName = 'bnb-input';
+	static dependencies = [BnbErrorMessage as any];
 
 	public static attributes = [
 		'label',
@@ -19,13 +19,13 @@ class BNBInput extends Component<BNBInputProps, BNBInputState> {
 		},
 	];
 
-	protected readonly defaultProps: BNBInputProps = {
+	protected readonly defaultProps: BnbInputProps = {
 		label: '',
 		required: false,
 		disabled: false,
 	};
 
-	protected readonly defaultState: BNBInputState = {
+	protected readonly defaultState: BnbInputState = {
 		error: 'Default Error Message',
 	};
 
@@ -34,4 +34,4 @@ class BNBInput extends Component<BNBInputProps, BNBInputState> {
 	}
 }
 
-export default BNBInput;
+export default BnbInput;
