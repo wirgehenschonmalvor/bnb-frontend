@@ -1,62 +1,64 @@
 $font-weight-normal: 400;
 $font-weight-bold: 600;
 $font-family-regular: 'Helvetica', sans-serif;
+$line-height-font-copy: 28px;
+$font-size-font-copy: 20px;
 
 @mixin fontHeadlineL() {
-  font-family: $font-family-regular;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 30px;
-  line-height: 35px;
-  font-style: italic;
-  font-weight: $font-weight-bold;
+	font-family: $font-family-regular;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 30px;
+	line-height: 35px;
+	font-style: italic;
+	font-weight: $font-weight-bold;
 
-  @include fromBreakpointM {
-    font-size: 35px;
-    line-height: 40px;
-  }
+	@include fromBreakpointM {
+		font-size: 35px;
+		line-height: 40px;
+	}
 }
 
 @mixin fontHeadlineM() {
-  font-family: $font-family-regular;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: $font-family-regular;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
-  font-size: 25px;
-  line-height: 30px;
-  font-style: italic;
-  font-weight: $font-weight-normal;
-  @include fromBreakpointM {
-    font-size: 30px;
-    line-height: 35px;
-  }
+	font-size: 25px;
+	line-height: 30px;
+	font-style: italic;
+	font-weight: $font-weight-normal;
+	@include fromBreakpointM {
+		font-size: 30px;
+		line-height: 35px;
+	}
 }
 
 @mixin fontHeadlineS() {
-  @include fontCopy();
-  font-weight: $font-weight-bold;
+	@include fontCopy();
+	font-weight: $font-weight-bold;
 }
 
 @mixin fontCopy() {
-  font-family: $font-family-regular;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
-  line-height: 28px;
+	font-family: $font-family-regular;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: $font-size-font-copy;
+	line-height: $line-height-font-copy;
 }
 
 @mixin fontCopyLead() {
-  font-family: $font-family-regular;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 25px;
-  line-height: 30px;
+	font-family: $font-family-regular;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 25px;
+	line-height: 30px;
 }
 
 @mixin fontCopyCapital() {
-  text-transform: uppercase;
-  float: left;
-  font-size: 105px;
-  line-height: 1;
-  padding-right: 5px;
+	text-transform: uppercase;
+	float: left;
+	font-size: 105px;
+	line-height: 1;
+	padding-right: 5px;
 }
