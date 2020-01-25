@@ -11,39 +11,4 @@
 	.capitalize::first-letter {
 		@include fontCopyCapital();
 	}
-
-	bnb-paragraph ul {
-		// @include slotted('ul') {
-		@include unstyled-list;
-		color: green;
-		// > li {
-		&::before {
-			content: '-';
-		}
-		ol {
-			counter-reset: level1;
-			li {
-				&::before {
-					counter-increment: level1;
-					content: counters(level1, '.') '';
-					color: inherit;
-					font-size: inherit;
-					line-height: inherit;
-				}
-				ol {
-					counter-reset: level2;
-					li {
-						&::before {
-							content: counters(level2, '.') '';
-							counter-increment: level2;
-							color: inherit;
-							font-size: inherit;
-							line-height: inherit;
-						}
-					}
-				}
-			}
-		}
-		// }
-	}
 }
