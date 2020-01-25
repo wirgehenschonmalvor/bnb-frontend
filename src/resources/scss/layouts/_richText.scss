@@ -1,51 +1,62 @@
 @import '../utilities/unstyledList';
 
-$first-level-indention: 20px;
-$second-level-indention: 20px;
+$list-indentation: 20px;
+
 ul {
 	@include unstyled-list;
 	> li {
+		&::first-letter {
+			text-transform: uppercase; //NOT WORKING
+		}
 		&::before {
 			content: '-';
 			margin-right: 15px;
-			margin-left: $first-level-indention;
+			margin-left: $list-indentation;
 		}
 	}
 
 	ol {
-		counter-reset: section;
-		li {
-			padding-left: 2px;
-
-			ol {
-				padding-left: $first-level-indention;
-				color: green;
-				counter-reset: item;
-				li {
-					&:before {
-						counter-increment: item;
-						content: counter(section) '.' counter(item) ' ';
-						color: inherit;
-						font-size: inherit;
-						line-height: inherit;
-					}
-				}
-			}
+		margin-left: $list-indentation;
+		ol {
+			margin-left: 0;
+			padding-left: $list-indentation;
 		}
 	}
 }
 
 ol {
+	counter-reset: item;
+	margin-top: 0;
+	margin-bottom: 0;
+
 	ul {
-		@include unstyled-list;
-		> li {
-			&::before {
-				content: '-';
-				margin-left: 0;
-			}
+		margin-left: 0;
+		&::first-letter {
+			text-transform: uppercase; //NOT WORKING
+		}
+		li::before {
+			margin-left: 0;
 		}
 	}
-	ol {
-		padding-left: $first-level-indention;
+}
+
+ol > li {
+	counter-increment: item;
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
+
+ol ol > li {
+	display: block;
+}
+
+ol ol {
+	padding-left: $list-indentation;
+	> li {
+		&:before {
+			content: counters(item, '.') '. ';
+			margin-left: -20px;
+		}
 	}
 }
