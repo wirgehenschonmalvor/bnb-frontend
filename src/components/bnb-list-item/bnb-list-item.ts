@@ -6,14 +6,12 @@ class BnbListItem extends Component<BnbListItemProps, null> {
 	public static componentName = 'bnb-list-item';
 	public static attributes = [
 		{
-			name: 'level',
-			type: 'number',
+			name: 'ordered',
+			type: 'boolen',
 		},
 	];
 
-	protected readonly defaultProps: BnbListItemProps = {
-		level: 1,
-	};
+	protected readonly defaultProps: BnbListItemProps = {};
 
 	public render(): HTMLFragment {
 		return template({ ...this.props });

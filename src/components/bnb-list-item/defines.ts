@@ -6,7 +6,7 @@
  * Props
  */
 interface BnbListItemProps {
-	level: number;
+	ordered?: boolean;
 }
 
 export { BnbListItemProps };

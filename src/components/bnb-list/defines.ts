@@ -5,8 +5,6 @@
 /**
  * Props
  */
-interface BnbListProps {
-	ordered?: boolean;
-}
+interface BnbListProps {}
 
 export { BnbListProps };

@@ -6,12 +6,7 @@ import BnbHeadline from '../bnb-headline/bnb-headline';
 
 class BnbList extends Component<BnbListProps, null> {
 	public static componentName = 'bnb-list';
-	public static attributes = [
-		{
-			name: 'ordered',
-			type: 'boolen',
-		},
-	];
+	public static attributes = [];
 
 	public static dependencies = [
 		BnbListItem as typeof Component,
