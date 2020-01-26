@@ -4,7 +4,6 @@
 @include host('bnb-list') {
 	list-style: none;
 	display: block;
-	counter-reset: item;
 	@include fontCopy();
 
 	@include slotted('bnb-list-item') {

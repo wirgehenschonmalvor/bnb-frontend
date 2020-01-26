@@ -1,11 +1,11 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
+import { BnbListProps, BnbListMethods } from './defines';
 
-import { BnbListProps } from './defines';
-
-export const template = (data: BnbListProps): HTMLFragment => {
+export const template = (data: BnbListProps & BnbListMethods): HTMLFragment => {
 	return html`
 		<slot />
-		${createStyle(styles)}
+		${createStyle(styles)} ${data.setCounterPrefix(data.counterPrefix)}
+		${data.setCounterStart(data.counterStart)}
 	`;
 };

@@ -1,6 +1,8 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles.scss';
 
+$prefix: attr(counter);
+
 @include host('bnb-headline') {
 	@include fontHeadlineL;
 	color: pink;

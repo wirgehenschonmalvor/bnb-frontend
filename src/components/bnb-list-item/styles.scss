@@ -1,6 +1,9 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
+$counterPrefix: attr(counter-prefix);
+$counterStart: attr(counter-start);
+
 @include host('bnb-list-item') {
 	display: block;
 	@include fontCopy;
@@ -8,8 +11,9 @@
 	&:before {
 		content: '\2022';
 		display: inline-block;
-		width: 30px;
+		width: 40px;
 		margin-left: 30px;
+		margin-right: 5px;
 		line-height: 0;
 		font-size: 25px;
 	}
@@ -17,7 +21,16 @@
 
 @include addAttributeStyles('bnb-list-item', 'ordered') {
 	&::before {
-		content: counter(item) '.';
+		content: $counterPrefix counter(item) '.';
+		counter-increment: item;
+		color: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+}
+@include addAttributeStyles('bnb-list-item', 'counter-prefix') {
+	&::before {
+		content: $counterPrefix counter(item) '';
 		counter-increment: item;
 		color: inherit;
 		font-size: inherit;

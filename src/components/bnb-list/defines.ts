@@ -5,6 +5,14 @@
 /**
  * Props
  */
-interface BnbListProps {}
+interface BnbListProps {
+	counterStart?: number;
+	counterPrefix?: number;
+}
 
-export { BnbListProps };
+interface BnbListMethods {
+	setCounterPrefix: Function;
+	setCounterStart: Function;
+}
+
+export { BnbListProps, BnbListMethods };
