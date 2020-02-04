@@ -25,12 +25,11 @@ class BnbList extends Component<BnbListProps, null> {
 						counterPrefix + '.',
 					);
 				});
-				let paragraph = this.querySelector('bnb-paragraph');
-				let headline = this.querySelector('bnb-headline');
-				let firstChildElement = this.firstElementChild;
-				console.log(firstChildElement);
-				if (paragraph || headline) {
-					firstChildElement.firstChild.before(counterPrefix + '. ');
+				const listHeadline = this.querySelector(
+					'bnb-paragraph, bnb-headline',
+				);
+				if (listHeadline) {
+					listHeadline.firstChild.before(counterPrefix + '. ');
 				}
 			}
 		},

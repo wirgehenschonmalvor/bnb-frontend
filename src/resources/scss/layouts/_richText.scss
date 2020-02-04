@@ -4,10 +4,7 @@ $list-indentation: 20px;
 
 ul {
 	@include unstyled-list;
-	> li {
-		&::first-letter {
-			text-transform: uppercase; //NOT WORKING
-		}
+	& > li {
 		&::before {
 			content: '-';
 			margin-right: 15px;
@@ -31,9 +28,6 @@ ol {
 
 	ul {
 		margin-left: 0;
-		&::first-letter {
-			text-transform: uppercase; //NOT WORKING
-		}
 		li::before {
 			margin-left: 0;
 		}
@@ -42,9 +36,6 @@ ol {
 
 ol > li {
 	counter-increment: item;
-	&::first-letter {
-		text-transform: uppercase;
-	}
 }
 
 ol ol > li {
