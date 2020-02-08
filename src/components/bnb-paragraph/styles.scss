@@ -1,13 +1,23 @@
-@import "node_modules/@biotope/element/lib/host.mixin";
-@import "../../resources/scss/styles";
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
 
-@include host("bnb-paragraph") {
+@include host('bnb-paragraph') {
 	@include fontCopy;
+
+	.secondary {
+		color: $purple;
+	}
+
+	.infotext {
+		@include fontCopyInfo();
+	}
+
 	.leadtext {
 		@include fontCopyLead;
-		color: $grey;
 		font-style: italic;
+		color: $grey;
 	}
+
 	.capitalize::first-letter {
 		@include fontCopyCapital();
 	}
