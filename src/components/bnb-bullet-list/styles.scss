@@ -1,0 +1,20 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-bullet-list') {
+	display: flex;
+	flex-direction: column;
+	background-color: $purple;
+
+	bnb-headline {
+		color: $white;
+		margin-bottom: 70px;
+	}
+	.bullet-list__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+}
