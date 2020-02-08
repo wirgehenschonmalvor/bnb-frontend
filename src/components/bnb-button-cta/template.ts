@@ -1,15 +1,9 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
 
-import {
-	BnbButtonCTAProps,
-	BnbButtonCTAState,
-	BnbButtonCTAMethods,
-} from './defines';
+import { BnbButtonCTAProps } from './defines';
 
-export const template = (
-	data: BnbButtonCTAProps & BnbButtonCTAState & BnbButtonCTAMethods,
-): HTMLFragment => {
+export const template = (data: BnbButtonCTAProps): HTMLFragment => {
 	return html`
 		<a
 			aria-label="${data.value}"

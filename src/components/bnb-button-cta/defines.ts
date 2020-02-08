@@ -11,14 +11,4 @@ interface BnbButtonCTAProps {
 	target: string;
 }
 
-/**
- * State
- */
-interface BnbButtonCTAState {}
-
-/**
- * Methods
- */
-interface BnbButtonCTAMethods {}
-
-export { BnbButtonCTAProps, BnbButtonCTAState, BnbButtonCTAMethods };
+export { BnbButtonCTAProps };

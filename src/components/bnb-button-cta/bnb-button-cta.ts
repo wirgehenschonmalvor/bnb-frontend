@@ -1,13 +1,9 @@
 import Component, { HTMLFragment } from '@biotope/element';
 import { template } from './template';
-import {
-	BnbButtonCTAProps,
-	BnbButtonCTAState,
-	BnbButtonCTAMethods,
-} from './defines';
+import { BnbButtonCTAProps } from './defines';
 
-class BnbButtonCTA extends Component<BnbButtonCTAProps, BnbButtonCTAState> {
-	public static componentName = 'bnb-button-c-t-a';
+class BnbButtonCTA extends Component<BnbButtonCTAProps> {
+	public static componentName = 'bnb-button-cta';
 	public static attributes = ['value', 'url', 'target'];
 
 	protected readonly defaultProps: BnbButtonCTAProps = {
@@ -16,12 +12,8 @@ class BnbButtonCTA extends Component<BnbButtonCTAProps, BnbButtonCTAState> {
 		target: '',
 	};
 
-	protected readonly defaultState: BnbButtonCTAState = {};
-
-	public methods: BnbButtonCTAMethods = {};
-
 	public render(): HTMLFragment {
-		return template({ ...this.props, ...this.state, ...this.methods });
+		return template({ ...this.props });
 	}
 }
 
