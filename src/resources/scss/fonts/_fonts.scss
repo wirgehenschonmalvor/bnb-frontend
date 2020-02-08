@@ -8,7 +8,7 @@ $font-family-regular: 'Helvetica', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 52px;
 	line-height: 64px;
-	$font-weight-normal: 400;
+	font-weight: $font-weight-normal;
 }
 
 @mixin fontHeadlineM() {
@@ -17,7 +17,7 @@ $font-family-regular: 'Helvetica', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 34px;
 	line-height: 44px;
-	$font-weight-normal: 400;
+	font-weight: $font-weight-normal;
 }
 
 @mixin fontHeading() {
@@ -28,7 +28,7 @@ $font-family-regular: 'Helvetica', sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	letter-spacing: 2px;
-	$font-weight-normal: 400;
+	font-weight: $font-weight-normal;
 }
 
 @mixin fontCopy() {
@@ -37,7 +37,7 @@ $font-family-regular: 'Helvetica', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 22px;
 	line-height: 30px;
-	$font-weight-normal: 400;
+	font-weight: $font-weight-normal;
 }
 
 @mixin fontCopyInfo() {
