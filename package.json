@@ -24,7 +24,8 @@
     "breakpoint-sass": "2.7.1",
     "handlebars": "^4.7.2",
     "sanitize.css": "^11.0.0",
-    "susy": "2.2.14"
+    "susy": "2.2.14",
+    "classnames": "^2.2.6"
   },
   "devDependencies": {
     "@biotope/cli": "^1.1.5",
