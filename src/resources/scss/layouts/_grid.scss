@@ -1,6 +1,6 @@
-@import "../utilities/functions";
-@import "../../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-@import "../../../../node_modules/susy/sass/susy";
+@import '../mixins/functions';
+@import '../../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../../../../node_modules/susy/sass/susy';
 
 $grid-columns: 12 !default;
 $grid-gutter: 30px !default;
@@ -16,9 +16,8 @@ $susy: (
 	container: $grid-max-width,
 	gutter: $grid-gutter/$grid-column-width,
 	gutter-position: inside-static,
-	global-box-sizing: border-box
+	global-box-sizing: border-box,
 );
-
 
 .row {
 	margin-top: -$section_margin_top_small;
@@ -30,12 +29,12 @@ $susy: (
 		margin-top: -$section_margin_top_medium;
 	}
 
-	@media (min-width: $xlarge) {
-		margin-top: -$section_margin_top_xlarge;
+	@media (min-width: $large) {
+		margin-top: -$section_margin_top_large;
 	}
 
 	&:after {
-		content: " ";
+		content: ' ';
 		display: block;
 		clear: both;
 	}
@@ -70,8 +69,8 @@ $susy: (
 		margin-top: $section_margin_top_medium;
 	}
 
-	@media (min-width: $xlarge) {
-		margin-top: $section_margin_top_xlarge;
+	@media (min-width: $large) {
+		margin-top: $section_margin_top_large;
 	}
 }
 

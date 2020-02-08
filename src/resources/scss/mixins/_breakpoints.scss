@@ -1,5 +1,4 @@
-$breakpoint-m: 768px;
-$breakpoint-max: 1440px;
+@import '../settings/settings';
 
 @mixin fromBreakpoint($breakpoint) {
 	@media screen and (min-width: #{$breakpoint}) {
@@ -8,13 +7,18 @@ $breakpoint-max: 1440px;
 }
 
 @mixin fromBreakpointM {
-	@include fromBreakpoint($breakpoint-m) {
+	@include fromBreakpoint($medium) {
+		@content;
+	}
+}
+@mixin fromBreakpointL {
+	@include fromBreakpoint($large) {
 		@content;
 	}
 }
 
 @mixin fromBreakpointMax {
-	@include fromBreakpoint($breakpoint-max) {
+	@include fromBreakpoint($max) {
 		@content;
 	}
 }
