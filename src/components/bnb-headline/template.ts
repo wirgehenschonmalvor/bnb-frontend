@@ -2,6 +2,7 @@ import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as stylesh1 from './h1.scss';
 import * as stylesh2 from './h2.scss';
 import * as stylesh3 from './h3.scss';
+import * as stylesh4 from './h4.scss';
 
 import { BnbHeadlineProps } from './defines';
 
@@ -16,6 +17,7 @@ const getStylesForLevel = (level: number = 1) => {
 		stylesh1,
 		stylesh2,
 		stylesh3,
+		stylesh4,
 	};
 
 	return styles[`stylesh${level}`.toString()];

@@ -3,4 +3,5 @@
 
 @include host('bnb-headline') {
 	@include fontHeadlineM;
+	color: $blue;
 }
