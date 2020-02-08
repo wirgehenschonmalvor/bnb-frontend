@@ -1,5 +1,41 @@
-@import "node_modules/@biotope/element/lib/host.mixin";
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
 
 @include host('bnb-newsletter') {
+	display: block;
+	.newsletter {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+		&-text,
+		&-form {
+			width: 100%;
+		}
 
+		&-form {
+			display: flex;
+			flex-direction: column;
+			input,
+			button {
+				border: 1px solid black;
+				line-height: 44px;
+			}
+		}
+
+		@include fromBreakpointM {
+			&__wrapper {
+				flex-direction: row;
+			}
+
+			&-text,
+			&-form {
+				width: 50%;
+			}
+
+			&-form {
+				margin-left: 50px;
+			}
+		}
+	}
 }
