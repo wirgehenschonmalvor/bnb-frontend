@@ -1,14 +1,15 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
 
 @include host('bnb-icon') {
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	// line-height: 0;
 
-	// svg {
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	fill: inherit;
-	// }
+	@include slotted('svg') {
+		height: 100%;
+		width: 100%;
+		fill: inherit;
+	}
 }

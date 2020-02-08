@@ -1,7 +1,7 @@
-// import * as bullet from './Icons/bullet.svg';
+// import * as bullet from './icons/bullet.svg';
 
 const icons = {
-	// bullet,
+	// 	bullet,
 };
 
 export default icons;
