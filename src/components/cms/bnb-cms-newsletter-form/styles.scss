@@ -1,0 +1,17 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-newsletter-form') {
+	display: flex;
+	justify-content: center;
+	margin: 50px 30px;
+
+	@include fromBreakpointM {
+		margin: 50px 50px;
+	}
+
+	@include fromBreakpointMax {
+		margin: 50px auto;
+		max-width: $content-max-width;
+	}
+}
