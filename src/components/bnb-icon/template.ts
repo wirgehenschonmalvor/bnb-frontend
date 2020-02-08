@@ -7,6 +7,8 @@ const getIconForName = (icon: string) => icons[icon] || '';
 
 export const template = (data: BnbIconProps): HTMLFragment => {
 	return html`
-		${{ html: getIconForName(data.icon) }} ${createStyle(styles)}
+		<!-- ${{ html: getIconForName(data.icon) }}  -->
+		<slot />
+		${createStyle(styles)}
 	`;
 };
