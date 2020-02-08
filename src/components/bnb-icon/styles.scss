@@ -1,0 +1,12 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+
+@include host('bnb-icon') {
+	display: inline-block;
+	line-height: 0;
+
+	svg {
+		height: 100%;
+		width: 100%;
+		fill: inherit;
+	}
+}
