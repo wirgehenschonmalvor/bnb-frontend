@@ -7,11 +7,15 @@ class BnbParagraph extends Component<BnbParagraphProps> {
 	public static attributes = [
 		{ name: 'leadtext', type: 'boolean' },
 		{ name: 'capitalize', type: 'boolean' },
+		{ name: 'infotext', type: 'boolean' },
+		{ name: 'secondary', type: 'boolean' },
 	];
 
 	protected readonly defaultProps: BnbParagraphProps = {
 		leadtext: false,
 		capitalize: false,
+		infotext: false,
+		secondary: false,
 	};
 
 	public render(): HTMLFragment {

@@ -9,6 +9,8 @@ export const template = (data: BnbParagraphProps): HTMLFragment => {
 			class="${classNames(
 				{ leadtext: data.leadtext },
 				{ capitalize: data.capitalize },
+				{ infotext: data.infotext },
+				{ secondary: data.secondary },
 			)}"
 		>
 			<slot />
