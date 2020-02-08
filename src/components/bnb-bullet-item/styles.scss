@@ -4,12 +4,16 @@
 @include host('bnb-bullet-item') {
 	display: block;
 
+	@include fromBreakpointM {
+		padding: 0 20px;
+	}
+
 	.item__wrapper {
 		display: flex;
 		flex-direction: column;
 		@include fontCopyInfo();
 		color: white;
-		width: 300px;
+		width: 280px;
 	}
 
 	// bnb-icon {

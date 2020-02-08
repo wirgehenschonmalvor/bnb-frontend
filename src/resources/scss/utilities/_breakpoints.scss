@@ -1,20 +1,20 @@
-$breakpoint-m: 1024px;
+$breakpoint-m: 768px;
 $breakpoint-max: 1440px;
 
 @mixin fromBreakpoint($breakpoint) {
-  @media screen and (min-width: #{$breakpoint}) {
-    @content;
-  }
+	@media screen and (min-width: #{$breakpoint}) {
+		@content;
+	}
 }
 
 @mixin fromBreakpointM {
-  @include fromBreakpoint($breakpoint-m) {
-    @content;
-  }
+	@include fromBreakpoint($breakpoint-m) {
+		@content;
+	}
 }
 
 @mixin fromBreakpointMax {
-  @include fromBreakpoint($breakpoint-max) {
-    @content;
-  }
+	@include fromBreakpoint($breakpoint-max) {
+		@content;
+	}
 }
