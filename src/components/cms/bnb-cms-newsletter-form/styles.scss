@@ -4,14 +4,14 @@
 @include host('bnb-cms-newsletter-form') {
 	display: flex;
 	justify-content: center;
-	margin: 50px 30px;
+	margin: $margin-top-bottom-regular $margin-left-right-small;
 
 	@include fromBreakpointM {
-		margin: 50px 50px;
+		margin: $margin-top-bottom-regular $margin-left-right-medium;
 	}
 
 	@include fromBreakpointMax {
-		margin: 50px auto;
+		margin: $margin-top-bottom-large auto;
 		max-width: $content-max-width;
 	}
 }
