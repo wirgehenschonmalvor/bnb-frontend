@@ -3,9 +3,9 @@
 
 	margin-top: $section_margin_top_small;
 
-	@media (min-width: $medium) {
-		margin-top: $section_margin_top_medium;
-	}
+	// @media (min-width: $medium) {
+	// 	margin-top: $section_margin_top_medium;
+	// }
 
 	@media (min-width: $large) {
 		margin-top: $section_margin_top_large;
@@ -21,9 +21,9 @@
 		+ [class*='section--colorTheme'] {
 			margin-top: $section_margin_top_small;
 
-			@media (min-width: $medium) {
-				margin-top: $section_margin_top_medium;
-			}
+			// @media (min-width: $medium) {
+			// 	margin-top: $section_margin_top_medium;
+			// }
 
 			@media (min-width: $large) {
 				margin-top: $section_margin_top_large;
@@ -35,24 +35,24 @@
 		margin-top: 0;
 		padding: 0 6.75% $section_margin_top_small 6.25%;
 
-		@include breakpoint($medium) {
-			padding-top: $section_margin_top_medium;
-			padding-bottom: $section_margin_top_medium;
-			padding-left: 1.96%;
-			padding-right: 4.3%;
-		}
+		// @include breakpoint($medium) {
+		// 	padding-top: $section_margin_top_medium;
+		// 	padding-bottom: $section_margin_top_medium;
+		// 	padding-left: 1.96%;
+		// 	padding-right: 4.3%;
+		// }
 
 		@include breakpoint($large) {
 			padding: $section_margin_top_large 30px;
 		}
 
-		> .row {
-			&:first-of-type {
-				@include breakpoint(max-width $medium - 1) {
-					margin-top: 0;
-				}
-			}
-		}
+		// > .row {
+		// 	&:first-of-type {
+		// 		@include breakpoint(max-width $medium - 1) {
+		// 			margin-top: 0;
+		// 		}
+		// 	}
+		// }
 
 		> .row--reducedWidth {
 			margin-left: -$half-grid-gutter;
