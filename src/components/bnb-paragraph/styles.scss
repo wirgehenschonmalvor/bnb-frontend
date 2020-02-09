@@ -3,21 +3,11 @@
 
 @include host('bnb-paragraph') {
 	@include fontCopy;
-
-	.secondary {
-		color: $purple;
-	}
-
-	.infotext {
-		@include fontCopyInfo();
-	}
-
 	.leadtext {
 		@include fontCopyLead;
-		font-style: italic;
 		color: $grey;
+		font-style: italic;
 	}
-
 	.capitalize::first-letter {
 		@include fontCopyCapital();
 	}
