@@ -5,13 +5,17 @@
 	display: flex;
 	@include fontCopy;
 	label {
-		margin-right: 15px;
 		line-height: calc(#{$line-height-font-copy} + 5px);
+		width: 50%;
 	}
 	select {
 		@include fontCopy;
-		width: $select-input-width;
-		// box-sizing: border-box;
+		width: 100%;
+		min-width: $select-input-width;
+		line-height: calc(#{$line-height-font-copy} + 5px);
+		height: 48px;
+		border: 1px solid $grey;
+		border-radius: 35px;
 	}
 	bnb-error-message {
 		display: none;
@@ -19,5 +23,12 @@
 		&.error {
 			display: block;
 		}
+	}
+}
+@include addAttributeStyles('bnb-select', 'purple') {
+	select,
+	label {
+		color: $purple;
+		border-color: $purple;
 	}
 }
