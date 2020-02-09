@@ -2,22 +2,31 @@
 @import '../../../resources/scss/styles';
 
 @include host('bnb-cms-info-box') {
-	display: block;
-	background-color: $purple;
-	padding: 50px 30px;
-	width: 100%;
+	display: flex;
+	justify-content: center;
 
-	@include fromBreakpointM {
-		@include slotted('bnb-bullet-list') {
-			max-width: 768px;
-			margin: 0 auto;
+	.color-container {
+		margin: 0;
+		padding: 0 $margin-left-right-small;
+		background-color: $purple;
+
+		@include fromBreakpointM {
+			padding: 0 $margin-left-right-medium;
 		}
-	}
 
-	@include fromBreakpointMax {
-		@include slotted('bnb-bullet-list') {
-			max-width: 1440px;
-			margin: 0 auto;
+		// @include fromBreakpointL {
+		// 	@include slotted('bnb-headline') {
+		// 		padding: 0 $margin-left-right-small;
+		// 	}
+		// }
+
+		@include fromBreakpointMax {
+			width: 100%;
+
+			@include slotted('bnb-bullet-list') {
+				margin: 0 auto;
+				max-width: $content-max-width;
+			}
 		}
 	}
 }

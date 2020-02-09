@@ -4,21 +4,22 @@
 @include host('bnb-bullet-list') {
 	display: flex;
 	flex-direction: column;
-	background-color: $purple;
 	width: 100%;
 
-	bnb-headline {
-		margin-bottom: 70px;
-		padding-left: 20px;
+	@include slotted('bnb-headline') {
+		@include fromBreakpointM {
+			padding: 0 $margin-left-right-small;
+		}
 	}
+
 	.bullet-list__wrapper {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
 		flex-wrap: wrap;
-		margin-bottom: 50px;
+		margin-bottom: $margin-top-bottom-regular;
 
-		@include fromBreakpointM {
+		@include fromBreakpointL {
+			flex-wrap: nowrap;
 			justify-content: space-between;
 		}
 	}

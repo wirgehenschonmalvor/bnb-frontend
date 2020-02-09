@@ -5,7 +5,9 @@ import { BnbCmsInfoBoxProps } from './defines';
 
 export const template = (data: BnbCmsInfoBoxProps): HTMLFragment => {
 	return html`
-		<slot />
+		<div class="color-container">
+			<slot />
+		</div>
 		${createStyle(styles)}
 	`;
 };

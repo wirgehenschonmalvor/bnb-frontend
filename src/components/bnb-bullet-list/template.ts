@@ -5,7 +5,7 @@ import { BnbBulletListProps } from './defines';
 
 export const template = (data: BnbBulletListProps): HTMLFragment => {
 	return html`
-		<bnb-headline white level="4"><slot /></bnb-headline>
+		<slot name="heading" />
 		<div class="bullet-list__wrapper"><slot name="list" /></div>
 		${createStyle(styles)}
 	`;
