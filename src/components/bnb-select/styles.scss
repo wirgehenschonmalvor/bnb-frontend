@@ -16,6 +16,15 @@
 		height: 48px;
 		border: 1px solid $grey;
 		border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+		-webkit-appearance: none;
+		padding: 0 20px;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $purple;
+		}
 	}
 	bnb-error-message {
 		display: none;
@@ -30,5 +39,12 @@
 	label {
 		color: $purple;
 		border-color: $purple;
+	}
+
+	select {
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey;
+		}
 	}
 }
