@@ -4,8 +4,7 @@
 @import 'settings/settings';
 
 /* functions */
-@import 'utilities/functions';
-@import 'utilities/addAttributeStyles';
+@import 'mixins/functions';
 
 /* fonts */
 @import 'fonts/fonts';
@@ -14,7 +13,6 @@
 
 /* breakpoint */
 @import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
-@import '../../resources/scss/utilities/_breakpoints.scss';
 
 /* layout */
 @import 'layouts/default';
@@ -23,6 +21,9 @@
 
 /* base styles */
 @import 'base/margins';
-@import 'base/types';
 
-/* elements */
+/* global mixins */
+@import 'mixins/addAttributeStyles';
+@import 'mixins/slotted';
+@import 'mixins/_breakpoints.scss';
+@import 'mixins/_hoverDevicesOnly.scss';
