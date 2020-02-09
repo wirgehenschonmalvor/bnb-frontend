@@ -2,6 +2,6 @@
 @import '../../resources/scss/styles.scss';
 
 @include host('bnb-headline') {
-	@include fontHeadlineM;
+	@include fontHeading;
 	color: $purple;
 }

@@ -1,3 +1,3 @@
-import BnbHeadline from "./bnb-headline";
+import BnbHeadline from './bnb-headline';
 
 BnbHeadline.register();

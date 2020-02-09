@@ -1,11 +1,12 @@
-import { html, createStyle, HTMLFragment } from "@biotope/element";
-import * as stylesh1 from "./h1.scss";
-import * as stylesh2 from "./h2.scss";
-import * as stylesh3 from "./h3.scss";
+import { html, createStyle, HTMLFragment } from '@biotope/element';
+import * as stylesh1 from './h1.scss';
+import * as stylesh2 from './h2.scss';
+import * as stylesh3 from './h3.scss';
+import * as stylesh4 from './h4.scss';
 
-import { BnbHeadlineProps } from "./defines";
+import { BnbHeadlineProps } from './defines';
 
-const createHeadlineElement = (level: number = 1, content: string = "") => {
+const createHeadlineElement = (level: number = 1, content: string = '') => {
 	const headline = document.createElement(`h${level}`, {});
 	headline.innerHTML = content;
 	return headline;
@@ -15,7 +16,8 @@ const getStylesForLevel = (level: number = 1) => {
 	const styles = {
 		stylesh1,
 		stylesh2,
-		stylesh3
+		stylesh3,
+		stylesh4,
 	};
 
 	return styles[`stylesh${level}`.toString()];
@@ -23,7 +25,7 @@ const getStylesForLevel = (level: number = 1) => {
 
 export const template = (data: BnbHeadlineProps): HTMLFragment => {
 	return html`
-		${createHeadlineElement(data.level, "<slot/>")}
+		${createHeadlineElement(data.level, '<slot/>')}
 		${createStyle(getStylesForLevel(data.level))}
 	`;
 };
