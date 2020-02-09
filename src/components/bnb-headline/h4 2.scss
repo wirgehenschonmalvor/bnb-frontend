@@ -1,0 +1,14 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-headline') {
+	h4 {
+		@include fontHeading();
+		color: $purple;
+	}
+}
+@include addAttributeStyles('bnb-headline', 'white') {
+	h4 {
+		color: white;
+	}
+}
