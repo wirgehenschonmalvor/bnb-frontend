@@ -31,6 +31,10 @@ $input-padding-left: 10px;
 		&::placeholder {
 			color: $grey;
 		}
+
+		&:focus {
+			outline-color: $purple;
+		}
 	}
 
 	input:disabled {
