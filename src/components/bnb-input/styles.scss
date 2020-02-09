@@ -1,30 +1,41 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
+$input-padding-left: 10px;
+
 @include host('bnb-input') {
 	display: flex;
 	flex-direction: column;
-	font-family: $font-family-regular;
+	@include fontCopy();
 
 	.input__wrapper {
-		width: $input-width;
+		min-width: $select-input-width;
 	}
 
 	label {
+		clip-path: inset(50%);
 		position: absolute;
-		left: 10px;
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
 	}
 
 	input {
+		padding-left: $input-padding-left;
+		@include fontCopy();
+		line-height: $min-height;
 		width: 100%;
+
+		&::placeholder {
+			color: $grey;
+		}
 	}
 
-	input:focus ~ label {
-		font-size: 10px;
-		color: grey;
-	}
-
-	input:disabled ~ label {
-		color: grey;
+	input:disabled {
+		&::placeholder {
+			color: $grey-light;
+		}
 	}
 }

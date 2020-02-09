@@ -11,6 +11,7 @@ export const template = (data: BnbInputProps & BnbInputState): HTMLFragment => {
 				type="text"
 				id="input${data.label}"
 				aria-label="input${data.label}"
+				placeholder="${data.placeholder}"
 			/>
 			<label for="input${data.label}"
 				>${data.label}${data.required ? `*` : ''}</label
