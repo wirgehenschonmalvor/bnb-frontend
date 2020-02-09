@@ -1,28 +1,46 @@
 // GLOBAL SASS SETTINGS
 
+// FONTS
+$font-family-regular: Arial, sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
 // Z-INDEXES
 //$z-index-component-xyz: 1;
 
 // COLORS
 $black: #000000;
-$white: #ffffff;
+$white: #f1f1f1;
 $yellow: yellow;
 $red: red;
-
+$blue: blue;
+$purple: #7d47ff;
 $grey: #666;
 $grey-light: lighten($grey, 20%);
 
 // BODY STYLES
 $body-bg: $white;
 $body-font-color: $black;
+$body-font-family: $font-family-regular;
+$body-font-weight: $font-weight-normal;
 $body-font-style: normal;
-$body-font-size: 17px;
-$body-line-height: 25px;
-$body-min-width: 300px;
+$body-font-size: 22px;
+$body-line-height: 30px;
+$body-min-width: 320px;
 
 // COMPONENT STYLES
-$content-max-width: 1280px;
+$content-max-width: 1440px;
 $component-max-width: 1200px;
+
+// breakpoint definitions
+$medium: 768px;
+$large: 1024px;
+$max: 1440px;
+
+// MaxValues
+$smallMax: $medium - 1;
+$mediumMax: $large - 1;
+$xlargeMax: 10000px;
 
 // Grid
 $grid-gutter: 30px;
@@ -32,7 +50,6 @@ $section_content_top: 33px;
 $section_margin_top_small: 60px;
 $section_margin_top_medium: 60px;
 $section_margin_top_large: 60px;
-$section_margin_top_xlarge: 80px;
 
 // Input & Select
-$input-width: 200px;
+$select-input-width: 250px;

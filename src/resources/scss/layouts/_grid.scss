@@ -1,4 +1,4 @@
-@import '../utilities/functions';
+@import '../mixins/functions';
 @import '../../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
 @import '../../../../node_modules/susy/sass/susy';
 
@@ -29,9 +29,9 @@ $susy: (
 	// 	margin-top: -$section_margin_top_medium;
 	// }
 
-	// @media (min-width: $xlarge) {
-	// 	margin-top: -$section_margin_top_xlarge;
-	// }
+	@media (min-width: $large) {
+		margin-top: -$section_margin_top_large;
+	}
 
 	&:after {
 		content: ' ';
@@ -69,9 +69,9 @@ $susy: (
 	// 	margin-top: $section_margin_top_medium;
 	// }
 
-	// @media (min-width: $xlarge) {
-	// 	margin-top: $section_margin_top_xlarge;
-	// }
+	@media (min-width: $large) {
+		margin-top: $section_margin_top_large;
+	}
 }
 
 // grid columns
