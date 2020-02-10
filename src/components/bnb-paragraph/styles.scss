@@ -3,6 +3,18 @@
 
 @include host('bnb-paragraph') {
 	@include fontCopy;
+	p {
+		margin: 0;
+	}
+
+	.secondary {
+		color: $purple;
+	}
+
+	.infotext {
+		@include fontCopyInfo();
+	}
+
 	.leadtext {
 		@include fontCopyLead;
 		color: $grey;

@@ -1,0 +1,24 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-bullet-item') {
+	display: block;
+
+	.item__wrapper {
+		display: flex;
+		flex-direction: column;
+		@include fontCopyInfo();
+		color: white;
+
+		@include fromBreakpointM {
+			padding: 0 $margin-left-right-small;
+		}
+	}
+
+	// bnb-icon {
+	img {
+		max-width: 100px;
+		height: 100px;
+		margin: $margin-top-bottom-regular auto;
+	}
+}
