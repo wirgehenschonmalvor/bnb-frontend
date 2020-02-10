@@ -11,6 +11,9 @@ import * as playYoutube from './svg/play_youtube.svg';
 import * as calendar from './svg/calendar.svg';
 import * as clock from './svg/clock.svg';
 import * as quote from './svg/quote.svg';
+import * as logo from './svg/logo.svg';
+import * as threePax from './svg/3pax.svg';
+import * as cornerCombination from './svg/corner-combination.svg';
 
 const icons = {
 	share,
@@ -26,6 +29,9 @@ const icons = {
 	calendar,
 	clock,
 	quote,
+	logo,
+	threePax,
+	cornerCombination,
 };
 
 export default icons;

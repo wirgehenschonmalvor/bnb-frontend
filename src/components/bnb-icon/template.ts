@@ -1,7 +1,7 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
 import { BnbIconProps } from './defines';
-import icons from './icons';
+import icons from './icons/svg';
 
 const getIconForName = (icon: string) => icons[icon] || '';
 
