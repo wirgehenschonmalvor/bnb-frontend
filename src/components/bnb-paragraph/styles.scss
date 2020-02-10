@@ -17,10 +17,9 @@
 
 	.leadtext {
 		@include fontCopyLead;
-		font-style: italic;
 		color: $grey;
+		font-style: italic;
 	}
-
 	.capitalize::first-letter {
 		@include fontCopyCapital();
 	}

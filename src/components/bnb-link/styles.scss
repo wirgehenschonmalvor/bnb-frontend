@@ -1,0 +1,30 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-link') {
+	a {
+		@include fontCopy();
+		color: $grey;
+		transition: all 0.6s ease;
+		cursor: pointer;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $purple;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-link', 'purple') {
+	a {
+		color: $purple;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $grey;
+			}
+		}
+	}
+}

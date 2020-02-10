@@ -2,7 +2,6 @@
 @import '../../resources/scss/styles.scss';
 
 @include host('bnb-headline') {
-	display: block;
 	h1 {
 		@include fontHeadlineL();
 	}
