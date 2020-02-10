@@ -4,25 +4,18 @@
 @include host('bnb-cms-info-box') {
 	display: flex;
 	justify-content: center;
+	background-color: $purple;
 
 	.color-container {
 		margin: 0;
 		padding: 0 $margin-left-right-small;
-		background-color: $purple;
+		flex-wrap: wrap;
 
 		@include fromBreakpointM {
 			padding: 0 $margin-left-right-medium;
 		}
 
-		// @include fromBreakpointL {
-		// 	@include slotted('bnb-headline') {
-		// 		padding: 0 $margin-left-right-small;
-		// 	}
-		// }
-
 		@include fromBreakpointMax {
-			width: 100%;
-
 			@include slotted('bnb-bullet-list') {
 				margin: 0 auto;
 				max-width: $content-max-width;
