@@ -12,6 +12,7 @@ import * as calendar from './svg/calendar.svg';
 import * as clock from './svg/clock.svg';
 import * as quote from './svg/quote.svg';
 import * as logo from './svg/logo.svg';
+import * as bullet from './svg/bullet.svg';
 import * as threePax from './svg/3pax.svg';
 import * as cornerCombination from './svg/corner-combination.svg';
 
@@ -30,6 +31,7 @@ const icons = {
 	clock,
 	quote,
 	logo,
+	bullet,
 	threePax,
 	cornerCombination,
 };
