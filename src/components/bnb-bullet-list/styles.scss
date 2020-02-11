@@ -14,13 +14,11 @@
 
 	.bullet-list__wrapper {
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
 		margin-bottom: $margin-top-bottom-regular;
 
 		@include fromBreakpointL {
 			flex-wrap: nowrap;
-			justify-content: space-between;
 		}
 	}
 }

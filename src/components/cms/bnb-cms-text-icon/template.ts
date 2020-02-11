@@ -11,7 +11,7 @@ export const template = (data: BnbCmsTextIconProps): HTMLFragment => {
 				<slot />
 			</div>
 			<div class="text-icon--right">
-				<slot name="icon" />
+				<bnb-icon icon="cornerCombination"></bnb-icon>
 			</div>
 		</div>
 		<div class="button">

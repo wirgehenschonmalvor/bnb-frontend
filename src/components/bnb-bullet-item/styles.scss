@@ -4,6 +4,13 @@
 @include host('bnb-bullet-item') {
 	display: block;
 
+	@include fromBreakpointM {
+		width: 43vw;
+	}
+	@include fromBreakpointL {
+		width: 25vw;
+	}
+
 	.item__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -15,10 +22,22 @@
 		}
 	}
 
-	// bnb-icon {
-	img {
-		max-width: 100px;
-		height: 100px;
+	bnb-icon {
+		height: 300px;
+		width: 300px;
 		margin: $margin-top-bottom-regular auto;
+
+		@include fromBreakpointM {
+			width: 35vw;
+			max-width: 300px;
+		}
+		@include fromBreakpointL {
+			width: 20vw;
+			max-width: 300px;
+		}
+		@include fromBreakpointMax {
+			width: 25vw;
+			max-width: 300px;
+		}
 	}
 }

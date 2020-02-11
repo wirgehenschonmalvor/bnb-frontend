@@ -6,7 +6,7 @@ import { BnbBulletItemProps } from './defines';
 export const template = (data: BnbBulletItemProps): HTMLFragment => {
 	return html`
 		<div class="item__wrapper">
-			<img src="https://dummyimage.com/100x100/000/fff&text=ICON" />
+			<bnb-icon icon="${data.icon}"></bnb-icon>
 			<slot />
 		</div>
 		${createStyle(styles)}
