@@ -4,12 +4,14 @@
 @include host('bnb-article-info') {
 	@include fontCopy;
 	display: flex;
+	color: $grey;
 
 	img {
 		height: 70px;
 		width: 70px;
 		margin-right: 17px;
 		border-radius: 50%;
+		border: 1px solid $grey;
 	}
 
 	.bnb-article-info {
