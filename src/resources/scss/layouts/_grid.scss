@@ -25,9 +25,9 @@ $susy: (
 	margin-right: -$half-grid-gutter;
 	max-width: none;
 
-	@media (min-width: $medium) {
-		margin-top: -$section_margin_top_medium;
-	}
+	// @media (min-width: $medium) {
+	// 	margin-top: -$section_margin_top_medium;
+	// }
 
 	@media (min-width: $large) {
 		margin-top: -$section_margin_top_large;
@@ -48,16 +48,16 @@ $susy: (
 		margin-left: calc(6.25% - #{$half-grid-gutter});
 		margin-right: calc(6.75% - #{$half-grid-gutter});
 
-		@include breakpoint($medium) {
-			margin-left: calc(1.96% - #{$half-grid-gutter});
-			margin-right: calc(4.3% - #{$half-grid-gutter});
-		}
+		// @include breakpoint($medium) {
+		// 	margin-left: calc(1.96% - #{$half-grid-gutter});
+		// 	margin-right: calc(4.3% - #{$half-grid-gutter});
+		// }
 
-		@include breakpoint(1520px) {
-			max-width: $content-max-width + $grid-gutter;
-			margin-left: auto;
-			margin-right: auto;
-		}
+		// @include breakpoint(1520px) {
+		// 	max-width: $content-max-width + $grid-gutter;
+		// 	margin-left: auto;
+		// 	margin-right: auto;
+		// }
 	}
 }
 
@@ -65,9 +65,9 @@ $susy: (
 	@include span(12);
 	margin-top: $section_margin_top_small;
 
-	@media (min-width: $medium) {
-		margin-top: $section_margin_top_medium;
-	}
+	// @media (min-width: $medium) {
+	// 	margin-top: $section_margin_top_medium;
+	// }
 
 	@media (min-width: $large) {
 		margin-top: $section_margin_top_large;
@@ -75,5 +75,5 @@ $susy: (
 }
 
 // grid columns
-@include make-grid-columns('col--medium', $medium);
-@include make-grid-columns('col--large', $large);
+// @include make-grid-columns('col--medium', $medium);
+// @include make-grid-columns('col--large', $large);

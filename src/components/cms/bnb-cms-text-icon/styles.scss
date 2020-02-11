@@ -30,6 +30,11 @@
 		flex-direction: column;
 		margin: 0 $margin-left-right-small;
 
+		&--left {
+			@include slotted('bnb-headline') {
+				margin: 0;
+			}
+		}
 		&--right {
 			margin: 0 auto;
 			width: 100%;
@@ -57,10 +62,15 @@
 
 			&--left {
 				width: 60%;
+				margin-right: calc(#{$element-spacing-large} / 2);
+				@include slotted('bnb-headline') {
+					padding-left: 0;
+				}
 			}
 
 			&--right {
 				width: 40%;
+				margin-left: calc(#{$element-spacing-large} / 2);
 			}
 		}
 	}

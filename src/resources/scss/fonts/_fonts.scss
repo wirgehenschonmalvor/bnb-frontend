@@ -1,5 +1,7 @@
 @import '../settings/settings';
 
+$line-height-font-copy: 30px;
+
 @mixin fontHeadlineL() {
 	font-family: $font-family-regular;
 	-webkit-font-smoothing: antialiased;
@@ -35,7 +37,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 22px;
-	line-height: 30px;
+	line-height: $line-height-font-copy;
 	font-weight: $font-weight-normal;
 }
 

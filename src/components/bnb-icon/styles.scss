@@ -3,9 +3,9 @@
 
 @include host('bnb-icon') {
 	display: inline-block;
-	width: 100px;
-	height: 100px;
-	// line-height: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 0;
 
 	@include slotted('svg') {
 		height: 100%;

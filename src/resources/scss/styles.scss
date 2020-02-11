@@ -25,5 +25,5 @@
 /* global mixins */
 @import 'mixins/addAttributeStyles';
 @import 'mixins/slotted';
-@import 'mixins/_breakpoints.scss';
-@import 'mixins/_hoverDevicesOnly.scss';
+@import 'mixins/breakpoints';
+@import 'mixins/hoverDevicesOnly';
