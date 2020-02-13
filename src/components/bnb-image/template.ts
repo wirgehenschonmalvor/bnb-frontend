@@ -23,14 +23,26 @@ export const template = (data: BnbImageProps): HTMLFragment => {
         object-fit: ${data.objectFit};
         object-position: ${data.objectPosition};
       }
-    `)}
-		<img
-			srcset="${createSrcsetValue(data.srcset)}"
-			sizes="${createSizesValue(data.sizes)}"
-			src="${data.src}"
-			alt="${data.title}"
-			aria-label="${data.title}"
-		/>
+	`)}
+		<div class="img-wrapper">
+			<img
+				srcset="${createSrcsetValue(data.srcset)}"
+				sizes="${createSizesValue(data.sizes)}"
+				src="${data.src}"
+				alt="${data.title}"
+				aria-label="${data.title}"
+			/>
+			${data.copyright
+				? html`
+						<span>&#169; ${data.copyright}</span>
+				  `
+				: ''}
+		</div>
+		${data.caption
+			? html`
+					<footer>${data.caption}</footer>
+			  `
+			: ''}
 		${createStyle(styles)}
 	`;
 };
