@@ -8,19 +8,19 @@ class BnbVideo extends Component<BnbVideoProps, null> {
 		'video-url',
 		{
 			name: 'autoplay',
-			type: 'booelan',
+			type: 'boolean',
 		},
 		{
 			name: 'muted',
-			type: 'booelan',
+			type: 'boolean',
 		},
 		{
 			name: 'loop',
-			type: 'booelan',
+			type: 'boolean',
 		},
 		{
 			name: 'controls',
-			type: 'booelan',
+			type: 'boolean',
 		},
 	];
 
