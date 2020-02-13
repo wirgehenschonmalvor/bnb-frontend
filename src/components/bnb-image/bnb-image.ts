@@ -15,6 +15,8 @@ class BnbImage extends Component<BnbImageProps, null> {
 		},
 		'src',
 		'title',
+		'caption',
+		'copyright',
 		'object-fit',
 		'object-position',
 	];

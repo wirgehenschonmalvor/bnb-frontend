@@ -10,6 +10,8 @@ interface BnbImageProps {
 	sizes: ImageCondition[];
 	src: string;
 	title: string;
+	caption?: string;
+	copyright?: string;
 	objectFit?: string;
 	objectPosition?: string;
 }
