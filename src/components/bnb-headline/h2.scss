@@ -4,6 +4,17 @@
 @include host('bnb-headline') {
 	h2 {
 		@include fontHeadlineM();
+	}
+}
+
+@include addAttributeStyles('bnb-headline', 'purple') {
+	h2 {
 		color: $purple;
+	}
+}
+
+@include addAttributeStyles('bnb-headline', 'white') {
+	h2 {
+		color: $white;
 	}
 }
