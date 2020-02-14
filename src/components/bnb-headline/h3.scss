@@ -5,15 +5,15 @@
 	h3 {
 		display: block;
 		@include fontHeading();
-		margin: 43px 0 16px 0;
+		margin: 40px 0 15px 0;
 	}
 }
-@include addAttributeStyles('bnb-headline', 'white') {
+@include addAttributeStyles('bnb-headline', 'color=white') {
 	h3 {
 		color: white;
 	}
 }
-@include addAttributeStyles('bnb-headline', 'purple') {
+@include addAttributeStyles('bnb-headline', 'color=purple') {
 	h3 {
 		color: $purple;
 	}

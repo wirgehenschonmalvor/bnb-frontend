@@ -1,15 +1,16 @@
 @import '../settings/settings';
 
-@mixin cmsComponentsMax() {
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0 $grid-gutter-small;
+@mixin cmsComponents() {
+	margin: 0 $margin-left-right-small;
+
+	@include fromBreakpointL() {
+		margin: 0 $margin-left-right-medium;
+	}
 
 	@include fromBreakpointMax() {
-		grid-template-columns: repeat(6, 1fr);
-		column-gap: $grid-gutter-small;
+		width: 100%;
 		max-width: $max;
 		margin: 0 auto;
-		padding: 0 $grid-gutter-small;
+		padding: 0 $margin-left-right-small;
 	}
 }

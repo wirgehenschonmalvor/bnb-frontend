@@ -9,13 +9,13 @@
 	}
 }
 
-@include addAttributeStyles('bnb-headline', 'purple') {
+@include addAttributeStyles('bnb-headline', 'color=purple') {
 	h2 {
 		color: $purple;
 	}
 }
 
-@include addAttributeStyles('bnb-headline', 'white') {
+@include addAttributeStyles('bnb-headline', 'color=white') {
 	h2 {
 		color: $white;
 	}
