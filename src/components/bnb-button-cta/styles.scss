@@ -28,7 +28,7 @@
 	}
 }
 
-@include addAttributeStyles('bnb-button-cta', 'primary') {
+@include addAttributeStyles('bnb-button-cta', 'version=primary') {
 	a {
 		color: $white;
 		background-color: $grey;
@@ -44,7 +44,7 @@
 	}
 }
 
-@include addAttributeStyles('bnb-button-cta', 'secondary') {
+@include addAttributeStyles('bnb-button-cta', 'version=secondary') {
 	a {
 		color: $grey;
 		background-color: $white;
@@ -59,7 +59,7 @@
 	}
 }
 
-@include addAttributeStyles('bnb-button-cta', 'primary-purple') {
+@include addAttributeStyles('bnb-button-cta', 'version=primary-purple') {
 	a {
 		color: $white;
 		background-color: $purple;
@@ -80,7 +80,7 @@
 	}
 }
 
-@include addAttributeStyles('bnb-button-cta', 'secondary-purple') {
+@include addAttributeStyles('bnb-button-cta', 'version=secondary-purple') {
 	a {
 		color: $purple;
 		background-color: $white;
