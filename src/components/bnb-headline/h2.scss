@@ -3,7 +3,9 @@
 
 @include host('bnb-headline') {
 	h2 {
+		display: block;
 		@include fontHeadlineM();
+		margin: 0 0 17px 0;
 	}
 }
 

@@ -3,7 +3,9 @@
 
 @include host('bnb-headline') {
 	h3 {
+		display: block;
 		@include fontHeading();
+		margin: 43px 0 16px 0;
 	}
 }
 @include addAttributeStyles('bnb-headline', 'white') {
