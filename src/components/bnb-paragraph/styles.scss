@@ -2,6 +2,7 @@
 @import '../../resources/scss/styles';
 
 @include host('bnb-paragraph') {
+	display: block;
 	@include fontCopy;
 	p {
 		margin: 0;
