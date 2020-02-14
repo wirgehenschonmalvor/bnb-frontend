@@ -4,18 +4,12 @@
 @include host('bnb-bullet-list') {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-
-	@include slotted('bnb-headline') {
-		@include fromBreakpointM {
-			padding: 0 $margin-left-right-small;
-		}
-	}
 
 	.bullet-list__wrapper {
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: $margin-top-bottom-regular;
+		justify-content: space-between;
 
 		@include fromBreakpointL {
 			flex-wrap: nowrap;
