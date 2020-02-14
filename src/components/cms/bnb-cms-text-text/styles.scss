@@ -5,41 +5,28 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	@include cmsComponents();
 
 	.text-text {
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
-		margin: 0 $margin-left-right-small;
 
 		&--left,
 		&--right {
 			@include slotted('bnb-headline') {
-				margin: 0 0 50px 0;
+				margin: 0;
 			}
 		}
 
 		@include fromBreakpointM {
-			margin: 0 $margin-left-right-medium;
-		}
-
-		@include fromBreakpointMax {
+			margin: $margin-left-right-small auto;
+			justify-content: space-between;
 			flex-direction: row;
-			max-width: $content-max-width;
-			margin: 0 auto;
-			padding: 0 $margin-left-right-medium;
 
-			&--right,
-			&--left {
-				width: 50%;
-			}
-
-			&--left {
-				margin-right: calc(#{$element-spacing-large} / 2);
-			}
-
+			&--left,
 			&--right {
-				margin-left: calc(#{$element-spacing-large} / 2);
+				margin: 0;
+				width: 46%;
 			}
 		}
 	}

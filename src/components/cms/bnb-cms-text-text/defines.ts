@@ -5,9 +5,10 @@
 /**
  * Props
  */
-interface BnbCmsTextTextProps {}
-
-
-export {
-  BnbCmsTextTextProps
+interface BnbCmsTextTextProps {
+	headingLeft: string;
+	headingRight: string;
+	color?: string;
 }
+
+export { BnbCmsTextTextProps };
