@@ -1,0 +1,25 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-share') {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 300px;
+
+	.link-wrapper {
+		position: relative;
+		a {
+			position: absolute;
+			height: 60px;
+			width: 60px;
+			margin: 0;
+		}
+		@include slotted('bnb-icon') {
+			margin: 0;
+			fill: $grey;
+			height: 60px;
+			width: 60px;
+		}
+	}
+}
