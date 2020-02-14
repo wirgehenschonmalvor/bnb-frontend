@@ -5,6 +5,18 @@
 /**
  * Props
  */
-interface BnbCmsTextIconProps {}
+interface BnbCmsTextIconProps {
+	icon: string;
+	heading: string;
+	color?: string;
+	button?: ButtonInfo;
+}
 
-export { BnbCmsTextIconProps };
+interface ButtonInfo {
+	value: string;
+	url: string;
+	target?: string;
+	version?: string;
+}
+
+export { BnbCmsTextIconProps, ButtonInfo };

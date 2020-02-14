@@ -1,5 +1,5 @@
 .section {
-	$half-grid-gutter: $grid-gutter / 2;
+	$half-grid-gutter-small: $grid-gutter-small / 2;
 
 	margin-top: $section_margin_top_small;
 
@@ -55,8 +55,8 @@
 		// }
 
 		> .row--reducedWidth {
-			margin-left: -$half-grid-gutter;
-			margin-right: -$half-grid-gutter;
+			margin-left: -$half-grid-gutter-small;
+			margin-right: -$half-grid-gutter-small;
 
 			@include breakpoint(1500px) {
 				margin-left: auto;

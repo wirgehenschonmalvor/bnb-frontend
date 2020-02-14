@@ -5,30 +5,17 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	@include cmsComponents();
 
-	@include slotted('bnb-headline') {
-		text-align: start;
-		margin: 0 $margin-left-right-small;
-
-		@include fromBreakpointM {
-			margin: 0 $margin-left-right-medium;
-		}
-
-		@include fromBreakpointMax {
-			width: 100%;
-			max-width: $content-max-width;
-			padding-left: $margin-left-right-medium;
-			margin: 0 auto;
-			justify-content: flex-start;
-		}
-	}
-
-	.text-icon,
-	.button {
+	.text-icon {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		flex-direction: column;
-		margin: 0 $margin-left-right-small;
+
+		@include slotted('bnb-icon') {
+			height: 100%;
+			width: 100%;
+		}
 
 		&--left {
 			@include slotted('bnb-headline') {
@@ -36,61 +23,45 @@
 			}
 		}
 		&--right {
-			margin: 0 auto;
-			width: 100%;
-		}
-		@include slotted('bnb-icon') {
-			height: 100%;
-			width: 100%;
+			width: 70%;
+			margin: $margin-left-right-small auto;
 		}
 
 		@include fromBreakpointM {
-			margin: 0 $margin-left-right-medium;
+			flex-direction: row;
+
+			&--left {
+				width: 50%;
+			}
 			&--right {
 				margin: 0;
-				display: flex;
-				justify-content: flex-end;
+				width: 30%;
 				align-self: flex-end;
 			}
 		}
 
 		@include fromBreakpointMax {
-			flex-direction: row;
-			max-width: $content-max-width;
-			margin: 0 auto;
-			padding: 0 $margin-left-right-medium;
-
-			&--left {
-				width: 60%;
-				margin-right: calc(#{$element-spacing-large} / 2);
-				@include slotted('bnb-headline') {
-					padding-left: 0;
-				}
-			}
-
 			&--right {
-				width: 40%;
-				margin-left: calc(#{$element-spacing-large} / 2);
+				margin-right: $right-indentation;
+				width: 257px;
+				height: 249px;
 			}
 		}
 	}
 
 	.button {
-		margin: $margin-top-bottom-large $margin-left-right-small;
-
-		@include fromBreakpointM {
-			@include slotted('bnb-button-cta') {
-				width: 50%;
-				align-self: center;
-			}
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		@include slotted('bnb-button-cta') {
+			margin: 0 auto;
 		}
 
-		@include fromBreakpointMax {
-			margin: $margin-top-bottom-large auto;
-			width: $content-max-width;
-			justify-content: flex-start;
+		@include fromBreakpointM {
+			margin: $margin-left-right-small auto;
 			@include slotted('bnb-button-cta') {
 				width: initial;
+				margin: 0;
 			}
 		}
 	}

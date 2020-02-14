@@ -7,10 +7,20 @@ export const template = (data: BnbCmsTextTextProps): HTMLFragment => {
 	return html`
 		<div class="text-text">
 			<div class="text-text--left">
-				<slot name="left" />
+				<bnb-headline level="3" color="${data.color}"
+					>${data.headingLeft}</bnb-headline
+				>
+				<bnb-headline level="2" color="${data.color}"
+					><slot name="left"
+				/></bnb-headline>
 			</div>
 			<div class="text-text--right">
-				<slot name="right" />
+				<bnb-headline level="3" color="${data.color}"
+					>${data.headingRight}</bnb-headline
+				>
+				<bnb-headline level="2" color="${data.color}"
+					><slot name="right"
+				/></bnb-headline>
 			</div>
 		</div>
 		${createStyle(styles)}

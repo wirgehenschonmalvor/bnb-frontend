@@ -3,6 +3,7 @@
 
 @include host('bnb-headline') {
 	h1 {
+		display: block;
 		@include fontHeadlineL();
 	}
 }

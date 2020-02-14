@@ -5,9 +5,8 @@
 /**
  * Props
  */
-interface BnbCmsInfoBoxProps {}
-
-
-export {
-  BnbCmsInfoBoxProps
+interface BnbCmsInfoBoxProps {
+	heading: string;
 }
+
+export { BnbCmsInfoBoxProps };

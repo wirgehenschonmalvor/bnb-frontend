@@ -5,10 +5,14 @@
 	display: block;
 
 	@include fromBreakpointM {
-		width: 43vw;
+		width: 40vw;
 	}
 	@include fromBreakpointL {
-		width: 25vw;
+		width: 20vw;
+	}
+
+	@include fromBreakpointMax {
+		max-width: 300px;
 	}
 
 	.item__wrapper {
@@ -16,28 +20,13 @@
 		flex-direction: column;
 		@include fontCopyInfo();
 		color: white;
-
-		@include fromBreakpointM {
-			padding: 0 $margin-left-right-small;
-		}
+		margin-top: 70px;
 	}
 
 	bnb-icon {
-		height: 300px;
-		width: 300px;
-		margin: $margin-top-bottom-regular auto;
-
-		@include fromBreakpointM {
-			width: 35vw;
-			max-width: 300px;
-		}
-		@include fromBreakpointL {
-			width: 20vw;
-			max-width: 300px;
-		}
-		@include fromBreakpointMax {
-			width: 25vw;
-			max-width: 300px;
-		}
+		height: 150px;
+		width: 150px;
+		margin: 30px auto;
+		fill: $white;
 	}
 }
