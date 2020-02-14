@@ -47,3 +47,25 @@
 		}
 	}
 }
+
+@include addAttributeStyles('bnb-cms-text-image', 'horizontal') {
+	.text-image {
+		@include fromBreakpointL {
+			flex-direction: row;
+
+			&--left {
+				width: 30%;
+			}
+			&--right {
+				margin: 0;
+				width: 57%;
+			}
+		}
+
+		@include fromBreakpointMax {
+			&--right {
+				margin-right: $right-indentation;
+			}
+		}
+	}
+}
