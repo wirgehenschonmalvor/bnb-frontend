@@ -3,8 +3,8 @@
 @import '../../../../node_modules/susy/sass/susy';
 
 $grid-columns: 12 !default;
-$grid-gutter: 30px !default;
-$half-grid-gutter: $grid-gutter / 2 !default;
+$grid-gutter-small: 30px !default;
+$half-grid-gutter-small: $grid-gutter-small / 2 !default;
 $grid-column-width: 120px !default;
 $grid-max-width: $content-max-width !default;
 
@@ -14,15 +14,15 @@ $susy: (
 	columns: $grid-columns,
 	column-width: $grid-column-width,
 	container: $grid-max-width,
-	gutter: $grid-gutter/$grid-column-width,
+	gutter: $grid-gutter-small/$grid-column-width,
 	gutter-position: inside-static,
 	global-box-sizing: border-box,
 );
 
 .row {
 	margin-top: -$section_margin_top_small;
-	margin-left: -$half-grid-gutter;
-	margin-right: -$half-grid-gutter;
+	margin-left: -$half-grid-gutter-small;
+	margin-right: -$half-grid-gutter-small;
 	max-width: none;
 
 	// @media (min-width: $medium) {
@@ -45,16 +45,16 @@ $susy: (
 	}
 
 	&--reducedWidth {
-		margin-left: calc(6.25% - #{$half-grid-gutter});
-		margin-right: calc(6.75% - #{$half-grid-gutter});
+		margin-left: calc(6.25% - #{$half-grid-gutter-small});
+		margin-right: calc(6.75% - #{$half-grid-gutter-small});
 
 		// @include breakpoint($medium) {
-		// 	margin-left: calc(1.96% - #{$half-grid-gutter});
-		// 	margin-right: calc(4.3% - #{$half-grid-gutter});
+		// 	margin-left: calc(1.96% - #{$half-grid-gutter-small});
+		// 	margin-right: calc(4.3% - #{$half-grid-gutter-small});
 		// }
 
 		// @include breakpoint(1520px) {
-		// 	max-width: $content-max-width + $grid-gutter;
+		// 	max-width: $content-max-width + $grid-gutter-small;
 		// 	margin-left: auto;
 		// 	margin-right: auto;
 		// }
