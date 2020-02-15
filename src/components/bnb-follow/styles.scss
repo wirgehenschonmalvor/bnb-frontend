@@ -1,0 +1,33 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-follow') {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 175px;
+
+	.link-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		a {
+			position: absolute;
+			width: 38px;
+			height: 38px;
+			margin: 0;
+		}
+		@include slotted('bnb-icon') {
+			fill: $grey;
+			height: 38px;
+			width: 38px;
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-follow', 'color=light') {
+	@include slotted('bnb-icon') {
+		fill: $grey-light;
+	}
+}
