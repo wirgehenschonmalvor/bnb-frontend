@@ -1,0 +1,111 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-stage') {
+	display: block;
+	background-color: $white;
+	max-width: $max;
+	margin: 0 auto;
+
+	bnb-image {
+		height: 300px;
+		width: 100vw;
+		max-width: $max;
+	}
+
+	.stage-text-container,
+	.stage-text-container-left,
+	.stage-text-container-right,
+	.stage-text-buttons-mobile,
+	.stage-text-buttons {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.stage-text-container {
+		background: white;
+		max-width: $max;
+		padding: 0 $margin-left-right-small;
+		margin-top: -80px;
+	}
+
+	bnb-button-cta {
+		margin: 20px 0;
+	}
+
+	#icon-desktop {
+		display: none;
+	}
+
+	#icon-mobile {
+		margin: 20px auto;
+		width: 70vw;
+		height: 70vw;
+	}
+
+	@include fromBreakpointM {
+		bnb-button-cta {
+			width: 70vw;
+			margin: 30px auto;
+		}
+	}
+	@include fromBreakpointL {
+		#icon-mobile {
+			margin: 30px auto;
+			width: 50vw;
+			height: 50vw;
+		}
+
+		.stage-text-buttons-mobile {
+			flex-direction: row;
+			bnb-button-cta {
+				width: 40vw;
+				margin: 50px auto;
+			}
+		}
+	}
+
+	@include fromBreakpointMax {
+		#icon-mobile {
+			display: none;
+		}
+
+		#icon-desktop {
+			display: flex;
+		}
+
+		bnb-image {
+			height: 600px;
+		}
+
+		.stage-text-container {
+			position: absolute;
+			top: 520px;
+			margin-right: calc(
+				#{$right-indentation} + #{$margin-left-right-small}
+			);
+			height: 500px;
+			flex-direction: row;
+			max-width: calc(
+				#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
+			);
+
+			.stage-text-container-right {
+				align-self: flex-end;
+				bnb-icon {
+					height: 250px;
+					width: 250px;
+					margin: 40px;
+				}
+			}
+			.stage-text-buttons {
+				justify-content: flex-start;
+
+				bnb-button-cta {
+					width: 215px;
+					margin: 50px 20px 70px 0;
+				}
+			}
+		}
+	}
+}
