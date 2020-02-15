@@ -8,7 +8,7 @@
 interface BnbButtonCTAProps {
 	value: string;
 	url: string;
-	target: string;
+	target?: string;
 }
 
 export { BnbButtonCTAProps };
