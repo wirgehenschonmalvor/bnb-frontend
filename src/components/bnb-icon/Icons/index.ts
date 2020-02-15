@@ -1,4 +1,5 @@
 import * as bildmarke from './svg/bildmarke.svg';
+import * as schriftzug from './svg/schriftzug.svg';
 import * as share from './svg/share.svg';
 import * as email from './svg/email.svg';
 import * as facebook from './svg/facebook.svg';
@@ -22,6 +23,7 @@ import * as iconsetNoSpacing from './svg/iconset-no-spacing.svg';
 import * as iconsetSpacingRight from './svg/iconset-spacing-right.svg';
 
 const icons = {
+	schriftzug,
 	bildmarke,
 	share,
 	email,

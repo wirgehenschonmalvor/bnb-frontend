@@ -102,6 +102,7 @@
 
 @include addAttributeStyles('bnb-button-cta', 'version=footer') {
 	a {
+		width: initial;
 		color: $grey-light;
 		background-color: transparent;
 		border: 2px solid $grey-light;
@@ -113,8 +114,9 @@
 
 		@include hoverDevicesOnly() {
 			&:hover {
-				color: $grey;
-				background-color: $grey-light;
+				color: $white;
+				background-color: $grey;
+				border-color: $grey;
 			}
 		}
 	}

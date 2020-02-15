@@ -23,11 +23,25 @@
 			height: 38px;
 			width: 38px;
 		}
+		@include hoverDevicesOnly {
+			&:hover {
+				@include slotted('bnb-icon') {
+					fill: $grey-light;
+				}
+			}
+		}
 	}
 }
 
 @include addAttributeStyles('bnb-follow', 'color=light') {
 	@include slotted('bnb-icon') {
 		fill: $grey-light;
+	}
+	@include hoverDevicesOnly {
+		.link-wrapper:hover {
+			@include slotted('bnb-icon') {
+				fill: $grey;
+			}
+		}
 	}
 }
