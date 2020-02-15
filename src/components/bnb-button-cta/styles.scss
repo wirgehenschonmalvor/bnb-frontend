@@ -99,3 +99,23 @@
 		}
 	}
 }
+
+@include addAttributeStyles('bnb-button-cta', 'version=footer') {
+	a {
+		color: $grey-light;
+		background-color: transparent;
+		border: 2px solid $grey-light;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey-light;
+		}
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $grey;
+				background-color: $grey-light;
+			}
+		}
+	}
+}

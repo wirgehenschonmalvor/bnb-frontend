@@ -1,0 +1,85 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-footer') {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	.footer-background {
+		display: flex;
+		background-color: $grey;
+		justify-content: flex-end;
+		flex-direction: column;
+
+		.footer-wrapper {
+			display: flex;
+			flex-direction: column;
+			@include cmsComponents();
+			padding: 40px 0 30px 0;
+
+			@include fromBreakpointM {
+				justify-content: space-between;
+				flex-direction: row;
+				padding: 40px 0 30px 0;
+			}
+
+			.footer-links--left,
+			.footer-links--right,
+			.footer-buttons {
+				display: flex;
+				flex-direction: column;
+				bnb-link {
+					width: 100%;
+					margin-bottom: 15px;
+					text-decoration: none;
+				}
+				bnb-button-cta {
+					margin-bottom: 30px;
+					margin-top: 30px;
+				}
+
+				@include fromBreakpointM {
+					bnb-button-cta {
+						margin-top: 0;
+					}
+				}
+				@include fromBreakpointL {
+					padding-bottom: 100px;
+					bnb-link {
+						margin-bottom: 25px;
+					}
+					bnb-button-cta {
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+
+		.footer-icon {
+			width: 100%;
+			max-width: $max;
+			margin: 0 -30px 50px -30px;
+			text-align: right;
+			right: 0;
+
+			bnb-icon {
+				fill: $grey-light;
+				width: 80px;
+				height: 80px;
+			}
+
+			@include fromBreakpointM {
+				bnb-icon {
+					width: 120px;
+					height: 120px;
+				}
+				margin-right: 50px;
+			}
+			@include fromBreakpointMax {
+				margin: 0 auto 50px auto;
+			}
+		}
+	}
+}
