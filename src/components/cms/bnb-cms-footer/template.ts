@@ -11,44 +11,36 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Aktiv werden"
-						url="https://www.brendnewbundestag.de/volunteers"
+						url="volunteers.html"
 					></bnb-link>
 					<bnb-link
 						footer
 						value="Kandidat*Innen"
-						url="https://www.brendnewbundestag.de/candidates"
+						url="candidates.html"
 					></bnb-link>
 					<bnb-link
 						footer
 						value="Über uns"
-						url="https://www.brendnewbundestag.de/about-us"
+						url="about-us.html"
 					></bnb-link>
-					<bnb-link
-						footer
-						value="News"
-						url="https://www.brendnewbundestag.de/news"
-					></bnb-link>
+					<bnb-link footer value="News" url="news.html"></bnb-link>
 				</div>
 				<div class="footer-links--right">
-					<bnb-link
-						footer
-						value="Presse"
-						url="https://www.brendnewbundestag.de/press"
-					></bnb-link>
+					<bnb-link footer value="Presse" url="press.html"></bnb-link>
 					<bnb-link
 						footer
 						value="Kontakt"
-						url="https://www.brendnewbundestag.de/contact"
+						url="contact.html"
 					></bnb-link>
 					<bnb-link
 						footer
 						value="Impressum"
-						url="https://www.brendnewbundestag.de/imprint"
+						url="imprint.html"
 					></bnb-link>
 					<bnb-link
 						footer
 						value="Datenschutz"
-						url="https://www.brendnewbundestag.de/data-protection"
+						url="data-protection.html"
 					></bnb-link>
 				</div>
 				<div class="footer-buttons">
