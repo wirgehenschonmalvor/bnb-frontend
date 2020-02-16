@@ -49,7 +49,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						value="Newsletter abonnieren"
 						url="#newsletter"
 					></bnb-button-cta>
-					<bnb-follow color="light"></bnb-follow>
+					<bnb-follow color="footer"></bnb-follow>
 				</div>
 			</div>
 			<div class="footer-icon">

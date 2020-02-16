@@ -30,13 +30,25 @@
 	}
 }
 
-@include addAttributeStyles('bnb-link', 'footer') {
+@include addAttributeStyles('bnb-link', 'header') {
 	a {
 		color: $grey-light;
 
 		@include hoverDevicesOnly {
 			&:hover {
 				color: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-link', 'footer') {
+	a {
+		color: $grey-light;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $white;
 			}
 		}
 	}

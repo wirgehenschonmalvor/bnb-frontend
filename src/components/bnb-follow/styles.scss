@@ -22,10 +22,12 @@
 			fill: $grey;
 			height: 38px;
 			width: 38px;
+			transition: all 0.6s ease;
 		}
 		@include hoverDevicesOnly {
 			&:hover {
 				@include slotted('bnb-icon') {
+					transition: all 0.6s ease;
 					fill: $grey-light;
 				}
 			}
@@ -41,6 +43,19 @@
 		.link-wrapper:hover {
 			@include slotted('bnb-icon') {
 				fill: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-follow', 'color=footer') {
+	@include slotted('bnb-icon') {
+		fill: $grey-light;
+	}
+	@include hoverDevicesOnly {
+		.link-wrapper:hover {
+			@include slotted('bnb-icon') {
+				fill: $white;
 			}
 		}
 	}
