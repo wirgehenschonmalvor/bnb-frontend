@@ -3,14 +3,17 @@
 
 @include host('bnb-cms-text-image') {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	@include cmsComponents();
+	margin: 0 auto;
+	max-width: $max;
+	margin-bottom: 100px;
 
 	.text-image {
+		@include cmsComponents();
+		background-color: white;
 		display: flex;
-		justify-content: space-between;
 		flex-direction: column;
+		margin-bottom: 0;
+		padding-bottom: 0;
 
 		&--left {
 			@include slotted('bnb-headline') {
@@ -23,6 +26,7 @@
 		&--right {
 			width: 100%;
 			margin: $margin-left-right-small auto;
+			margin-bottom: 0;
 			bnb-image {
 				height: 600px;
 			}
@@ -30,20 +34,26 @@
 
 		@include fromBreakpointL {
 			flex-direction: row;
+			justify-content: space-between;
+			margin-left: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			padding-right: 0;
+			padding-left: $margin-left-right-medium;
 
 			&--left {
 				width: 55%;
 			}
 			&--right {
 				margin: 0;
-				width: 30%;
+				width: 35%;
+				align-self: flex-end;
 			}
 		}
 
 		@include fromBreakpointMax {
-			&--right {
-				margin-right: $right-indentation;
-			}
+			margin-right: $right-indentation;
+			padding-left: $margin-left-right-small;
 		}
 	}
 }
@@ -63,9 +73,7 @@
 		}
 
 		@include fromBreakpointMax {
-			&--right {
-				margin-right: $right-indentation;
-			}
+			margin-right: $right-indentation;
 		}
 	}
 }

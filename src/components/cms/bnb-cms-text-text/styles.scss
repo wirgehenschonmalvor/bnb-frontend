@@ -29,5 +29,9 @@
 				width: 46%;
 			}
 		}
+
+		@include fromBreakpointMax {
+			margin-right: $right-indentation;
+		}
 	}
 }
