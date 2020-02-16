@@ -36,6 +36,10 @@
 }
 
 @include addAttributeStyles('bnb-follow', 'color=light') {
+	.link-wrapper a:focus {
+		outline: none;
+		box-shadow: 0 0 3px 2px $grey-light;
+	}
 	@include slotted('bnb-icon') {
 		fill: $grey-light;
 	}
@@ -49,6 +53,10 @@
 }
 
 @include addAttributeStyles('bnb-follow', 'color=footer') {
+	.link-wrapper a:focus {
+		outline: none;
+		box-shadow: 0 0 3px 2px $grey-light;
+	}
 	@include slotted('bnb-icon') {
 		fill: $grey-light;
 	}

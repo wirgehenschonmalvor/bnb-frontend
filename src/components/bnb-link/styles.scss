@@ -3,6 +3,12 @@
 
 @include host('bnb-link') {
 	display: inline-block;
+
+	:focus {
+		outline: none;
+		box-shadow: 0 0 3px 2px $grey;
+	}
+
 	a {
 		@include fontCopy();
 		text-decoration: inherit;
@@ -20,6 +26,9 @@
 }
 
 @include addAttributeStyles('bnb-link', 'purple') {
+	:focus {
+		outline-color: $purple;
+	}
 	a {
 		color: $purple;
 
@@ -32,6 +41,10 @@
 }
 
 @include addAttributeStyles('bnb-link', 'header') {
+	:focus {
+		outline: none;
+		box-shadow: 0 0 3px 2px $grey-light;
+	}
 	a {
 		color: $grey-light;
 
@@ -44,6 +57,10 @@
 }
 
 @include addAttributeStyles('bnb-link', 'footer') {
+	:focus {
+		outline: none;
+		box-shadow: 0 0 3px 2px $grey-light;
+	}
 	a {
 		color: $grey-light;
 

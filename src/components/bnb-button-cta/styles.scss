@@ -19,7 +19,7 @@
 
 		&:focus {
 			outline: none;
-			box-shadow: 0 0 3px 2px $purple;
+			box-shadow: 0 0 3px 2px $grey;
 		}
 
 		@include hoverDevicesOnly() {
@@ -69,7 +69,7 @@
 
 		&:focus {
 			outline: none;
-			box-shadow: 0 0 3px 2px $grey;
+			box-shadow: 0 0 3px 2px $purple;
 		}
 
 		@include hoverDevicesOnly() {
@@ -90,7 +90,7 @@
 
 		&:focus {
 			outline: none;
-			box-shadow: 0 0 3px 2px $grey;
+			box-shadow: 0 0 3px 2px $purple;
 		}
 
 		@include hoverDevicesOnly() {
