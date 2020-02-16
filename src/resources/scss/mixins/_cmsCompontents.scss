@@ -1,16 +1,16 @@
 @import '../settings/settings';
 
 @mixin cmsComponents() {
-	margin: 0 $margin-left-right-small;
+	margin: 0 $margin-left-right-small 100px $margin-left-right-small;
 
 	@include fromBreakpointL() {
-		margin: 0 $margin-left-right-medium;
+		margin: 0 $margin-left-right-medium 100px $margin-left-right-medium;
 	}
 
 	@include fromBreakpointMax() {
 		width: 100%;
 		max-width: $max;
 		margin: 0 auto;
-		padding: 0 $margin-left-right-small;
+		padding: 0 $margin-left-right-small 100px $margin-left-right-small;
 	}
 }

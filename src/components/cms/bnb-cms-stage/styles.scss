@@ -52,8 +52,8 @@
 	@include fromBreakpointL {
 		#icon-mobile {
 			margin: 30px auto;
-			width: 50vw;
 			height: 50vw;
+			width: 50vw;
 		}
 
 		.stage-text-buttons-mobile {
@@ -79,8 +79,6 @@
 		}
 
 		.stage-text-container {
-			position: absolute;
-			top: 520px;
 			margin-right: calc(
 				#{$right-indentation} + #{$margin-left-right-small}
 			);
