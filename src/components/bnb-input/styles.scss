@@ -27,13 +27,16 @@ $input-padding-left: 10px;
 		@include fontCopy();
 		line-height: $min-height;
 		width: 100%;
+		transition: all 0.6s ease;
+		border: 1px solid $grey;
 
 		&::placeholder {
 			color: $grey;
 		}
 
 		&:focus {
-			outline-color: $purple;
+			outline: none;
+			box-shadow: 0 0 15px 2px $grey;
 		}
 	}
 
