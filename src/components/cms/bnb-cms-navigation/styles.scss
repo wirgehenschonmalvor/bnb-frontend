@@ -4,13 +4,18 @@
 @include host('bnb-cms-navigation') {
 	display: block;
 	background-color: $white;
+	@include fontMenu();
 
 	nav {
-		@include cmsComponents();
+		margin: 0 $margin-left-right-small;
 		height: 65px;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+
+		@include fromBreakpointL {
+			margin: 0 $margin-left-right-medium;
+		}
 
 		@media screen and (min-width: 1366px) {
 			height: 160px;
@@ -22,6 +27,12 @@
 			#menu-desktop {
 				display: flex;
 			}
+		}
+
+		@include fromBreakpointMax {
+			max-width: $max;
+			padding: 0 $margin-left-right-small;
+			margin: 0 auto;
 		}
 	}
 
@@ -87,39 +98,54 @@
 		flex-direction: column;
 		position: absolute;
 		right: 0;
-		width: 320px;
-		height: 600px;
-		box-shadow: 0 0 10px #85888c;
-		margin: -50px 0 0 -50px;
-		padding: $margin-left-right-small;
-		padding-top: 125px;
+		width: 0;
+		height: 0;
+
 		background-color: $white;
 		-webkit-font-smoothing: antialiased;
 		transform-origin: 0% 0%;
 		transform: translate(120%, 0);
 		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-
-		@include fromBreakpointM {
-			padding: $margin-left-right-medium;
-			padding-top: 125px;
-		}
 	}
 
 	#menu-mobile bnb-link {
+		display: none;
 		padding: 10px 0;
 		transition-delay: 2s;
 	}
 
-	#menuToggle input:checked ~ #menu-mobile {
-		transform: translate($margin-left-right-small, 0);
-
-		@include fromBreakpointM {
-			transform: translate($margin-left-right-medium, 0);
-		}
+	#menu-mobile bnb-button-cta,
+	#menu-mobile bnb-follow {
+		display: none;
+		margin: 50px 0;
 	}
 
-	bnb-button-cta {
-		margin: 50px 0;
+	#menuToggle input:checked ~ #menu-mobile {
+		width: 320px;
+		height: 700px;
+		box-shadow: 0 0 10px #85888c;
+		margin: -50px 0 0 -50px;
+		padding: $margin-left-right-small;
+		padding-top: 125px;
+		transform: translate($margin-left-right-small, 0);
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+		bnb-icon,
+		bnb-link {
+			display: block;
+		}
+
+		bnb-follow,
+		bnb-button-cta,
+		#overlay-icon {
+			display: flex;
+		}
+
+		@include fromBreakpointM {
+			padding: $margin-left-right-medium;
+			padding-top: 125px;
+			transform: translate($margin-left-right-medium, 0);
+		}
 	}
 
 	#navigation-icon,
@@ -158,6 +184,7 @@
 	}
 
 	#overlay-icon {
+		display: none;
 		height: 100px;
 		left: $margin-left-right-small;
 		top: 10px;
@@ -208,6 +235,9 @@
 				bnb-button-cta,
 				bnb-follow {
 					margin: 30px 20px;
+				}
+				bnb-button-cta {
+					margin-right: 0;
 				}
 			}
 		}
