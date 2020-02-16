@@ -5,5 +5,13 @@
 	h1 {
 		display: block;
 		@include fontHeadlineL();
+		font-size: 40px;
+		line-height: 50px;
+		word-break: initial;
+
+		@media screen and (min-width: 426px) {
+			font-size: 52px;
+			line-height: 64px;
+		}
 	}
 }

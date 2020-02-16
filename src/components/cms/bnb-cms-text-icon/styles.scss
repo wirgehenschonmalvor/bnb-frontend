@@ -42,7 +42,7 @@
 
 		@include fromBreakpointMax {
 			&--right {
-				margin-right: $right-indentation;
+				margin-right: calc(#{$right-indentation} + 78px);
 				width: 257px;
 				height: 249px;
 			}
