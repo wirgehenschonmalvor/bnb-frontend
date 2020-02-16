@@ -1,5 +1,11 @@
-<bnb-checkbox id="confirmCheckbox" label="Please check."
-    data-resources="[{paths: ['components/bnb-checkbox/index.js']}]"></bnb-checkbox>
+<bnb-checkbox required id="confirmCheckbox" label="Please check." link
+    data-resources="[{paths: ['components/bnb-checkbox/index.js']}]">
+    <bnb-paragraph>Ich habe die
+        <bnb-link value="Datenschutzbestimmunge" url="data-protection.html" target="_blank"></bnb-link>
+        und die
+        <bnb-link value="Nutzungsbedingungen" url="data-protection.html" target="_blank"></bnb-link>
+        gelesen und akzeptiert.*</bnb-paragraph>
+</bnb-checkbox>
 
-<bnb-checkbox checked id="confirmCheckbox" label="Please check."
+<bnb-checkbox required checked id="confirmCheckbox" label="Please check."
     data-resources="[{paths: ['components/bnb-checkbox/index.js']}]"></bnb-checkbox>

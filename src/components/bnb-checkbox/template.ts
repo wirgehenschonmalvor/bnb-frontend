@@ -6,8 +6,28 @@ import { BnbCheckboxProps } from './defines';
 export const template = (data: BnbCheckboxProps): HTMLFragment => {
 	return html`
 		<div class="input__wrapper">
-			<input id="${data.id}" type="checkbox" aria-label="${data.label}" checked=${data.checked}/>
-			<label for="${data.id}">${data.label}</label>
+			<input
+				required=${data.required}
+				id="${data.id}"
+				type="checkbox"
+				aria-label="${data.label}"
+				checked=${data.checked}
+			/>
+			<label for="${data.id}">
+				${data.link
+					? html`
+							<slot />
+					  `
+					: html`
+							<bnb-paragraph>
+								${data.label}${data.required
+									? html`
+											*
+									  `
+									: ''}
+							</bnb-paragraph>
+					  `}
+			</label>
 		</div>
 		${createStyle(styles)}
 	`;

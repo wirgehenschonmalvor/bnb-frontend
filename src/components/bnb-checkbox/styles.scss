@@ -2,6 +2,7 @@
 @import '../../resources/scss/styles';
 
 @include host('bnb-checkbox') {
+	display: block;
 	.input__wrapper {
 		display: flex;
 		@include fontCopy();
@@ -20,6 +21,14 @@
 		-webkit-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
+		display: flex;
+		flex-direction: row;
+
+		@include slotted('bnb-paragraph') {
+			display: block;
+			margin: auto;
+			word-break: none;
+		}
 	}
 
 	input[type='checkbox'] + label:last-child {
@@ -51,5 +60,11 @@
 		border-bottom-color: $purple;
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
+	}
+}
+
+@include addAttributeStyles('bnb-checkbox', 'error') {
+	input[type='checkbox'] + label:before {
+		border: 2px solid $red;
 	}
 }
