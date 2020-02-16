@@ -2,10 +2,10 @@
 @import '../../resources/scss/styles.scss';
 
 @include host('bnb-headline') {
+	display: block;
 	h3 {
-		display: block;
 		@include fontHeading();
-		margin: 40px 0 15px 0;
+		margin: 20px 0;
 	}
 }
 @include addAttributeStyles('bnb-headline', 'color=white') {
