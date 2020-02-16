@@ -13,6 +13,10 @@
 		justify-content: flex-end;
 		align-items: center;
 
+		a {
+			display: contents;
+		}
+
 		@include fromBreakpointL {
 			margin: 0 $margin-left-right-medium;
 		}
@@ -26,6 +30,9 @@
 			}
 			#menu-desktop {
 				display: flex;
+				a {
+					display: contents;
+				}
 			}
 		}
 
@@ -106,6 +113,10 @@
 		transform-origin: 0% 0%;
 		transform: translate(120%, 0);
 		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+		a {
+			display: contents;
+		}
 	}
 
 	#menu-mobile bnb-link {
@@ -130,14 +141,14 @@
 		transform: translate($margin-left-right-small, 0);
 		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
-		bnb-icon,
+		a bnb-icon,
 		bnb-link {
 			display: block;
 		}
 
 		bnb-follow,
 		bnb-button-cta,
-		#overlay-icon {
+		a #overlay-icon {
 			display: flex;
 		}
 
@@ -148,19 +159,15 @@
 		}
 	}
 
-	#navigation-icon,
-	#navigation-icon-desktop,
-	#overlay-icon {
+	a #navigation-icon,
+	a #navigation-icon-desktop,
+	a #overlay-icon {
 		width: 100px;
 		height: 65px;
 		position: absolute;
 		align-self: center;
 		left: $margin-left-right-small;
 		fill: $grey;
-
-		@include fromBreakpointM {
-			transform: translate($margin-left-right-medium, 0);
-		}
 
 		@media screen and (min-width: 1366px) {
 			left: 0;
@@ -169,13 +176,15 @@
 		}
 	}
 
-	#navigation-icon {
+	a #navigation-icon {
+		margin-left: -17px;
 		@media screen and (min-width: 1366px) {
 			display: none;
 		}
 	}
 
-	#navigation-icon-desktop {
+	a #navigation-icon-desktop {
+		margin-left: -17px;
 		@include fromBreakpointMax {
 			position: relative;
 			left: auto;
@@ -183,11 +192,12 @@
 		}
 	}
 
-	#overlay-icon {
+	a #overlay-icon {
 		display: none;
 		height: 100px;
 		left: $margin-left-right-small;
 		top: 10px;
+		margin-left: -17px;
 
 		@media screen and (min-width: 321px) {
 			opacity: 0;

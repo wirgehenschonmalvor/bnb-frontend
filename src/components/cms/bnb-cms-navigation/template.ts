@@ -7,17 +7,21 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 	return html`
 		<div class="navigation-wrapper">
 			<nav role="navigation">
-				<bnb-icon id="navigation-icon" icon="schriftzug"></bnb-icon>
+				<a href="home.html">
+					<bnb-icon id="navigation-icon" icon="schriftzug"></bnb-icon>
+				</a>
 				<div id="menuToggle">
 					<input type="checkbox" />
 					<span></span>
 					<span></span>
 					<span></span>
 					<div id="menu-mobile">
-						<bnb-icon
-							id="overlay-icon"
-							icon="schriftzug"
-						></bnb-icon>
+						<a href="home.html">
+							<bnb-icon
+								id="overlay-icon"
+								icon="schriftzug"
+							></bnb-icon>
+						</a>
 						<bnb-link
 							header
 							value="Aktiv werden"
@@ -47,10 +51,12 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 					</div>
 				</div>
 				<div id="menu-desktop">
-					<bnb-icon
-						id="navigation-icon-desktop"
-						icon="schriftzug"
-					></bnb-icon>
+					<a href="home.html">
+						<bnb-icon
+							id="navigation-icon-desktop"
+							icon="schriftzug"
+						></bnb-icon>
+					</a>
 					<div class="navigation-links">
 						<bnb-link
 							header
