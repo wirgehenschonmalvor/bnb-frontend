@@ -2,6 +2,7 @@
 
 @mixin cmsComponents() {
 	margin: 0 $margin-left-right-small 100px $margin-left-right-small;
+	box-sizing: border-box;
 
 	@include fromBreakpointL() {
 		margin: 0 $margin-left-right-medium 100px $margin-left-right-medium;
