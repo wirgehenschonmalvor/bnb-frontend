@@ -50,6 +50,10 @@
 		}
 	}
 	@include fromBreakpointL {
+		.stage-text-container {
+			padding: 0 $margin-left-right-medium;
+		}
+
 		#icon-mobile {
 			margin: 30px auto;
 			height: 50vw;
@@ -66,6 +70,10 @@
 	}
 
 	@include fromBreakpointMax {
+		.stage-text-container {
+			padding: 0 $margin-left-right-small;
+		}
+
 		#icon-mobile {
 			display: none;
 		}

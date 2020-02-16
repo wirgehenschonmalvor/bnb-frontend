@@ -7,7 +7,7 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 	return html`
 		<div class="navigation-wrapper">
 			<nav role="navigation">
-				<a href="home.html">
+				<a href="index.html">
 					<bnb-icon id="navigation-icon" icon="schriftzug"></bnb-icon>
 				</a>
 				<div id="menuToggle">
@@ -16,7 +16,7 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 					<span></span>
 					<span></span>
 					<div id="menu-mobile">
-						<a href="home.html">
+						<a href="index.html">
 							<bnb-icon
 								id="overlay-icon"
 								icon="schriftzug"
@@ -51,7 +51,7 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 					</div>
 				</div>
 				<div id="menu-desktop">
-					<a href="home.html">
+					<a href="index.html">
 						<bnb-icon
 							id="navigation-icon-desktop"
 							icon="schriftzug"
