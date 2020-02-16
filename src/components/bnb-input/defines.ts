@@ -10,6 +10,7 @@ interface BnbInputProps {
 	placeholder: string;
 	required: boolean;
 	disabled: boolean;
+	type?: string;
 }
 
 /**

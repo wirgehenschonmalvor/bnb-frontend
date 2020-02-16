@@ -43,3 +43,9 @@ $input-padding-left: 10px;
 		}
 	}
 }
+
+@include addAttributeStyles('bnb-input', 'error') {
+	input {
+		border: 2px solid $red;
+	}
+}

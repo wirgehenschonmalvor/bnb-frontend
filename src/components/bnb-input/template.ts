@@ -8,22 +8,13 @@ export const template = (data: BnbInputProps & BnbInputState): HTMLFragment => {
 		<div class="input__wrapper">
 			<input
 				disabled="${data.disabled ? `true` : ''}"
-				type="text"
+				type="${data.type}"
 				id="input${data.label}"
 				aria-label="input${data.label}"
-				placeholder="${data.placeholder}"
+				placeholder="${data.placeholder}${data.required ? `*` : ''}"
 			/>
-			<label for="input${data.label}"
-				>${data.label}${data.required ? `*` : ''}</label
-			>
+			<label for="input${data.label}">${data.label}</label>
 		</div>
-		${data.required
-			? html`
-					<bnb-error-message
-						message="${data.error}"
-					></bnb-error-message>
-			  `
-			: ''}
 		${createStyle(styles)}
 	`;
 };

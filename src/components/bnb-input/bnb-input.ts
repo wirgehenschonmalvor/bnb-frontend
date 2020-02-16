@@ -10,6 +10,7 @@ class BnbInput extends Component<BnbInputProps, BnbInputState> {
 	public static attributes = [
 		'label',
 		'placeholder',
+		'type',
 		{
 			name: 'required',
 			type: 'boolean',
@@ -21,6 +22,7 @@ class BnbInput extends Component<BnbInputProps, BnbInputState> {
 	];
 
 	protected readonly defaultProps: BnbInputProps = {
+		type: 'text',
 		label: '',
 		placeholder: '',
 		required: false,
