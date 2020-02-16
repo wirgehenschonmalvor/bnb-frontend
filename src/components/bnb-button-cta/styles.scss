@@ -2,6 +2,7 @@
 @import '../../resources/scss/styles';
 
 @include host('bnb-button-cta') {
+	display: block;
 	a {
 		@include fontCopy();
 		display: block;

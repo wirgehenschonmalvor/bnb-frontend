@@ -1,19 +1,19 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
 
-import { BnbInputProps, BnbInputState } from './defines';
+import { BnbTextareaProps } from './defines';
 
-export const template = (data: BnbInputProps & BnbInputState): HTMLFragment => {
+export const template = (data: BnbTextareaProps): HTMLFragment => {
 	return html`
 		<div class="input__wrapper">
-			<input
+			<textarea
 				disabled="${data.disabled ? `true` : ''}"
-				type="${data.type}"
-				id="input${data.label}"
-				aria-label="input${data.label}"
+				type="text"
+				id="textarea${data.label}"
+				aria-label="textarea${data.label}"
 				placeholder="${data.placeholder}${data.required ? `*` : ''}"
-			/>
-			<label for="input${data.label}">${data.label}</label>
+			></textarea>
+			<label for="textarea${data.label}">${data.label}</label>
 		</div>
 		${createStyle(styles)}
 	`;
