@@ -27,7 +27,7 @@
 			margin: $margin-left-right-small auto;
 		}
 
-		@include fromBreakpointM {
+		@include fromBreakpointL {
 			flex-direction: row;
 
 			&--left {
@@ -53,15 +53,27 @@
 		display: flex;
 		width: 100%;
 		margin: 0 auto;
-		@include slotted('bnb-button-cta') {
+		bnb-button-cta {
 			margin: 0 auto;
+			width: 100%;
 		}
 
 		@include fromBreakpointM {
+			bnb-button-cta {
+				width: 70vw;
+			}
+		}
+
+		@include fromBreakpointL {
 			margin: $margin-left-right-small auto;
-			@include slotted('bnb-button-cta') {
-				width: initial;
+			bnb-button-cta {
+				width: 40vw;
 				margin: 0;
+			}
+		}
+		@include fromBreakpointMax {
+			bnb-button-cta {
+				width: initial;
 			}
 		}
 	}
