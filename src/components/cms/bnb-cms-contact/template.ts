@@ -63,7 +63,11 @@ export const template = (
 				</bnb-checkbox>
 			</div>
 		</div>
-		<bnb-button-cta value="Absenden" version="primary"></bnb-button-cta>
+		<bnb-button-cta
+			value="Absenden"
+			version="primary"
+			tab-index="0"
+		></bnb-button-cta>
 		${createStyle(styles)}
 	`;
 };
