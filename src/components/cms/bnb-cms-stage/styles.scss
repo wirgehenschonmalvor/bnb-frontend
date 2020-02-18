@@ -26,7 +26,6 @@
 		background: white;
 		max-width: $max;
 		padding: 0 $margin-left-right-small;
-		margin-top: -80px;
 	}
 
 	bnb-button-cta {
@@ -44,12 +43,18 @@
 	}
 
 	@include fromBreakpointM {
+		bnb-image {
+			height: 400px
+		}
 		bnb-button-cta {
 			width: 70vw;
 			margin: 30px auto;
 		}
 	}
 	@include fromBreakpointL {
+		bnb-image {
+			height: 500px
+		}
 		.stage-text-container {
 			padding: 0 $margin-left-right-medium;
 		}
@@ -70,8 +75,13 @@
 	}
 
 	@include fromBreakpointMax {
+		bnb-image {
+			margin-bottom: 420px;
+		}
 		.stage-text-container {
+			position: absolute;
 			padding: 0 $margin-left-right-small;
+			top: 680px;
 		}
 
 		#icon-mobile {
