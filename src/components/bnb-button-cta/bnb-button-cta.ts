@@ -4,7 +4,7 @@ import { BnbButtonCTAProps } from './defines';
 
 class BnbButtonCTA extends Component<BnbButtonCTAProps> {
 	public static componentName = 'bnb-button-cta';
-	public static attributes = ['value', 'url', 'target', {name: 'tabindex', type: 'number'}];
+	public static attributes = ['value', 'url', 'target', {name: 'tab-index', type: 'number'}];
 
 	protected readonly defaultProps: BnbButtonCTAProps = {
 		value: '',

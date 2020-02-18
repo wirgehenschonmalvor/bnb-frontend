@@ -9,7 +9,7 @@ interface BnbButtonCTAProps {
 	value: string;
 	url: string;
 	target?: string;
-	tabindex?: number;
+	tabIndex?: number;
 }
 
 export { BnbButtonCTAProps };

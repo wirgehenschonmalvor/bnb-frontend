@@ -13,7 +13,7 @@ export const template = (data: BnbCheckboxProps): HTMLFragment => {
 				aria-label="${data.label}"
 				checked=${data.checked}
 			/>
-			<label for="${data.id}" tabindex="${data.tabindex}">
+			<label for="${data.id}" tabindex="${data.tabIndex}">
 				${data.link
 					? html`
 							<slot />

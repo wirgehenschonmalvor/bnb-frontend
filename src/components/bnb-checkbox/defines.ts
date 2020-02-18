@@ -11,7 +11,7 @@ interface BnbCheckboxProps {
 	checked: boolean;
 	required?: boolean;
 	link?: boolean;
-	tabindex?: number;
+	tabIndex?: number;
 }
 
 export { BnbCheckboxProps };

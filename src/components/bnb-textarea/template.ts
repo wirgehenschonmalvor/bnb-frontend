@@ -11,7 +11,7 @@ export const template = (data: BnbTextareaProps): HTMLFragment => {
 				type="text"
 				id="textarea${data.label}"
 				aria-label="textarea${data.label}"
-				tabindex="${data.tabindex}"
+				tabindex="${data.tabIndex}"
 				placeholder="${data.placeholder}${data.required ? `*` : ''}"
 			></textarea>
 			<label for="textarea${data.label}">${data.label}</label>

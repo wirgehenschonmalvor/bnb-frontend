@@ -16,7 +16,7 @@ class BnbTextarea extends Component<BnbTextareaProps, null> {
 			type: 'boolean',
 		},
 		,
-		{ name: 'tabindex', type: 'number' },
+		{ name: 'tab-index', type: 'number' },
 	];
 
 	protected readonly defaultProps: BnbTextareaProps = {
