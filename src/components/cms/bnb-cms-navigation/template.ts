@@ -7,7 +7,11 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 	return html`
 		<div class="navigation-wrapper">
 			<nav role="navigation">
-				<a href="index.html">
+				<a
+					href="index.html"
+					id="navigation-icon-desktop-link"
+					tabindex="0"
+				>
 					<bnb-icon id="navigation-icon" icon="schriftzug"></bnb-icon>
 				</a>
 				<div id="menuToggle">
@@ -51,7 +55,11 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 					</div>
 				</div>
 				<div id="menu-desktop">
-					<a href="index.html">
+					<a
+						href="index.html"
+						id="navigation-icon-desktop-link"
+						tabindex="0"
+					>
 						<bnb-icon
 							id="navigation-icon-desktop"
 							icon="schriftzug"
@@ -80,12 +88,12 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 						></bnb-link>
 					</div>
 					<div class="navigation-buttons">
+						<bnb-follow color="light"></bnb-follow>
 						<bnb-button-cta
 							version="header"
 							value="Mitmachen!"
 							url="volunteers.html"
 						></bnb-button-cta>
-						<bnb-follow color="light"></bnb-follow>
 					</div>
 				</div>
 			</nav>
