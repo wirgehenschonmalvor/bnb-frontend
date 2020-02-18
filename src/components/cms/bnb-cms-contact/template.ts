@@ -44,6 +44,7 @@ export const template = (
 					id="confirmCheckbox"
 					label="Datenschutzbestimmungen und Nutzungsbedingungen akzeptiert"
 					link
+					tabindex="5"
 				>
 					<bnb-paragraph
 						>Ich habe die
@@ -63,7 +64,11 @@ export const template = (
 				</bnb-checkbox>
 			</div>
 		</div>
-		<bnb-button-cta value="Absenden" version="primary"></bnb-button-cta>
+		<bnb-button-cta
+			value="Absenden"
+			version="primary"
+			tabindex="8"
+		></bnb-button-cta>
 		${createStyle(styles)}
 	`;
 };

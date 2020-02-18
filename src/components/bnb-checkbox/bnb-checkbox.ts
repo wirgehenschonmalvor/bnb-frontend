@@ -12,6 +12,7 @@ class BnbCheckbox extends Component<BnbCheckboxProps, null> {
 		{ name: 'checked', type: 'boolean' },
 		{ name: 'required', type: 'boolean' },
 		{ name: 'link', type: 'boolean' },
+		{ name: 'tabindex', type: 'number' },
 	];
 
 	protected readonly defaultProps: BnbCheckboxProps = {

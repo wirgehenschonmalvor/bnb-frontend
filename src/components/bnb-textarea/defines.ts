@@ -10,6 +10,7 @@ interface BnbTextareaProps {
 	placeholder: string;
 	required: boolean;
 	disabled: boolean;
+	tabindex?: number;
 }
 
 export { BnbTextareaProps };
