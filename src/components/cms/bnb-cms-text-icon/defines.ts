@@ -7,7 +7,8 @@
  */
 interface BnbCmsTextIconProps {
 	icon: string;
-	heading: string;
+	copyText?: boolean;
+	heading?: string;
 	color?: string;
 	button?: ButtonInfo;
 }

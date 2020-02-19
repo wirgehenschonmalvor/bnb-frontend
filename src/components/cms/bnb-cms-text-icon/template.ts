@@ -5,14 +5,20 @@ import { BnbCmsTextIconProps } from './defines';
 
 export const template = (data: BnbCmsTextIconProps): HTMLFragment => {
 	return html`
+		${data.heading ? html`
 		<bnb-headline level="3" color="${data.color}"
 			>${data.heading}</bnb-headline
-		>
+		>` : ''}
 		<div class="text-icon">
 			<div class="text-icon--left">
+				${data.copyText
+					? html`
+							<bnb-paragraph><slot /></bnb-paragraph>
+					  `
+					: html`
 				<bnb-headline level="2" color="${data.color}"
 					><slot
-				/></bnb-headline>
+				/></bnb-headline>`}
 			</div>
 			<div class="text-icon--right">
 				<bnb-icon icon="${data.icon}"></bnb-icon>
