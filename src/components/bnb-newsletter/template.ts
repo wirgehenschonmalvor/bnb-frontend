@@ -38,7 +38,7 @@ export const template = (): HTMLFragment => {
 					gelesen und akzeptiert.*</bnb-paragraph
 				>
 			</bnb-checkbox>
-			<bnb-button-cta version="primary" value="Anmelden"></bnb-button-cta>
+			<bnb-button-cta version="primary" value="Anmelden" tab-index="0"></bnb-button-cta>
 		</div>
 		${createStyle(styles)}
 	`;
