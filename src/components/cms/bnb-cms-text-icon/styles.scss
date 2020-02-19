@@ -5,9 +5,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	@include cmsComponents();
+	margin: 0 auto;
+	max-width: $max;
 
 	.text-icon {
+		@include cmsComponents();
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
@@ -41,10 +43,19 @@
 		}
 
 		@include fromBreakpointMax {
+			width: calc(
+			#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
+			);
+			margin-right: 148px;
+
 			&--right {
-				margin-right: calc(#{$right-indentation} + 78px);
+				margin-left: 205px;
 				width: 257px;
 				height: 249px;
+			}
+
+			&--left {
+				width: 695px;
 			}
 		}
 	}
@@ -74,6 +85,46 @@
 		@include fromBreakpointMax {
 			bnb-button-cta {
 				width: initial;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-cms-text-icon', 'copy-text'){
+	background-color: white;
+
+	bnb-paragraph {
+		padding-bottom: 150px;
+	}
+
+	@include fromBreakpointL {
+		.text-icon {
+			flex-direction: column ;
+			&--left {
+				width: initial;
+			}
+
+			&--right {
+				width: 50%;
+			}
+		}
+	}
+
+	@include fromBreakpointMax {
+		background-color: transparent;
+
+		.text-icon {
+			flex-direction: row;
+			background-color: white;
+
+			&--right {
+				margin-left: 205px;
+				width: 257px;
+				height: 249px;
+			}
+
+			&--left {
+				width: 695px;
 			}
 		}
 	}

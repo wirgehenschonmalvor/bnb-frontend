@@ -1,0 +1,81 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-sub-stage') {
+	display: block;
+	background-color: $white;
+	max-width: $max;
+	margin: 0 auto;
+
+	bnb-image {
+		height: 300px;
+		width: 100vw;
+		max-width: $max;
+	}
+
+	.stage-text-container,
+	.stage-text-container-left,
+	.stage-text-container-right,
+	.stage-text-paragraph {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.stage-text-container {
+		background: white;
+		max-width: $max;
+		padding: 0 $margin-left-right-small;
+	}
+
+    .stage-text-paragraph {
+        @include slotted('bnb-paragraph') {
+            padding-bottom: 230px;
+        }
+    }
+
+	@include fromBreakpointM {
+		bnb-image {
+			height: 400px
+		}
+    }
+
+	@include fromBreakpointL {
+		bnb-image {
+			height: 500px
+		}
+		.stage-text-container {
+			padding: 0 $margin-left-right-medium;
+		}
+	}
+
+	@include fromBreakpointMax {
+		bnb-image {
+			margin-bottom: 420px;
+            height: 600px;
+		}
+
+		.stage-text-container {
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+            padding: 0 $margin-left-right-small;
+            top: 680px;
+			margin-right: calc(
+				#{$right-indentation} + #{$margin-left-right-small}
+			);
+			height: 500px;
+			width: calc(
+				#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
+			);
+
+			.stage-text-container-left {
+                width: 695px;
+            }
+
+			.stage-text-container-right {
+                align-self: flex-end;
+                padding-left: 205px;
+			}
+		}
+	}
+}

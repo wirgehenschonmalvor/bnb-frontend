@@ -78,11 +78,6 @@
 		bnb-image {
 			margin-bottom: 420px;
 		}
-		.stage-text-container {
-			position: absolute;
-			padding: 0 $margin-left-right-small;
-			top: 680px;
-		}
 
 		#icon-mobile {
 			display: none;
@@ -97,6 +92,9 @@
 		}
 
 		.stage-text-container {
+			position: absolute;
+			padding: 0 $margin-left-right-small;
+			top: 680px;
 			margin-right: calc(
 				#{$right-indentation} + #{$margin-left-right-small}
 			);
