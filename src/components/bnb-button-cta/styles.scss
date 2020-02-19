@@ -1,0 +1,147 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-button-cta') {
+	display: block;
+	a {
+		@include fontCopy();
+		display: block;
+		min-height: 48px;
+		width: 100%;
+		padding: 5px 40px;
+		line-height: 48px;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.6s ease;
+		cursor: pointer;
+		border-radius: 35px;
+		box-sizing: border-box;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey;
+		}
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				transition: all 0.6s ease;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-button-cta', 'version=primary') {
+	a {
+		color: $white;
+		background-color: $grey;
+		border: 2px solid $grey;
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $grey;
+				border: 2px solid $grey;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-button-cta', 'version=secondary') {
+	a {
+		color: $grey;
+		background-color: $white;
+		border: 2px solid $grey;
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $white;
+				background-color: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-button-cta', 'version=primary-purple') {
+	a {
+		color: $white;
+		background-color: $purple;
+		border: 2px solid $purple;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $purple;
+		}
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $purple;
+				border: 2px solid $purple;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-button-cta', 'version=secondary-purple') {
+	a {
+		color: $purple;
+		background-color: $white;
+		border: 2px solid $purple;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $purple;
+		}
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $white;
+				background-color: $purple;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-button-cta', 'version=header') {
+	a {
+		width: initial;
+		color: $grey-light;
+		background-color: transparent;
+		border: 2px solid $grey-light;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey-light;
+		}
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $white;
+				background-color: $grey;
+				border-color: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-button-cta', 'version=footer') {
+	a {
+		width: initial;
+		color: $grey-light;
+		background-color: transparent;
+		border: 2px solid $grey-light;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey-light;
+		}
+
+		@include hoverDevicesOnly() {
+			&:hover {
+				color: $grey;
+				background-color: $white;
+				border-color: $white;
+			}
+		}
+	}
+}

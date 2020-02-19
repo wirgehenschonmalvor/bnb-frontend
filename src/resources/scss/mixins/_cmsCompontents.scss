@@ -1,0 +1,17 @@
+@import '../settings/settings';
+
+@mixin cmsComponents() {
+	margin: 20px $margin-left-right-small 100px $margin-left-right-small;
+	box-sizing: border-box;
+
+	@include fromBreakpointL() {
+		margin: 20px $margin-left-right-medium 100px $margin-left-right-medium;
+	}
+
+	@include fromBreakpointMax() {
+		width: 100%;
+		max-width: $max;
+		margin: 0 auto;
+		padding: 20px $margin-left-right-small 100px $margin-left-right-small;
+	}
+}

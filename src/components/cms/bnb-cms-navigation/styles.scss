@@ -1,0 +1,264 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-navigation') {
+	display: block;
+	background-color: $white;
+	@include fontMenu();
+
+	nav {
+		margin: 0 $margin-left-right-small;
+		height: 65px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@include fromBreakpointL {
+			margin: 0 $margin-left-right-medium;
+		}
+
+		@media screen and (min-width: 1366px) {
+			height: 160px;
+
+			#menu-mobile,
+			#menuToggle {
+				display: none;
+			}
+			#menu-desktop {
+				display: flex;
+			}
+		}
+
+		@include fromBreakpointMax {
+			max-width: $max;
+			padding: 0 $margin-left-right-small;
+			margin: 0 auto;
+		}
+	}
+
+	#menuToggle {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+		-webkit-user-select: none;
+		user-select: none;
+
+	}
+
+
+	#menuToggle input {
+		top: -15px;
+		left: -15px;
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		cursor: pointer;
+		-webkit-appearance: none;
+		z-index: 2;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey;
+		}
+	}
+
+	#menuToggle span {
+		display: flex;
+		width: 29px;
+		height: 2px;
+		margin-bottom: 5px;
+		position: relative;
+		background: $grey;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 5px 0px;
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+			background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+	}
+
+	#menuToggle span:first-child {
+		transform-origin: 0% 0%;
+	}
+
+	#menuToggle span:nth-last-child(2) {
+		transform-origin: 0% 100%;
+	}
+
+	#menuToggle input:checked ~ span {
+		opacity: 1;
+		transform: rotate(45deg) translate(-3px, -1px);
+		background: #36383f;
+	}
+	#menuToggle input:checked ~ span:nth-last-child(3) {
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	#menuToggle input:checked ~ span:nth-last-child(2) {
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+
+	#menu-mobile {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		width: 0;
+		height: 0;
+
+		background-color: $white;
+		-webkit-font-smoothing: antialiased;
+		transform-origin: 0% 0%;
+		transform: translate(120%, 0);
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+	}
+
+	#menu-mobile bnb-link {
+		display: none;
+		padding: 10px 0;
+		transition-delay: 2s;
+	}
+
+	#menu-mobile bnb-button-cta,
+	#menu-mobile bnb-follow {
+		display: none;
+		margin: 50px 0;
+	}
+
+	#menuToggle input:checked ~ #menu-mobile {
+		width: 320px;
+		height: 700px;
+		box-shadow: 0 0 10px #85888c;
+		margin: -50px 0 0 -50px;
+		padding: $margin-left-right-small;
+		padding-top: 125px;
+		transform: translate($margin-left-right-small, 0);
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+		a bnb-icon,
+		bnb-link {
+			display: block;
+		}
+
+		bnb-follow,
+		bnb-button-cta,
+		a #overlay-icon {
+			display: flex;
+		}
+
+		@include fromBreakpointM {
+			padding: $margin-left-right-medium;
+			padding-top: 125px;
+			transform: translate($margin-left-right-medium, 0);
+		}
+	}
+
+	#navigation-icon-desktop-link:focus {
+		outline: none;
+		@include slotted ('bnb-icon') {
+			outline: none;
+			box-shadow: 0 0 3px 2px $grey-light;
+		}
+	}
+
+	a #navigation-icon,
+	a #navigation-icon-desktop,
+	a #overlay-icon {
+		width: 100px;
+		height: 65px;
+		position: absolute;
+		align-self: center;
+		left: $margin-left-right-small;
+		fill: $grey;
+
+		@include fromBreakpointL {
+			left: $margin-left-right-medium;
+		}
+
+		@media screen and (min-width: 1366px) {
+			left: 33px;
+			top: 44px;
+			width: 195px;
+		}
+	}
+
+	a #navigation-icon {
+		margin-left: 0;
+		top: 0;
+		@media screen and (min-width: 1366px) {
+			display: none;
+		}
+	}
+
+	a #navigation-icon-desktop {
+		@include fromBreakpointMax {
+			margin-left: -17px;
+			position: relative;
+			left: auto;
+			top: -50px;
+		}
+	}
+
+	a #overlay-icon {
+		display: none;
+		height: 100px;
+		left: 48px;
+		top: 10px;
+		margin-left: -17px;
+
+		@media screen and (min-width: 321px) {
+			opacity: 0;
+		}
+	}
+
+	#menu-desktop {
+		display: none;
+		align-items: flex-end;
+		width: 100%;
+		height: 100%;
+
+		.navigation-links {
+			align-items: flex-end;
+			margin-bottom: 40px;
+			display: flex;
+			flex-grow: 1;
+			margin-left: 165px;
+
+			bnb-link {
+				margin: 0 auto;
+			}
+
+			@include fromBreakpointMax {
+				margin-left: 0;
+			}
+		}
+
+		.navigation-buttons {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			bnb-button-cta {
+				margin: 0 auto 20px auto;
+			}
+
+			bnb-follow {
+				margin: 30px 0 20px 0;
+			}
+
+			@include fromBreakpointMax {
+				flex-direction: row;
+
+				bnb-button-cta,
+				bnb-follow {
+					margin: 30px 20px;
+				}
+				bnb-button-cta {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

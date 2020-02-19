@@ -2,7 +2,17 @@
 @import '../../resources/scss/styles.scss';
 
 @include host('bnb-headline') {
+	display: block;
+
 	h1 {
-		@include fontHeadlineL;
+		@include fontHeadlineL();
+		font-size: 40px;
+		line-height: 50px;
+		word-break: initial;
+
+		@media screen and (min-width: 426px) {
+			font-size: 52px;
+			line-height: 64px;
+		}
 	}
 }

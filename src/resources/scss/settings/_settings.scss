@@ -1,7 +1,7 @@
 // GLOBAL SASS SETTINGS
 
 // FONTS
-$font-family-sans-serif: Arial, sans-serif;
+$font-family-regular: Arial, sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 600;
 
@@ -10,48 +10,49 @@ $font-weight-bold: 600;
 
 // COLORS
 $black: #000000;
-$white: #ffffff;
+$white: #f6f6f6;
 $yellow: yellow;
 $red: red;
 $blue: blue;
-$purple: #7649f6;
-$grey: #3d3947;
-$grey-light: lighten($grey, 20%);
+$green: #00f2a0;
+$purple: #7d47ff;
+$grey: #3e3948;
+$grey-light: #9b9b9b;
 
 // BODY STYLES
 $body-bg: $white;
 $body-font-color: $black;
-$body-font-family: $font-family-sans-serif;
+$body-font-family: $font-family-regular;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
-$body-font-size: 17px;
-$body-line-height: 25px;
-$body-min-width: 300px;
+$body-font-size: 22px;
+$body-line-height: 30px;
+$body-min-width: 320px;
 
 // COMPONENT STYLES
-$content-max-width: 1280px;
+$content-max-width: 1440px;
 $component-max-width: 1200px;
 
 // breakpoint definitions
-$xsmall: 300px;
-$small: 600px;
 $medium: 768px;
-$large: 992px;
-$xlarge: 1200px;
+$large: 1024px;
+$max: 1440px;
 
 // MaxValues
-$xsmallMax: $small - 1;
 $smallMax: $medium - 1;
 $mediumMax: $large - 1;
-$largeMax: $xlarge - 1;
 $xlargeMax: 10000px;
 
 // Grid
-$grid-gutter: 30px;
+$grid-gutter-small: 35px;
+$grid-gutter-large: 50px;
 
 // margins for content and sections
 $section_content_top: 33px;
 $section_margin_top_small: 60px;
 $section_margin_top_medium: 60px;
 $section_margin_top_large: 60px;
-$section_margin_top_xlarge: 80px;
+
+// Input & Select
+$select-input-width: 250px;
+$min-height: 48px;

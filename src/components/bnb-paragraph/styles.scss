@@ -2,7 +2,11 @@
 @import '../../resources/scss/styles';
 
 @include host('bnb-paragraph') {
+	display: block;
 	@include fontCopy;
+	p {
+		margin: 0;
+	}
 
 	.secondary {
 		color: $purple;
@@ -14,10 +18,9 @@
 
 	.leadtext {
 		@include fontCopyLead;
-		font-style: italic;
 		color: $grey;
+		font-style: italic;
 	}
-
 	.capitalize::first-letter {
 		@include fontCopyCapital();
 	}

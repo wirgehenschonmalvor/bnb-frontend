@@ -1,0 +1,47 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-claims') {
+	display: flex;
+	flex-direction: column;
+	@include cmsComponents();
+
+	.claim-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	bnb-accordion {
+		width: auto;
+		margin: 20px 0;
+	}
+
+	.claim-wrapper--left,
+	.claim-wrapper--right {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@include fromBreakpointM {
+	}
+
+	@include fromBreakpointL {
+		.claim-wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.claim-wrapper--left,
+		.claim-wrapper--right {
+			width: 43vw;
+			flex-direction: column;
+		}
+	}
+
+	@include fromBreakpointMax {
+		.claim-wrapper--left,
+		.claim-wrapper--right {
+			width: 48%;
+		}
+	}
+}

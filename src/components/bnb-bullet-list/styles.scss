@@ -1,0 +1,18 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-bullet-list') {
+	display: flex;
+	flex-direction: column;
+
+	.bullet-list__wrapper {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@include fromBreakpointL {
+			flex-wrap: nowrap;
+		}
+	}
+}

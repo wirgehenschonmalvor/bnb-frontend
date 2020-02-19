@@ -1,0 +1,73 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-link') {
+	display: inline-block;
+
+	:focus {
+		outline: none;
+		box-shadow: 0 0 15px 2px $grey;
+	}
+
+	a {
+		@include fontCopy();
+		text-decoration: inherit;
+		color: $grey;
+		transition: all 0.6s ease;
+		cursor: pointer;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $purple;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-link', 'purple') {
+	:focus {
+		outline-color: $purple;
+	}
+	a {
+		color: $purple;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-link', 'header') {
+	:focus {
+		outline: none;
+		box-shadow: 0 0 15px 2px $grey-light;
+	}
+	a {
+		color: $grey-light;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-link', 'footer') {
+	:focus {
+		outline: none;
+		box-shadow: 0 0 15px 2px $grey-light;
+	}
+	a {
+		color: $grey-light;
+
+		@include hoverDevicesOnly {
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}

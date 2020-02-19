@@ -1,9 +1,9 @@
 @mixin addAttributeStyles($component, $attribute) {
-    :host([#{$attribute}]) {
-        @content
-    }
+	:host([#{$attribute}]) {
+		@content;
+	}
 
-    #{$component}[#{$attribute}] {
-        @content
-    }
+	#{$component}[#{$attribute}] {
+		@content;
+	}
 }

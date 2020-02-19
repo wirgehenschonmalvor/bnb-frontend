@@ -1,0 +1,15 @@
+---
+# These values are used for creating the index
+# It is also possible to use these inside the partials via {{ data.frontMatter.[your property] }}
+title: BnbCmsTextImage
+description: A simple demo of BnbCmsTextImage
+---
+
+{{!-- DEV-Notes:
+	specify the layout as the main partial
+	inject the content via contentMain variable
+--}}
+
+{{> layouts/layout.default
+	contentMain="components/cms/bnb-cms-text-image/scaffolding/bnb-cms-text-image"
+}}
