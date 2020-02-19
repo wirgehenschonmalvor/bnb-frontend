@@ -1,0 +1,17 @@
+@import '../settings/settings';
+
+@mixin buttonSizes {
+    @include fromBreakpointM {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+    }
+
+    @include fromBreakpointL {
+        width: 40vw;
+    }
+
+    @include fromBreakpointMax {
+        width: max-content;
+    }
+}

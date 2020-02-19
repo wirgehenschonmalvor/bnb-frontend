@@ -12,8 +12,11 @@
 		}
 
 		bnb-button-cta {
-			text-align: start;
-			width: max-content;
+			@include buttonSizes();
+
+			@include fromBreakpointMax {
+				margin-left: 0;
+			}
 		}
 	}
 }
