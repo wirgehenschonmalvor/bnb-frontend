@@ -2,16 +2,39 @@
 @import '../../../resources/scss/styles';
 
 @include host('bnb-cms-newsletter-form') {
-	display: flex;
-	justify-content: center;
-	margin: $margin-top-bottom-regular $margin-left-right-small;
+	display: block;
+	@include cmsComponents();
+	background-color: $white;
 
-	@include fromBreakpointM {
-		margin: $margin-top-bottom-regular $margin-left-right-medium;
-	}
+	.newsletter-form-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
-	@include fromBreakpointMax {
-		margin: $margin-top-bottom-large auto;
-		max-width: $content-max-width;
+		&--left {
+			bnb-follow {
+				margin-top: 60px;
+			}
+		}
+
+		&--right {
+			margin-bottom: 75px;
+		}
+
+		@include fromBreakpointMax {
+			flex-direction: row;
+			justify-content: space-between;
+			margin-right: calc(
+				#{$right-indentation} + #{$margin-left-right-small}
+			);
+
+			&--left {
+				max-width: 600px;
+			}
+
+			&--right {
+				max-width: 550px;
+			}
+		}
 	}
 }

@@ -5,7 +5,8 @@
 /**
  * Props
  */
-interface BnbCmsNewsletterFormProps {}
+interface BnbCmsNewsletterFormProps {
+}
 
 
 export {
