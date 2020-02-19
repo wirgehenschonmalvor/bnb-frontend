@@ -1,3 +1,5 @@
+@import '../base/margins';
+
 // GLOBAL SASS SETTINGS
 
 // FONTS
@@ -56,3 +58,11 @@ $section_margin_top_large: 60px;
 // Input & Select
 $select-input-width: 250px;
 $min-height: 48px;
+
+//SECTION SIZES
+$section-left-width: 600px;
+$section-right-width: 600px;
+$section-right-icon: 250px;
+$component-container-indent-width: calc(
+	#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
+);

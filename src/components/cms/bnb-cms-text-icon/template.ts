@@ -26,15 +26,13 @@ export const template = (data: BnbCmsTextIconProps): HTMLFragment => {
 		</div>
 		${data.button
 			? html`
-					<div class="button">
-						<bnb-button-cta
-							version="${data.button.version}"
-							value="${data.button.value}"
-							url="${data.button.url}"
-							target="${data.button.target}"
-						>
-						</bnb-button-cta>
-					</div>
+			<bnb-button-cta
+				version="${data.button.version}"
+				value="${data.button.value}"
+				url="${data.button.url}"
+				target="${data.button.target}"
+			>
+			</bnb-button-cta>
 			  `
 			: ''}
 		${createStyle(styles)}
