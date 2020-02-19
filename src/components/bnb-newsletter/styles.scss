@@ -13,10 +13,6 @@
 
 		bnb-button-cta {
 			@include buttonSizes();
-
-			@include fromBreakpointMax {
-				margin-left: 0;
-			}
 		}
 	}
 }
