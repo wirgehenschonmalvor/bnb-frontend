@@ -2,40 +2,18 @@
 @import '../../resources/scss/styles';
 
 @include host('bnb-newsletter') {
-	display: block;
-	.newsletter {
-		&__wrapper {
-			display: flex;
-			flex-direction: column;
-		}
-		&-text,
-		&-form {
-			width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.newsletter-form {
+		bnb-input,
+		bnb-checkbox {
+			margin-bottom: 25px;
 		}
 
-		&-form {
-			display: flex;
-			flex-direction: column;
-			input,
-			button {
-				border: 1px solid black;
-				line-height: 44px;
-			}
-		}
-
-		@include fromBreakpointM {
-			&__wrapper {
-				flex-direction: row;
-			}
-
-			&-text,
-			&-form {
-				width: 50%;
-			}
-
-			&-form {
-				margin-left: $element-spacing-large;
-			}
+		bnb-button-cta {
+			text-align: start;
+			width: max-content;
 		}
 	}
 }
