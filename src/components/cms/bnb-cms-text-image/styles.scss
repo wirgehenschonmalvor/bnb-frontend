@@ -42,7 +42,7 @@
 			padding-left: $margin-left-right-medium;
 
 			&--left {
-				width: 55%;
+				width: $section-left-width;
 			}
 			&--right {
 				margin: 0;
@@ -52,6 +52,7 @@
 		}
 
 		@include fromBreakpointMax {
+			max-width: $component-container-indent-width;
 			margin-right: $right-indentation;
 			padding-left: $margin-left-right-small;
 		}

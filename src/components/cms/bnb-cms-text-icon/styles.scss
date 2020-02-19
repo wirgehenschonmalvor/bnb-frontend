@@ -8,6 +8,10 @@
 	margin: 0 auto;
 	max-width: $max;
 
+	@include fromBreakpointMax {
+		padding-left: 0;
+	}
+
 	.text-icon {
 		@include cmsComponents();
 		display: flex;
@@ -43,49 +47,31 @@
 		}
 
 		@include fromBreakpointMax {
-			width: calc(
-			#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
-			);
-			margin-right: 148px;
+			margin-right: $right-indentation;
+			margin-left: 0;
+			padding: 0 $margin-left-right-small $margin-left-right-small $margin-left-right-small;
+			width: $component-container-indent-width;
 
 			&--right {
-				margin-left: 205px;
-				width: 257px;
-				height: 249px;
+				width: $section-right-icon;
+				height: $section-right-icon;
 			}
 
 			&--left {
-				width: 695px;
+				width: $section-left-width;
 			}
 		}
 	}
 
-	.button {
-		display: flex;
-		width: 100%;
-		margin: 0 auto;
-		bnb-button-cta {
-			margin: 0 auto;
-			width: 100%;
-		}
+	bnb-button-cta {
+		margin-top: 40px;
+		@include buttonSizes();
+	}
 
-		@include fromBreakpointM {
-			bnb-button-cta {
-				width: 70vw;
-			}
-		}
-
-		@include fromBreakpointL {
-			margin: $margin-left-right-small auto;
-			bnb-button-cta {
-				width: 40vw;
-				margin: 0;
-			}
-		}
+	bnb-headline,
+	bnb-button-cta {
 		@include fromBreakpointMax {
-			bnb-button-cta {
-				width: initial;
-			}
+			margin-left: $margin-left-right-small;
 		}
 	}
 }
@@ -114,17 +100,16 @@
 		background-color: transparent;
 
 		.text-icon {
-			flex-direction: row;
 			background-color: white;
+			flex-direction: row;
 
 			&--right {
-				margin-left: 205px;
-				width: 257px;
-				height: 249px;
+				width: $section-right-icon;
+				height: $section-right-icon;
 			}
 
 			&--left {
-				width: 695px;
+				width: $section-left-width;
 			}
 		}
 	}

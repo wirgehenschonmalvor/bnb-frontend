@@ -60,13 +60,9 @@
             position: absolute;
             padding: 0 $margin-left-right-small;
             top: 680px;
-			margin-right: calc(
-				#{$right-indentation} + #{$margin-left-right-small}
-			);
+			margin-right: $right-indentation-margin;
 			height: 500px;
-			width: calc(
-				#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
-			);
+			width: $component-container-indent-width;
 
 			.stage-text-container-left {
                 width: 695px;

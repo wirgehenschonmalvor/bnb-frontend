@@ -95,14 +95,10 @@
 			position: absolute;
 			padding: 0 $margin-left-right-small;
 			top: 680px;
-			margin-right: calc(
-				#{$right-indentation} + #{$margin-left-right-small}
-			);
+			margin-right: $right-indentation-margin;
 			height: 500px;
 			flex-direction: row;
-			max-width: calc(
-				#{$max} - calc(#{$right-indentation} + #{$margin-left-right-small})
-			);
+			max-width: $component-container-indent-width;
 
 			.stage-text-container-right {
 				align-self: flex-end;

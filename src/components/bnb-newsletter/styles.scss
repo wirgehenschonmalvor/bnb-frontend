@@ -1,0 +1,18 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-newsletter') {
+	display: flex;
+	flex-direction: column;
+
+	.newsletter-form {
+		bnb-input,
+		bnb-checkbox {
+			margin-bottom: 25px;
+		}
+
+		bnb-button-cta {
+			@include buttonSizes();
+		}
+	}
+}

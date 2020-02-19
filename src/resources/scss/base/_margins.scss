@@ -13,5 +13,8 @@ $margin-top-bottom-large: 70px;
 
 $element-spacing-large: 50px;
 $right-indentation: 118px;
+$right-indentation-margin: calc(
+	#{$right-indentation} + #{$margin-left-right-small}
+);
 
 $padding-right-large: 70px;
