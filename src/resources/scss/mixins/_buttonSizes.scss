@@ -13,5 +13,6 @@
 
     @include fromBreakpointMax {
         width: max-content;
+        margin-left: 0;
     }
 }
