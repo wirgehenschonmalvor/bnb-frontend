@@ -1,9 +1,7 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
 
-import { BnbNewsletterProps } from './defines';
-
-export const template = (data: BnbNewsletterProps): HTMLFragment => {
+export const template = (): HTMLFragment => {
 	return html`
 		<bnb-headline level="3">anmelden</bnb-headline>
 		<div class="newsletter-form">
