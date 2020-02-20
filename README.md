@@ -1,5 +1,5 @@
-![GitHub tag](https://img.shields.io/github/tag/purposedevelopment/bnb-frontend/BNB.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/purposedevelopment/bnb-frontend/BNB.svg) ![GitHub PRs](https://img.shields.io/github/issues-pr-raw/purposedevelopment/bnb-frontend/BNB.svg)
-![GitHub](https://img.shields.io/github/license/purposedevelopment/bnb-frontend/BNB.svg)
+![GitHub tag](https://img.shields.io/github/tag/PurposeDevelopment/bnb-frontend/BNB.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/PurposeDevelopment/bnb-frontend/BNB.svg) ![GitHub PRs](https://img.shields.io/github/issues-pr-raw/PurposeDevelopment/bnb-frontend/BNB.svg)
+![GitHub](https://img.shields.io/github/license/PurposeDevelopment/bnb-frontend/BNB.svg)
 
 # BNB is a Website for the project "Brand New Bundestag"
 
