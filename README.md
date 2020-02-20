@@ -45,5 +45,4 @@
 
 ## Naming:
 
--   `branch` names should be named with kebab-case
--   `component` names should be named with CamelCase
+-   `branch` & `component` names should be named with kebab-case
