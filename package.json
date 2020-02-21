@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/biotope/biotope.git"
   },
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",

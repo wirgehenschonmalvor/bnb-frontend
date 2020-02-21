@@ -13,7 +13,8 @@ import * as instagramSmall from './svg/instagram_small.svg';
 import * as xing from './svg/xing.svg';
 import * as close from './svg/close.svg';
 import * as search from './svg/search.svg';
-import * as play from './svg/movie.svg';
+import * as movie from './svg/movie.svg';
+import * as play from './svg/play.svg';
 import * as playYoutube from './svg/play_youtube.svg';
 import * as calendar from './svg/calendar.svg';
 import * as clock from './svg/clock.svg';
@@ -39,6 +40,7 @@ const icons = {
 	xing,
 	close,
 	search,
+	movie,
 	play,
 	playYoutube,
 	calendar,
