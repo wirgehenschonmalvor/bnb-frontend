@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 auto;
+	margin: 0 auto 100px auto;
 	max-width: $max;
 
 	@include fromBreakpointMax {
@@ -13,6 +13,7 @@
 	}
 
 	.text-icon {
+		background-color: white;
 		@include cmsComponents();
 		display: flex;
 		justify-content: space-between;
@@ -27,7 +28,13 @@
 			@include slotted('bnb-headline') {
 				margin: 0;
 			}
+
+			bnb-button-cta {
+				margin-top: 50px;
+				@include buttonSizes();
+			}
 		}
+
 		&--right {
 			width: 70%;
 			margin: $margin-left-right-small auto;
@@ -63,21 +70,20 @@
 		}
 	}
 
-	bnb-button-cta {
-		margin-top: 40px;
-		@include buttonSizes();
-	}
-
-	bnb-headline,
-	bnb-button-cta {
+	bnb-headline[level='3'] {
+		background-color: white;
 		@include fromBreakpointMax {
-			margin-left: $margin-left-right-small;
+			width: $component-container-indent-width;
+			margin-right: $right-indentation;
+			margin-left: 0;
+			padding-left: $margin-left-right-small;
+			padding-right: $margin-left-right-small;
 		}
 	}
 }
 
 @include addAttributeStyles('bnb-cms-text-icon', 'copy-text'){
-	background-color: white;
+	background-color: transparent;
 
 	bnb-paragraph {
 		padding-bottom: 150px;
@@ -100,7 +106,7 @@
 		background-color: transparent;
 
 		.text-icon {
-			background-color: white;
+			background-color: transparent;
 			flex-direction: row;
 
 			&--right {
