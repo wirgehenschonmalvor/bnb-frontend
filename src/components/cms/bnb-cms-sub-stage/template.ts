@@ -3,9 +3,8 @@ import * as styles from './styles.scss';
 
 import { BnbCmsSubStageProps } from './defines';
 
-
-export const template = ( data: BnbCmsSubStageProps ): HTMLFragment => {
-  return html`
+export const template = (data: BnbCmsSubStageProps): HTMLFragment => {
+	return html`
 		<bnb-image
 			srcset="${data.image.srcset}"
 			sizes="${data.image.sizes}"
@@ -17,14 +16,14 @@ export const template = ( data: BnbCmsSubStageProps ): HTMLFragment => {
 		<div class="stage-text-container">
 			<div class="stage-text-container-left">
 				<bnb-headline level="3">${data.heading}</bnb-headline>
-				<bnb-headline class="h2" level="2">
+				<bnb-headline class="h1" level="1">
 					<slot />
 				</bnb-headline>
 				<div class="stage-text-paragraph">
-          <slot name="text" />
+					<slot name="text" />
 				</div>
 			</div>
 		</div>
 		${createStyle(styles)}
-  `;
-}
+	`;
+};

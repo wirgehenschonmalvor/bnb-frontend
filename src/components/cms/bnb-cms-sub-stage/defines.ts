@@ -8,6 +8,7 @@ import { BnbImageProps } from "../../bnb-image/defines";
  * Props
  */
 interface BnbCmsSubStageProps {
+  icon: string;
   heading: string;
 	image: BnbImageProps;
 }
