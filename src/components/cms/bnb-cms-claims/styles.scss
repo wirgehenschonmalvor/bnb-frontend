@@ -7,41 +7,21 @@
 	@include cmsComponents();
 
 	.claim-wrapper {
-		display: flex;
-		flex-direction: column;
-	}
+		max-width: 900px;
+		align-self: flex-start;
+		width: 100%;
 
-	bnb-accordion {
-		width: auto;
-		margin: 20px 0;
-	}
-
-	.claim-wrapper--left,
-	.claim-wrapper--right {
-		display: flex;
-		flex-direction: column;
-	}
-
-	@include fromBreakpointM {
-	}
-
-	@include fromBreakpointL {
-		.claim-wrapper {
-			flex-direction: row;
-			justify-content: space-between;
+		.h1 {
+			margin: -30px 0 -10px 0;
 		}
 
-		.claim-wrapper--left,
-		.claim-wrapper--right {
-			width: 43vw;
-			flex-direction: column;
+		bnb-paragraph {
+			margin-bottom: 50px;
 		}
-	}
 
-	@include fromBreakpointMax {
-		.claim-wrapper--left,
-		.claim-wrapper--right {
-			width: 48%;
+		bnb-accordion {
+			width: auto;
+			margin: 20px 0;
 		}
 	}
 }

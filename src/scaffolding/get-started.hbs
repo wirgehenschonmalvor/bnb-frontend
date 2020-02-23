@@ -4,7 +4,20 @@
         background-color: #f6f6f6;
     }
 </style>
-<bnb-cms-navigation page="get-started" data-resources="[{paths: ['components/cms/bnb-cms-navigation/index.js']}]"></bnb-cms-navigation>
+<bnb-cms-navigation page="get-started" data-resources="[{paths: ['components/cms/bnb-cms-navigation/index.js']}]">
+</bnb-cms-navigation>
+<bnb-cms-stage heading="sei dabei" image='{"src":"../_assets/img/stage.jpg", "title":"Stage Image", "objectFit":"cover", "objectPosition":"bottom", "srcset":[{"src":"../_assets/img/stage_300.jpeg", "width":300},
+            {"src":"../_assets/img/stage_600.jpeg", "width":600},
+            {"src":"../_assets/img/stage_1024.jpeg", "width":1024},
+            {"src":"../_assets/img/stage_1440.jpeg", "width":1440},
+            {"src":"../_assets/img/stage_1920.jpeg", "width":1920}]}' icon="iconsetNoSpacing"
+            button-left='{"version":"primary", "value":"Ich bin dabei!", "url":"get-started.html"}'
+    data-resources="[{paths: ['components/cms/bnb-cms-stage/index.js']}]">
+    <bnb-headline slot="headline">Engagiere dich bei uns!
+    Werde Freiwillige*r Helfer bei Brand New Bundestag.</bnb-headline>
+    <bnb-paragraph slot="text">Je mehr wir sind, desto mehr Gewicht haben wir. Unterstütze uns aktiv ehrenamtlich bei dir vor Ort oder als
+    Botschafter*in für unsere Bewegung.</bnb-paragraph>
+</bnb-cms-stage>
 <bnb-cms-newsletter-form data-resources="[{paths: ['components/cms/bnb-cms-newsletter-form/index.js']}]">
 </bnb-cms-newsletter-form>
 <bnb-cms-footer data-resources="[{paths: ['components/cms/bnb-cms-footer/index.js']}]"></bnb-cms-footer>

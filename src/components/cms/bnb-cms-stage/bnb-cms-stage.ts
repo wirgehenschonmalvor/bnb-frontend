@@ -5,6 +5,7 @@ import BnbIcon from '../../bnb-icon/bnb-icon';
 import BnbImage from '../../bnb-image/bnb-image';
 import BnbButtonCTA from '../../bnb-button-cta/bnb-button-cta';
 import BnbHeadline from '../../bnb-headline/bnb-headline';
+import BnbParagraph from '../../bnb-paragraph/bnb-paragraph';
 
 class BnbCmsStage extends Component<BnbCmsStageProps, null> {
 	public static componentName = 'bnb-cms-stage';
@@ -30,6 +31,7 @@ class BnbCmsStage extends Component<BnbCmsStageProps, null> {
 		BnbImage as typeof Component,
 		BnbButtonCTA as typeof Component,
 		BnbHeadline as typeof Component,
+		BnbParagraph as typeof Component,
 	];
 
 	protected readonly defaultProps: BnbCmsStageProps = {
