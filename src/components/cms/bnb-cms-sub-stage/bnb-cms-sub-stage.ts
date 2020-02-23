@@ -9,11 +9,13 @@ import BnbHeadline from '../../bnb-headline/bnb-headline';
 class BnbCmsSubStage extends Component<BnbCmsSubStageProps, null> {
 	public static componentName = 'bnb-cms-sub-stage';
 	public static attributes = [
+		'icon',
 		'heading',
 		{ name: 'image', type: 'object' },
 	];
 
 	protected readonly defaultProps: BnbCmsSubStageProps = {
+		icon: '',
 		heading: '',
 		image: {
 			srcset: [],
