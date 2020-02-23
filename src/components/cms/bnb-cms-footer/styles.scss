@@ -71,6 +71,8 @@
 
 			.footer-links--middle {
 				.headline {
+					font-size: 34px;
+					line-height: 50px;
 					margin-top: 50px;
 					@include fromBreakpointL {
 						margin-top: 0;
@@ -92,6 +94,10 @@
 
 			.footer-links--right {
 				margin-top: 50px;
+				bnb-paragraph {
+					font-size: 34px;
+					line-height: 50px;
+				}
 
 				bnb-follow {
 					margin-top: 27px;
