@@ -42,8 +42,8 @@ $line-height-font-copy: 30px;
 }
 @mixin fontMenu() {
 	@include fontCopy();
-	font-size: 34px;
-	line-height: 44px;
+	font-size: 28px;
+	line-height: 32px;
 }
 @mixin fontButton() {
 	@include fontCopy();

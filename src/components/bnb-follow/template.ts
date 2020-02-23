@@ -12,16 +12,16 @@ export const template = (): HTMLFragment => {
 			<bnb-icon icon="facebookSmall"> </bnb-icon>
 		</div>
 		<div class="link-wrapper">
+			<a href="https://google.com" target="_blank" rel="noopener"></a>
+			<bnb-icon icon="instagramSmall"> </bnb-icon>
+		</div>
+		<div class="link-wrapper">
 			<a
 				href="https://twitter.com/brandnewBT?ref_src=twsrc%5Etfw"
 				target="_blank"
 				rel="noopener"
 			></a>
 			<bnb-icon icon="twitterSmall"> </bnb-icon>
-		</div>
-		<div class="link-wrapper">
-			<a href="https://google.com" target="_blank" rel="noopener"></a>
-			<bnb-icon icon="instagramSmall"> </bnb-icon>
 		</div>
 		${createStyle(styles)}
 	`;
