@@ -4,6 +4,7 @@
 @include host('bnb-cms-footer') {
 	display: block;
 	width: 100%;
+	@include fontCopy();
 
 	.footer-background {
 		display: flex;
@@ -16,12 +17,9 @@
 			flex-direction: column;
 			padding: 40px 30px 30px 30px;
 
-			@include fromBreakpointM {
+			@include fromBreakpointL {
 				justify-content: space-between;
 				flex-direction: row;
-			}
-
-			@include fromBreakpointL {
 				padding: 40px 50px 30px 50px;
 			}
 
@@ -33,66 +31,119 @@
 			}
 
 			.footer-links--left,
-			.footer-links--right,
-			.footer-buttons {
+			.footer-links--middle,
+			.footer-links--right {
 				display: flex;
 				flex-direction: column;
+				font-size: 34px;
+				line-height: 50px;
+				color: $grey-light;
+
 				bnb-link {
+					font-size: inherit;
+					line-height: inherit;
 					width: 100%;
 					margin-bottom: 15px;
 					text-decoration: none;
 				}
-				bnb-button-cta {
-					margin-bottom: 30px;
-					margin-top: 30px;
+
+				.footer-links--left-small {
+					display: flex;
+					flex-direction: column;
+					@include fontCopy();
 				}
 
-				@include fromBreakpointM {
-					bnb-button-cta {
+				@include fromBreakpointL {
+					padding-bottom: 100px;
+					width: 410px;
+
+					.footer-links--left-small {
+						flex-direction: row;
+						margin-top: 80px;
+
+						bnb-link {
+							width: max-content;
+							margin-right: 50px;
+						}
+					}
+				}
+			}
+
+			.footer-links--middle {
+				.headline {
+					margin-top: 50px;
+					@include fromBreakpointL {
 						margin-top: 0;
 					}
 				}
+				.contact {
+					@include fontCopy();
+					margin-top: 20px;
+				}
+
 				@include fromBreakpointL {
-					padding-bottom: 100px;
-					bnb-link {
-						margin-bottom: 25px;
-					}
-					bnb-button-cta {
-						margin-bottom: 50px;
-					}
+					margin-left: 30px;
+				}
+
+				@include fromBreakpointMax {
+					margin-left: 0;
 				}
 			}
-		}
 
-		.footer-icon {
-			max-width: $max;
-			margin: 0 -30px 50px -30px;
-			text-align: right;
-			right: 0;
-			width: 100%;
+			.footer-links--right {
+				margin-top: 50px;
 
-			bnb-icon {
-				fill: $grey-light;
-				width: 80px;
-				height: 80px;
-			}
+				bnb-follow {
+					margin-top: 27px;
+				}
 
-			@include fromBreakpointM {
+				bnb-button-cta {
+					margin-top: 50px;
+					@include buttonSizes();
+				}
+
 				bnb-icon {
-					width: 120px;
-					height: 120px;
+					align-self: flex-end;
+					margin-top: 120px;
+					fill: $grey-light;
+					width: 80px;
+					height: 80px;
 				}
-			}
 
-			@include fromBreakpointL {
-				width: auto;
-				margin: 0 50px 50px 50px;
-			}
+				@include fromBreakpointM {
+					bnb-icon {
+						width: 120px;
+						height: 120px;
+					}
+				}
 
-			@include fromBreakpointMax {
-				width: $max;
-				padding: 0 30px 50px 30px;
-				margin: 0 auto;
+				@include fromBreakpointL {
+					width: 250px;
+					margin-top: 0;
+
+					bnb-icon {
+						margin-top: 220px;
+					}
+
+					bnb-button-cta {
+						width: max-content;
+						margin-right: 0;
+					}
+
+					bnb-follow,
+					bnb-paragraph {
+						align-self: flex-end;
+					}
+				}
+
+				@include fromBreakpointMax {
+					width: 410px;
+
+					bnb-follow,
+					bnb-paragraph {
+						align-self: flex-start;
+					}
+				}
 			}
 		}
 	}
