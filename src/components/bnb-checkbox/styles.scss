@@ -19,7 +19,16 @@
 
 		&:focus {
 			outline: none;
+		}
+
+		&:focus + label::before {
+			outline: none;
 			box-shadow: 0 0 3px 2px $grey;
+		}
+
+		&:checked:focus + label::before {
+			outline: none;
+			box-shadow: none;
 		}
 	}
 
@@ -54,6 +63,7 @@
 		left: -23px;
 		top: 14px;
 		opacity: 0.6;
+		border-radius: 50%;
 		-webkit-transition: all 0.12s, border-color 0.08s;
 		transition: all 0.12s, border-color 0.08s;
 	}
