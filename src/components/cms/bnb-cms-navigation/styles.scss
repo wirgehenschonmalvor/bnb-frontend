@@ -262,3 +262,27 @@
 		}
 	}
 }
+
+@include addAttributeStyles ('bnb-cms-navigation', 'page=about-us') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #about-us {
+		text-decoration: underline;
+	}
+}
+
+@include addAttributeStyles ('bnb-cms-navigation', 'page=get-started') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #get-started {
+		text-decoration: underline;
+	}
+}
+
+@include addAttributeStyles ('bnb-cms-navigation', 'page=claims') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #claims {
+		text-decoration: underline;
+	}
+}
+
+@include addAttributeStyles ('bnb-cms-navigation', 'page=faqs') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #faqs {
+		text-decoration: underline;
+	}
+}
