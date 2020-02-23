@@ -1,0 +1,44 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-list-item') {
+	display: flex;
+	justify-content: flex-start;
+	font-family: inherit;
+	line-height: inherit;
+	font-size: inherit;
+	position: relative;
+
+	p {
+		margin: 0;
+	}
+
+	@include slotted('a') {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	bnb-icon {
+		flex-shrink: 0;
+		display: inline-block;
+        width: 12px;
+        height: 12px;
+		line-height: inherit;
+		margin-right: 13px;
+        align-self: flex-start;
+        fill: $purple;
+	}
+
+	.list-item-counter {
+		flex-shrink: 0;
+		width: 24px;
+		height: 21px;
+		margin-right: 0;
+	}
+
+	@include fromBreakpointM {
+		.list-item-counter {
+			width: 31px;
+		}
+	}
+}

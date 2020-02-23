@@ -1,0 +1,33 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-list') {
+	display: block;
+	position: relative;
+	font-family: inherit;
+
+	@include slotted('bnb-paragraph') {
+        margin: 30px 0;
+    }
+
+	@include slotted('bnb-headline') {
+		font-size: 18px;
+		line-height: 25px;
+		margin: 45px 0 14px 0;
+
+		@include fromBreakpointM {
+			font-size: 22px;
+			line-height: 21px;
+			margin: 48px 0 32px 0;
+		}
+	}
+
+	@include slotted('bnb-list-item') {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+	@include slotted('bnb-list-item:last-child') {
+		margin-bottom: 0;
+	}
+}
