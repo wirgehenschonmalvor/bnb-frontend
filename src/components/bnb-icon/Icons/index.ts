@@ -21,6 +21,7 @@ import * as clock from './svg/clock.svg';
 import * as quote from './svg/quote.svg';
 import * as logo from './svg/logo.svg';
 import * as bullet from './svg/bullet.svg';
+import * as arrow from './svg/arrow.svg';
 import * as iconsetNoSpacing from './svg/iconset-no-spacing.svg';
 import * as iconsetSpacingRight from './svg/iconset-spacing-right.svg';
 
@@ -48,6 +49,7 @@ const icons = {
 	quote,
 	logo,
 	bullet,
+	arrow,
 	iconsetNoSpacing,
 	iconsetSpacingRight,
 };

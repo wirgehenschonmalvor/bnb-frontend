@@ -8,10 +8,11 @@ export const template = (data: BnbAccordionProps): HTMLFragment => {
 		<div class="accordion">
 			<input type="checkbox" id="${data.id}" name="accordion-item" />
 			<label for="${data.id}"
-				><bnb-headline level="2"
-					>${data.label}
-					<bnb-icon icon="cross"></bnb-icon></bnb-headline
-			></label>
+				><bnb-headline level="2">
+					<bnb-icon icon="arrow"></bnb-icon
+					>${data.label}</bnb-headline
+				></label
+			>
 			<div class="text">
 				<bnb-paragraph>
 					<slot />
