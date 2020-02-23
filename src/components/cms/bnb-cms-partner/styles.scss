@@ -2,26 +2,32 @@
 @import '../../../resources/scss/styles';
 
 @include host('bnb-cms-partner') {
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
+	display: block;
+	width: 100%;
+	margin: 0;
+	background-color: white;
 	margin-bottom: 100px;
-	@include cmsComponents();
 
-	.partner-container {
+	.component-wrapper {
 		display: flex;
-		flex-wrap: wrap;
+		justify-content: flex-start;
+		flex-direction: column;
+		@include cmsComponents();
 
-		bnb-icon {
-			height: 260px;
-			width: max-content;
-			margin: 50px auto;
+		.partner-container {
+			display: flex;
+			flex-wrap: wrap;
 
-			@include fromBreakpointL {
-				height: 180px;
-				margin: 50px auto 0 auto;
+			bnb-icon {
+				height: 260px;
+				width: max-content;
+				margin: 50px auto;
+
+				@include fromBreakpointL {
+					height: 180px;
+					margin: 50px auto 0 auto;
+				}
 			}
 		}
-
 	}
 }
