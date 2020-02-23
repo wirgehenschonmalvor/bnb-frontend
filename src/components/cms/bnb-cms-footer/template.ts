@@ -13,47 +13,65 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						value="Aktiv werden"
 						url="volunteers.html"
 					></bnb-link>
-					<bnb-link
+					<!-- <bnb-link
 						footer
-						value="Kandidat*Innen"
+						value=""
 						url="candidates.html"
-					></bnb-link>
+					></bnb-link> -->
 					<bnb-link
 						footer
 						value="Über uns"
 						url="about-us.html"
 					></bnb-link>
-					<bnb-link footer value="News" url="news.html"></bnb-link>
-				</div>
-				<div class="footer-links--right">
-					<bnb-link footer value="Presse" url="press.html"></bnb-link>
+					<!-- <bnb-link footer value="" url="news.html"></bnb-link> -->
+					<bnb-link
+						footer
+						value="Häufige Fragen/FAQs"
+						url="faqs.html"
+					></bnb-link>
+					<bnb-link footer value="Unsere Forderungen" url="claims.html"></bnb-link>
 					<bnb-link
 						footer
 						value="Kontakt"
 						url="contact.html"
 					></bnb-link>
-					<bnb-link
-						footer
-						value="Impressum"
-						url="imprint.html"
-					></bnb-link>
-					<bnb-link
-						footer
-						value="Datenschutz"
-						url="data-protection.html"
-					></bnb-link>
+					<div class="footer-links--left-small">
+						<bnb-link
+							footer
+							value="Impressum"
+							url="imprint.html"
+						></bnb-link>
+						<bnb-link
+							footer
+							value="Datenschutz"
+							url="data-protection.html"
+						></bnb-link>
+					</div>
 				</div>
-				<div class="footer-buttons">
+				<div class="footer-links--middle">
+					<bnb-paragraph class="headline"
+						>So erreichst Du uns:</bnb-paragraph
+					>
+					<bnb-paragraph class="contact">
+						Brand New Bundestag e.V. <br />
+						Musterstrasse 12 <br />1000 Berlin <br />
+						<bnb-link
+							footer
+							value="info@brandnewbundestag.de"
+							url="mailto:info@brandnewbundestag.de"
+						></bnb-link>
+					</bnb-paragraph>
+				</div>
+				<div class="footer-links--right">
+					<bnb-paragraph class="headline">Folge uns:</bnb-paragraph>
+					<bnb-follow color="footer"></bnb-follow>
 					<bnb-button-cta
 						version="footer"
-						value="Newsletter abonnieren"
-						url="#newsletter"
+						value="Spenden"
+						url="#"
 					></bnb-button-cta>
-					<bnb-follow color="footer"></bnb-follow>
+					<bnb-icon icon="bildmarke"></bnb-icon>
 				</div>
-			</div>
-			<div class="footer-icon">
-				<bnb-icon icon="bildmarke"></bnb-icon>
 			</div>
 		</footer>
 		${createStyle(styles)}
