@@ -11,7 +11,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Aktiv werden"
-						url="volunteers.html"
+						url="get-started.html"
 					></bnb-link>
 					<!-- <bnb-link
 						footer
