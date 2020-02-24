@@ -24,7 +24,7 @@ import * as bullet from './svg/bullet.svg';
 import * as arrow from './svg/arrow.svg';
 import * as iconsetNoSpacing from './svg/iconset-no-spacing.svg';
 import * as doubleIconset from './svg/2er-icon.svg';
-import * as tribbleIconset from './svg/3er-icon.svg';
+import * as tripleIconset from './svg/3er-icon.svg';
 import * as iconsetSpacingRight from './svg/iconset-spacing-right.svg';
 
 const icons = {
@@ -54,7 +54,7 @@ const icons = {
 	arrow,
 	iconsetNoSpacing,
 	doubleIconset,
-	tribbleIconset,
+	tripleIconset,
 	iconsetSpacingRight,
 };
 
