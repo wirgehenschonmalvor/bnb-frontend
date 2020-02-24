@@ -21,7 +21,12 @@ export const template = (): HTMLFragment => {
 				label="last name"
 				placeholder="Nachname"
 			></bnb-input>
-			<bnb-checkbox label="accept data protection" required link>
+			<bnb-checkbox
+				id="acceptDataProtection"
+				label="accept data protection"
+				required
+				link
+			>
 				<bnb-paragraph
 					>Ich habe die
 					<bnb-link
@@ -32,7 +37,11 @@ export const template = (): HTMLFragment => {
 					gelesen und akzeptiert.*</bnb-paragraph
 				>
 			</bnb-checkbox>
-			<bnb-button-cta version="primary" value="Anmelden" tab-index="0"></bnb-button-cta>
+			<bnb-button-cta
+				version="primary"
+				value="Anmelden"
+				tab-index="0"
+			></bnb-button-cta>
 		</div>
 		${createStyle(styles)}
 	`;
