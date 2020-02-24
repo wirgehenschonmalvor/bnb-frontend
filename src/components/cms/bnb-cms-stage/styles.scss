@@ -115,6 +115,7 @@
 					height: 250px;
 					width: 250px;
 					margin: 40px;
+					margin-top: 410px;
 				}
 			}
 
@@ -129,6 +130,8 @@
 			.stage-text-buttons {
 				height: 112px;
 				justify-content: flex-start;
+				position: absolute;
+				bottom: 45px;
 
 				bnb-button-cta {
 					width: 215px;
