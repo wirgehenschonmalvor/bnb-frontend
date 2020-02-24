@@ -118,3 +118,15 @@
 		}
 	}
 }
+
+@include addAttributeStyles('bnb-cms-text-icon', 'transparent'){
+	background-color: transparent;
+
+	.text-icon {
+		background-color: transparent;
+	}
+
+	bnb-headline[level='3'] {
+		background-color: transparent;
+	}
+}
