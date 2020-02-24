@@ -12,7 +12,11 @@ export const template = (): HTMLFragment => {
 			<bnb-icon icon="facebookSmall"> </bnb-icon>
 		</div>
 		<div class="link-wrapper">
-			<a href="https://google.com" target="_blank" rel="noopener"></a>
+			<a
+				href="https://www.instagram.com/brandnewbundestag/"
+				target="_blank"
+				rel="noopener"
+			></a>
 			<bnb-icon icon="instagramSmall"> </bnb-icon>
 		</div>
 		<div class="link-wrapper">
