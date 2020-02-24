@@ -57,8 +57,8 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						Musterstrasse 12 <br />1000 Berlin <br />
 						<bnb-link
 							footer
-							value="info@brandnewbundestag.de"
-							url="mailto:info@brandnewbundestag.de"
+							value="team@brandnewbundestag.de"
+							url="mailto:team@brandnewbundestag.de"
 						></bnb-link>
 					</bnb-paragraph>
 				</div>

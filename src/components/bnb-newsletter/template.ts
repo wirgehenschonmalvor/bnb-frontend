@@ -25,13 +25,7 @@ export const template = (): HTMLFragment => {
 				<bnb-paragraph
 					>Ich habe die
 					<bnb-link
-						value="Datenschutzbestimmunge"
-						url="data-protection.html"
-						target="_blank"
-					></bnb-link>
-					und die
-					<bnb-link
-						value="Nutzungsbedingungen"
+						value="AGB und Datenschutzbestimmungen"
 						url="data-protection.html"
 						target="_blank"
 					></bnb-link>

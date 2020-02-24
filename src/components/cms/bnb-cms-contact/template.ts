@@ -52,12 +52,6 @@ export const template = (
 							url="data-protection.html"
 							target="_blank"
 						></bnb-link>
-						und die
-						<bnb-link
-							value="Nutzungsbedingungen"
-							url="data-protection.html"
-							target="_blank"
-						></bnb-link>
 						gelesen und akzeptiert.*</bnb-paragraph
 					>
 				</bnb-checkbox>
