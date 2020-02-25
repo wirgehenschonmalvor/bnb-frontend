@@ -16,19 +16,22 @@
 		top: 11px;
 		position: relative;
 		flex-shrink: 0;
+		border: none;
 
-		&:focus {
-			outline: none;
-		}
+		@include hoverDevicesOnly {
+			&:focus {
+				outline: none;
+			}
 
-		&:focus + label::before {
-			outline: none;
-			box-shadow: 0 0 3px 2px $grey;
-		}
+			&:focus + label::before {
+				outline: none;
+				box-shadow: 0 0 3px 2px $grey;
+			}
 
-		&:checked:focus + label::before {
-			outline: none;
-			box-shadow: none;
+			&:checked:focus + label::before {
+				outline: none;
+				box-shadow: none;
+			}
 		}
 	}
 
