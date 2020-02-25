@@ -43,9 +43,7 @@
 		z-index: 1;
 		-webkit-user-select: none;
 		user-select: none;
-
 	}
-
 
 	#menuToggle input {
 		top: -15px;
@@ -57,9 +55,11 @@
 		-webkit-appearance: none;
 		z-index: 2;
 
-		&:focus {
-			outline: none;
-			box-shadow: 0 0 3px 2px $grey;
+		@include hoverDevicesOnly() {
+			&:focus {
+				outline: none;
+				box-shadow: 0 0 3px 2px $grey;
+			}
 		}
 	}
 
@@ -157,7 +157,7 @@
 
 	#navigation-icon-desktop-link:focus {
 		outline: none;
-		@include slotted ('bnb-icon') {
+		@include slotted('bnb-icon') {
 			outline: none;
 			box-shadow: 0 0 3px 2px $grey-light;
 		}
@@ -263,25 +263,25 @@
 	}
 }
 
-@include addAttributeStyles ('bnb-cms-navigation', 'page=about-us') {
+@include addAttributeStyles('bnb-cms-navigation', 'page=about-us') {
 	.navigation-wrapper nav #menu-desktop .navigation-links #about-us {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles ('bnb-cms-navigation', 'page=get-started') {
+@include addAttributeStyles('bnb-cms-navigation', 'page=get-started') {
 	.navigation-wrapper nav #menu-desktop .navigation-links #get-started {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles ('bnb-cms-navigation', 'page=claims') {
+@include addAttributeStyles('bnb-cms-navigation', 'page=claims') {
 	.navigation-wrapper nav #menu-desktop .navigation-links #claims {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles ('bnb-cms-navigation', 'page=faqs') {
+@include addAttributeStyles('bnb-cms-navigation', 'page=faqs') {
 	.navigation-wrapper nav #menu-desktop .navigation-links #faqs {
 		text-decoration: underline;
 	}
