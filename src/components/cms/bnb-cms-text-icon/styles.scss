@@ -56,7 +56,8 @@
 		@include fromBreakpointMax {
 			margin-right: $right-indentation;
 			margin-left: 0;
-			padding: 0 $margin-left-right-small $margin-left-right-small $margin-left-right-small;
+			padding: 0 $margin-left-right-small $margin-left-right-small
+				$margin-left-right-small;
 			width: $component-container-indent-width;
 
 			&--right {
@@ -71,6 +72,7 @@
 	}
 
 	bnb-headline[level='3'] {
+		@include cmsComponentsLeftRight();
 		background-color: white;
 		@include fromBreakpointMax {
 			width: $component-container-indent-width;
@@ -82,7 +84,7 @@
 	}
 }
 
-@include addAttributeStyles('bnb-cms-text-icon', 'copy-text'){
+@include addAttributeStyles('bnb-cms-text-icon', 'copy-text') {
 	background-color: transparent;
 
 	bnb-paragraph {
@@ -91,7 +93,7 @@
 
 	@include fromBreakpointL {
 		.text-icon {
-			flex-direction: column ;
+			flex-direction: column;
 			&--left {
 				width: initial;
 			}
@@ -103,7 +105,6 @@
 	}
 
 	@include fromBreakpointMax {
-
 		.text-icon {
 			flex-direction: row;
 
@@ -119,7 +120,7 @@
 	}
 }
 
-@include addAttributeStyles('bnb-cms-text-icon', 'transparent'){
+@include addAttributeStyles('bnb-cms-text-icon', 'transparent') {
 	background-color: transparent;
 
 	.text-icon {
