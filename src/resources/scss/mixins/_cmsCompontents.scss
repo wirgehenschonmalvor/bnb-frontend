@@ -24,4 +24,12 @@
 		margin-left: $margin-left-right-medium;
 		margin-right: $margin-left-right-medium;
 	}
+
+	@include fromBreakpointMax() {
+		max-width: $max;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: $margin-left-right-small;
+		padding-right: $margin-left-right-small;
+	}
 }
