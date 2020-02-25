@@ -15,3 +15,13 @@
 		padding: 0 $margin-left-right-small 100px $margin-left-right-small;
 	}
 }
+
+@mixin cmsComponentsLeftRight() {
+	margin-left: $margin-left-right-small;
+	margin-right: $margin-left-right-small;
+
+	@include fromBreakpointL() {
+		margin-left: $margin-left-right-medium;
+		margin-right: $margin-left-right-medium;
+	}
+}
