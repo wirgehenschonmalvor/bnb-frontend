@@ -7,7 +7,11 @@ import BnbParagraph from '../../bnb-paragraph/bnb-paragraph';
 
 class BnbCmsTextImage extends Component<BnbCmsTextImageProps, null> {
 	public static componentName = 'bnb-cms-text-image';
-	public static attributes = ['heading', { name: 'image', type: 'object' }];
+	public static attributes = [
+		'heading',
+		{ name: 'image', type: 'object' },
+		{ name: 'light', type: 'boolean' },
+	];
 
 	public static dependencies = [
 		BnbImage as typeof Component,
