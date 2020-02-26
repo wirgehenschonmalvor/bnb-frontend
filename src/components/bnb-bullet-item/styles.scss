@@ -3,6 +3,7 @@
 
 @include host('bnb-bullet-item') {
 	display: block;
+	width: 100%;
 
 	@include fromBreakpointM {
 		width: 40vw;
