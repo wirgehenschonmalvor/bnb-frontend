@@ -1,3 +1,5 @@
+import { BnbImageProps } from "../bnb-image/defines";
+
 /**
  *  ## DEFINE ALL INTERFACES FOR BnbYoutube
  **/
@@ -7,6 +9,11 @@
  */
 interface BnbYoutubeProps {
 	youtubeId: string;
+	thumbnail?: BnbImageProps;
 }
 
-export { BnbYoutubeProps };
+interface BnBYoutubeMethods {
+  onButtonClick: Function;
+}
+
+export { BnbYoutubeProps, BnbImageProps, BnBYoutubeMethods };
