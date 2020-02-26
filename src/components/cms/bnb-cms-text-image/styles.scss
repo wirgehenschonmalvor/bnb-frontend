@@ -6,10 +6,14 @@
 	margin: 0 auto;
 	max-width: $max;
 	margin-bottom: 100px;
+	background-color: white;
+
+	@include fromBreakpointMax {
+		background-color: transparent;
+	}
 
 	.text-image {
 		@include cmsComponents();
-		background-color: white;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0;
@@ -26,7 +30,7 @@
 		&--right {
 			width: 100%;
 			margin: $margin-left-right-small auto;
-			margin-bottom: 0;
+			padding-bottom: 60px;
 			bnb-image {
 				height: 600px;
 			}
@@ -46,15 +50,21 @@
 			}
 			&--right {
 				margin: 0;
+				padding-bottom: 20px;
 				width: 35%;
 				align-self: flex-end;
 			}
 		}
 
 		@include fromBreakpointMax {
+			background-color: white;
 			max-width: $component-container-indent-width;
 			margin-right: $right-indentation;
 			padding-left: $margin-left-right-small;
+
+			&--right {
+				padding-bottom: 0;
+			}
 		}
 	}
 }

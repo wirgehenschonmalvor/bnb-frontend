@@ -14,6 +14,10 @@
 		flex-direction: column;
 		@include cmsComponents();
 
+		@include fromBreakpointMax {
+			padding-bottom: 0;
+		}
+
 		.partner-container-top,
 		.partner-container-bottom {
 			display: flex;
@@ -33,7 +37,7 @@
 				@include fromBreakpointL {
 					height: 180px;
 					width: 180px;
-					margin: 50px auto 0 auto;
+					margin: 50px auto 40px;
 				}
 			}
 		}

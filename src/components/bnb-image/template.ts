@@ -37,12 +37,12 @@ export const template = (data: BnbImageProps): HTMLFragment => {
 						<span>&#169; ${data.copyright}</span>
 				  `
 				: ''}
-		</div>
 		${data.caption
 			? html`
 					<footer>${data.caption}</footer>
 			  `
 			: ''}
+		</div>
 		${createStyle(styles)}
 	`;
 };
