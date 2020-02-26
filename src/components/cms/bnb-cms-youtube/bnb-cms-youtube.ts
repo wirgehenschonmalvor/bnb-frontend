@@ -1,8 +1,8 @@
 import Component, { HTMLFragment } from '@biotope/element';
 import { template } from './template';
 import { BnbCmsYoutubeProps } from './defines';
-import BnbHeadline from '../bnb-headline/bnb-headline';
-import BnbYoutube from '../bnb-youtube/bnb-youtube';
+import BnbHeadline from '../../bnb-headline/bnb-headline';
+import BnbYoutube from '../../bnb-youtube/bnb-youtube';
 
 class BnbCmsYoutube extends Component<BnbCmsYoutubeProps, null> {
 	public static componentName = 'bnb-cms-youtube';

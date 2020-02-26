@@ -1,4 +1,4 @@
-import { BnbYoutubeProps } from "../bnb-youtube/defines";
+import { BnbYoutubeProps } from "../../bnb-youtube/defines";
 
 /**
  *  ## DEFINE ALL INTERFACES FOR BnbCmsYoutube
