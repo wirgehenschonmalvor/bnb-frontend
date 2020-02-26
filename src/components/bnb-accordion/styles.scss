@@ -1,0 +1,56 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-accordion') {
+	display: block;
+	.accordion {
+		input[name='accordion-item'] {
+			display: none;
+		}
+
+		.text {
+			color: $grey-medium;
+			max-height: 0;
+			height: 0;
+			overflow: hidden;
+			transition: all 0.3s ease-in-out;
+		}
+
+		input[name='accordion-item']:checked ~ .text {
+			height: auto;
+			max-height: 2000px;
+			padding-bottom: 30px;
+		}
+
+		label {
+			color: $grey-medium;
+			cursor: pointer;
+			bnb-headline {
+				transition: all 0.3s ease-in-out;
+			}
+			bnb-icon {
+				transition: all 0.3s ease-in-out;
+				fill: none;
+				margin-right: 25px;
+				stroke: $grey-medium;
+			}
+		}
+
+		input[name='accordion-item']:checked ~ label {
+			color: $grey-light;
+			bnb-icon {
+				transform: rotateX(180deg);
+				stroke: $grey-light;
+			}
+		}
+
+		@include hoverDevicesOnly {
+			label:hover {
+				color: $grey-light;
+				bnb-icon {
+					stroke: $grey-light;
+				}
+			}
+		}
+	}
+}

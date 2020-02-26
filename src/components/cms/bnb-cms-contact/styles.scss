@@ -1,0 +1,59 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-contact') {
+	display: flex;
+	flex-direction: column;
+	background-color: $white;
+
+	bnb-headline {
+		@include cmsComponents();
+		margin-bottom: 0;
+
+		@include fromBreakpointL {
+			margin-bottom: 0;
+		}
+
+		@include fromBreakpointMax {
+			padding-bottom: 0;
+		}
+	}
+
+	bnb-button-cta {
+		@include cmsComponents();
+		@include buttonSizes();
+	}
+
+	.contact {
+		&__wrapper {
+			@include cmsComponents();
+		}
+
+		&__text {
+			margin: $margin-top-bottom-regular 0;
+		}
+
+		&__inputs {
+			&--name,
+			&--email,
+			&--telefon,
+			&--message,
+			bnb-checkbox {
+				margin: 20px auto;
+			}
+		}
+
+		@include fromBreakpointMax {
+			&__wrapper {
+				display: flex;
+				justify-content: space-between;
+			}
+			&__text {
+				width: 45%;
+			}
+			&__inputs {
+				width: 45%;
+			}
+		}
+	}
+}

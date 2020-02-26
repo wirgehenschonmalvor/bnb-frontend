@@ -1,0 +1,143 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-stage') {
+	display: block;
+	background-color: $white;
+	margin: 0 auto;
+
+	bnb-image {
+		height: 300px;
+		width: 100vw;
+	}
+
+	.stage-text-container,
+	.stage-text-container-left,
+	.stage-text-container-right,
+	.stage-text-buttons-mobile,
+	.stage-text-buttons {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.stage-text-container {
+		max-width: $max;
+		padding: 0 $margin-left-right-small;
+	}
+
+	bnb-button-cta {
+		margin: 20px 0;
+	}
+
+	#icon-desktop {
+		display: none;
+	}
+
+	#icon-mobile {
+		margin: 20px auto;
+		width: 70vw;
+		height: 70vw;
+	}
+
+	@include fromBreakpointM {
+		bnb-image {
+			height: 400px;
+		}
+		bnb-button-cta {
+			width: 70vw;
+			margin: 30px auto;
+		}
+
+		#icon-mobile {
+			margin: 30px 0 30px auto;
+			height: 70vw;
+			width: 50vw;
+		}
+	}
+	@include fromBreakpointL {
+		bnb-image {
+			height: 500px;
+		}
+		.stage-text-container {
+			padding: 0 $margin-left-right-medium;
+		}
+
+		#icon-mobile {
+			margin: 30px 0 30px auto;
+			height: 50vw;
+			width: 40vw;
+		}
+
+		.stage-text-buttons-mobile {
+			flex-direction: row;
+			bnb-button-cta {
+				width: 40vw;
+				margin: 50px auto;
+			}
+		}
+	}
+
+	@include fromBreakpointMax {
+		bnb-image {
+			margin-bottom: 700px;
+		}
+
+		#icon-mobile {
+			display: none;
+		}
+
+		#icon-desktop {
+			display: flex;
+		}
+
+		bnb-image {
+			height: 600px;
+		}
+
+		.stage-text-container {
+			position: absolute;
+			padding: 0 $margin-left-right-small 0 0;
+			top: 680px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 0 auto;
+			height: 700px;
+			flex-direction: row;
+			max-width: $max;
+
+			.stage-text-container-right {
+				background-color: white;
+				align-self: flex-end;
+				margin-right: $right-indentation;
+				height: inherit;
+				bnb-icon {
+					height: $section-right-icon;
+					width: $section-right-icon;
+					margin: 40px;
+					margin-top: 295px;
+				}
+			}
+
+			.stage-text-container-left {
+				padding-left: $margin-left-right-small;
+				background-color: white;
+				bnb-paragraph {
+					height: 200px;
+				}
+			}
+
+			.stage-text-buttons {
+				height: 112px;
+				justify-content: flex-start;
+				position: absolute;
+				bottom: 45px;
+
+				bnb-button-cta {
+					width: 215px;
+					margin: 50px 20px 0 0;
+				}
+			}
+		}
+	}
+}

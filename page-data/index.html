@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Brand New Bundestag</title>
+		<script src="../.tmp/resources/components/cms/bnb-cms-navigation/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-stage/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-text-icon/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-text-image/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-text-text/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-info-box/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-footer/index.js"></script>
+		<script src="../.tmp/resources/components/cms/bnb-cms-newsletter-form/index.js"></script>
+		<style>
+			body {
+				margin: 0;
+				background-color: #f6f6f6;
+			}
+		</style>
+	</head>
+	<body>
+		<bnb-cms-navigation></bnb-cms-navigation>
+		<bnb-cms-stage
+			heading="Band New Bundestag"
+			image='{"src":"assets/img/stage.jpg", "title":"Testbild 16:9", "objectFit":"cover", "objectPosition":"bottom", "srcset":[{"src":"assets/img/stage_300.jpeg", "width":300},
+            {"src":"assets/img/stage_600.jpeg", "width":600},
+            {"src":"assets/img/stage_1024.jpeg", "width":1024},
+            {"src":"assets/img/stage_1440.jpeg", "width":1440},
+            {"src":"assets/img/stage_1920.jpeg", "width":1920}]}'
+			button-left='{"version":"primary", "value":"Ich bin dabei!", "url":"get-started.html"}'
+			button-right='{"version":"secondary", "value":"Über uns", "url":"about-us.html"}'
+			icon="tripleIconset"
+			data-resources="[{paths: ['components/cms/bnb-cms-stage/index.js']}]"
+			>Unsere Demokratie braucht  eine neue Generation von
+			Politiker*innen. Bring sie mit uns 2021 in den
+			Bundestag!</bnb-cms-stage
+		>
+		<bnb-cms-text-icon
+			icon="tripleIconset"
+			heading="Unsere Mission"
+			color="purple"
+			button='{"value":"Jetzt mitmachen!", "url":"https://www.google.com", "target":"_blank", "version":"primary-purple"}'
+			data-resources="[{paths: ['components/cms/bnb-cms-text-icon/index.js']}]"
+		>
+			Wir bringen eine neue Generation von Politiker*innen in die
+			Parlamente. Für echte Demokratie, Klimaschutz, soziale Gerechtigkeit
+			und nachhaltiges Wirtschaften in einem vereinten Europa.
+		</bnb-cms-text-icon>
+		<bnb-cms-text-text
+			heading-left="Die Herausforderung"
+			heading-right="Die Herausforderung"
+			data-resources="[{paths: ['components/cms/bnb-cms-text-text/index.js']}]"
+		>
+			<p slot="left">
+				Wir bringen eine neue Generation von Politiker*innen in die
+				Parlamente. Für echte Demokratie, Klimaschutz, soziale
+				Gerechtigkeit und nachhaltiges Wirtschaften in einem vereinten
+				Europa.
+			</p>
+			<p slot="right">
+				Wir bringen eine neue Generation von Politiker*innen in die
+				Parlamente. Für echte Demokratie, Klimaschutz, soziale
+				Gerechtigkeit und nachhaltiges Wirtschaften in einem vereinten
+				Europa.
+			</p>
+		</bnb-cms-text-text>
+		<bnb-cms-info-box
+			heading="Wie funktioniert Brand New Bundestag?"
+			data-resources="[{paths: ['components/cms/bnb-cms-info-box/index.js']}]"
+		>
+			<bnb-bullet-list>
+				<bnb-bullet-item slot="list" icon="bildmarke"
+					>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Beatae incidunt at qui dolores laudantium vitae officiis
+					aliquid eveniet magni accusamus, iure, dolore tempora. Nisi
+					delectus nemo et est fuga eos deleniti molestiae quia vitae
+					cumque officiis
+				</bnb-bullet-item>
+				<bnb-bullet-item slot="list" icon="bildmarke"
+					>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Beatae incidunt at qui dolores laudantium vitae officiis
+					aliquid eveniet magni accusamus, iure, dolore tempora. Nisi
+					delectus nemo et est fuga eos deleniti molestiae quia vitae
+					cumque officiis
+				</bnb-bullet-item>
+				<bnb-bullet-item slot="list" icon="bildmarke"
+					>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Beatae incidunt at qui dolores laudantium vitae officiis
+					aliquid eveniet magni accusamus, iure, dolore tempora. Nisi
+					delectus nemo et est fuga eos deleniti molestiae quia vitae
+					cumque officiis
+				</bnb-bullet-item>
+				<bnb-bullet-item slot="list" icon="bildmarke"
+					>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Beatae incidunt at qui dolores laudantium vitae officiis
+					aliquid eveniet magni accusamus, iure, dolore tempora. Nisi
+					delectus nemo et est fuga eos deleniti molestiae quia vitae
+					cumque officiis
+				</bnb-bullet-item>
+			</bnb-bullet-list>
+		</bnb-cms-info-box>
+		<bnb-cms-text-image
+			heading="Unsere Forderungen"
+			image='{"src":"assets/img/testbild.jpg", "title":"Testbild 16:9", "objectFit":"cover", "objectPosition":"center", "srcset":[{"src":"assets/img/testbild_300.jpeg", "width":300},
+		    {"src":"assets/img/testbild_600.jpeg", "width":600},
+		    {"src":"assets/img/testbild_1024.jpeg", "width":1024},
+		    {"src":"assets/img/testbild_1440.jpeg", "width":1440},
+		    {"src":"assets/img/testbild_1920.jpeg", "width":1920}]}'
+			data-resources="[{paths: ['components/cms/bnb-cms-text-image/index.js']}]"
+		>
+			Wir fordern dass Politik wieder für die gemacht wird, für die sie
+			bestimmt ist: für Dich, für mich, für alle.
+			<bnb-paragraph slot="text"
+				>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+				diam nonumy eirmod tempor invidunt ut labore et dolore magna
+				aliquyam erat, sed diam voluptua. At vero eos et accusam et
+				justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+				takimata sanctus est Lorem ipsum dolor sit amet.
+				<br />
+				<br />
+				Lorem ipsum dolor. Lorem ipsum dolor sit amet, consetetur
+				sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+				labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+				eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+				gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+				amet. Lorem ipsum dolor.</bnb-paragraph
+			>
+		</bnb-cms-text-image>
+		<bnb-cms-text-image
+			horizontal
+			heading="Unsere Forderungen"
+			image='{"src":"assets/img/stage.jpg", "title":"Testbild 16:9", "objectFit":"cover", "objectPosition":"center", "srcset":[{"src":"assets/img/testbild_300.jpeg", "width":300},
+		    {"src":"assets/img/stage_600.jpeg", "width":600},
+		    {"src":"assets/img/stage_1024.jpeg", "width":1024},
+		    {"src":"assets/img/stage_1440.jpeg", "width":1440},
+		    {"src":"assets/img/stage_1920.jpeg", "width":1920}]}'
+			data-resources="[{paths: ['components/cms/bnb-cms-text-image/index.js']}]"
+		>
+			Wir fordern dass Politik wieder für die gemacht wird, für die sie
+			bestimmt ist: für Dich, für mich, für alle.
+			<bnb-paragraph slot="text"
+				>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+				diam nonumy eirmod tempor invidunt ut labore et dolore magna
+				aliquyam erat, sed diam voluptua. At vero eos et accusam et
+				justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+				takimata sanctus est Lorem ipsum dolor sit amet.</bnb-paragraph
+			>
+		</bnb-cms-text-image>
+		<bnb-cms-newsletter-form></bnb-cms-newsletter-form>
+		<bnb-cms-footer></bnb-cms-footer>
+	</body>
+</html>

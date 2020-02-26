@@ -1,0 +1,93 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-checkbox') {
+	display: block;
+	.input__wrapper {
+		display: flex;
+		@include fontCopy();
+		min-height: $min-height;
+	}
+
+	input[type='checkbox'] {
+		-webkit-appearance: none;
+		width: 20px;
+		height: 20px;
+		top: 11px;
+		position: relative;
+		flex-shrink: 0;
+		border: none;
+
+		@include hoverDevicesOnly {
+			&:focus {
+				outline: none;
+			}
+
+			&:focus + label::before {
+				outline: none;
+				box-shadow: 0 0 3px 2px $grey;
+			}
+
+			&:checked:focus + label::before {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+
+	input[type='checkbox'] + label {
+		position: relative;
+		padding-left: 15px;
+		cursor: pointer;
+		line-height: $min-height;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		display: flex;
+		flex-direction: row;
+
+		@include slotted('bnb-paragraph') {
+			display: block;
+			margin: auto;
+			word-break: none;
+		}
+	}
+
+	input[type='checkbox'] + label:last-child {
+		margin-bottom: 0;
+	}
+
+	input[type='checkbox'] + label:before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		border: 1px solid $grey;
+		position: absolute;
+		left: -23px;
+		top: 14px;
+		opacity: 0.6;
+		border-radius: 50%;
+		-webkit-transition: all 0.12s, border-color 0.08s;
+		transition: all 0.12s, border-color 0.08s;
+	}
+
+	input[type='checkbox']:checked + label:before {
+		width: 10px;
+		top: 10px;
+		left: -18px;
+		border-radius: 0;
+		opacity: 1;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: $purple;
+		border-bottom-color: $purple;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+
+@include addAttributeStyles('bnb-checkbox', 'error') {
+	input[type='checkbox'] + label:before {
+		border: 2px solid $red;
+	}
+}

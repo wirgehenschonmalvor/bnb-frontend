@@ -1,0 +1,18 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles.scss';
+
+@include host('bnb-headline') {
+	display: block;
+
+	h1 {
+		@include fontHeadlineL();
+		font-size: 40px;
+		line-height: 50px;
+		word-break: break-word;
+
+		@media screen and (min-width: 426px) {
+			font-size: 52px;
+			line-height: 64px;
+		}
+	}
+}

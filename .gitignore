@@ -1,1 +1,10 @@
+.tmp
 node_modules
+.iconfont
+dist
+npm-debug.log
+.DS-Store
+*iml
+.idea
+package-lock.json
+.DS_Store

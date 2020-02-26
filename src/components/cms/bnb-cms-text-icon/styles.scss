@@ -1,0 +1,147 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-text-icon') {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto 100px auto;
+	max-width: $max;
+	background-color: white;
+
+	@include fromBreakpointMax {
+		background-color: transparent;
+		padding-left: 0;
+	}
+
+	.text-icon {
+		@include cmsComponents();
+		margin-bottom: 50px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		@include slotted('bnb-icon') {
+			height: 100%;
+			width: 100%;
+		}
+
+		&--left {
+			@include slotted('bnb-headline') {
+				margin: 0;
+			}
+
+			bnb-button-cta {
+				margin-top: 50px;
+				@include buttonSizes();
+			}
+		}
+
+		&--right {
+			width: 50%;
+			margin: $margin-left-right-medium auto;
+		}
+
+		@include fromBreakpointL {
+			flex-direction: row;
+
+			&--left {
+				width: 50%;
+			}
+			&--right {
+				margin: 0;
+				width: 30%;
+				align-self: flex-end;
+			}
+		}
+
+		@include fromBreakpointMax {
+			background-color: white;
+			margin-right: $right-indentation;
+			margin-left: 0;
+			padding: 0 $margin-left-right-small $margin-left-right-small
+				$margin-left-right-small;
+			width: $component-container-indent-width;
+
+			&--right {
+				width: $section-right-icon;
+				height: $section-right-icon;
+			}
+
+			&--left {
+				width: $section-left-width;
+			}
+		}
+	}
+
+	bnb-headline[level='3'] {
+		@include cmsComponentsLeftRight();
+		background-color: white;
+		@include fromBreakpointMax {
+			width: $component-container-indent-width;
+			margin-right: $right-indentation;
+			margin-left: 0;
+			padding-left: $margin-left-right-small;
+			padding-right: $margin-left-right-small;
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-cms-text-icon', 'copy-text') {
+	background-color: transparent;
+
+	bnb-paragraph {
+		padding-bottom: 150px;
+	}
+
+	@include fromBreakpointL {
+		.text-icon {
+			flex-direction: column;
+			&--left {
+				width: initial;
+			}
+
+			&--right {
+				width: 30%;
+			}
+		}
+	}
+
+	@include fromBreakpointMax {
+		.text-icon {
+			background-color: transparent;
+			flex-direction: row;
+
+			&--right {
+				width: $section-right-icon;
+				height: $section-right-icon;
+			}
+
+			&--left {
+				width: 695px;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-cms-text-icon', 'transparent') {
+	background-color: transparent;
+
+	.text-icon {
+		background-color: transparent;
+	}
+
+	bnb-headline[level='3'] {
+		background-color: transparent;
+	}
+
+	@include fromBreakpointMax {
+		.text-icon {
+			background-color: transparent;
+		}
+
+		bnb-headline[level='3'] {
+			background-color: transparent;
+		}
+	}
+}

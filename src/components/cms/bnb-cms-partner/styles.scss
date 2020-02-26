@@ -1,0 +1,33 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-partner') {
+	display: block;
+	width: 100%;
+	margin: 0;
+	background-color: white;
+	margin-bottom: 100px;
+
+	.component-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		@include cmsComponents();
+
+		.partner-container {
+			display: flex;
+			flex-wrap: wrap;
+
+			bnb-icon {
+				height: 260px;
+				width: max-content;
+				margin: 50px auto;
+
+				@include fromBreakpointL {
+					height: 180px;
+					margin: 50px auto 0 auto;
+				}
+			}
+		}
+	}
+}
