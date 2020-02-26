@@ -13,12 +13,15 @@ export const template = (data: BnbCmsTextImageProps): HTMLFragment => {
 			</div>
 			<div class="text-image--right">
 				<bnb-image
+					light=${data.light}
 					srcset="${data.image.srcset}"
 					sizes="${data.image.sizes}"
 					src="${data.image.src}"
 					title="${data.image.title}"
 					object-fit="${data.image.objectFit}"
 					object-position="${data.image.objectPosition}"
+					caption="${data.image.caption}"
+					copyright="${data.image.copyright}"
 				></bnb-image>
 			</div>
 		</div>
