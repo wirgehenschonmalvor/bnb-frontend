@@ -11,26 +11,27 @@ export const template = (
 		<div class="youtube-wrapper">
 			${data.thumbnail
 				? html`
-					${createStyle(`
+						${createStyle(`
         :host img {
           object-fit: ${data.thumbnail.objectFit};
           object-position: ${data.thumbnail.objectPosition};
 		}`)}
-				<div class="thumbnail-wrapper">
-					<img
-						ref=${refs.thumbnail}
-						src="${data.thumbnail.src}"
-						srcset="${data.thumbnail.srcset}"
-						sizes="${data.thumbnail.sizes}"
-						alt="${data.thumbnail.title}"
-					/>
-					<bnb-icon
-					ref=${refs.button} onclick=${data.onButtonClick}
-						 icon="play">
-						</bnb-icon>
-				</div>
-					`
-					  : ''}
+						<div class="thumbnail-wrapper" ref=${refs.thumbnail}>
+							<img
+								src="${data.thumbnail.src}"
+								srcset="${data.thumbnail.srcset}"
+								sizes="${data.thumbnail.sizes}"
+								alt="${data.thumbnail.title}"
+							/>
+							<bnb-icon
+								ref=${refs.button}
+								onclick=${data.onButtonClick}
+								icon="play"
+							>
+							</bnb-icon>
+						</div>
+				  `
+				: ''}
 			<iframe
 				ref=${refs.video}
 				src=${`https://www.youtube.com/embed/${data.youtubeId}?modestbranding=true&showinfo=false&rel=0`}
