@@ -18,6 +18,7 @@
 	.stage-text-buttons {
 		display: flex;
 		flex-direction: column;
+		background-color: white;
 	}
 
 	.stage-text-container {
@@ -78,8 +79,12 @@
 	}
 
 	@include fromBreakpointMax {
+
+	.stage-text-container {
+		background-color: transparent;
+	}
 		bnb-image {
-			margin-bottom: 700px;
+			margin-bottom: 600px;
 		}
 
 		#icon-mobile {
@@ -107,7 +112,6 @@
 			max-width: $max;
 
 			.stage-text-container-right {
-				background-color: white;
 				align-self: flex-end;
 				margin-right: $right-indentation;
 				height: inherit;
@@ -121,7 +125,6 @@
 
 			.stage-text-container-left {
 				padding-left: $margin-left-right-small;
-				background-color: white;
 				bnb-paragraph {
 					height: 200px;
 				}
