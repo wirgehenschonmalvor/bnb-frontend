@@ -14,18 +14,30 @@
 		flex-direction: column;
 		@include cmsComponents();
 
-		.partner-container {
+		@include fromBreakpointMax {
+			padding-bottom: 0;
+		}
+
+		.partner-container-top,
+		.partner-container-bottom {
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: space-evenly;
+
+			@include fromBreakpointL {
+				justify-content: space-between;
+			}
 
 			bnb-icon {
 				height: 260px;
+				width: 260px;
 				width: max-content;
-				margin: 50px auto;
+				margin: 50px 15px auto;
 
 				@include fromBreakpointL {
 					height: 180px;
-					margin: 50px auto 0 auto;
+					width: 180px;
+					margin: 50px auto 40px;
 				}
 			}
 		}

@@ -7,7 +7,11 @@ import BnbIcon from '../bnb-icon/bnb-icon';
 
 class BnbAccordion extends Component<BnbAccordionProps, null> {
 	public static componentName = 'bnb-accordion';
-	public static attributes = ['label', 'id'];
+	public static attributes = [
+		'label',
+		'id',
+		{ name: 'checked', taype: 'boolean' },
+	];
 
 	public static dependencies = [
 		BnbHeadline as typeof Component,
