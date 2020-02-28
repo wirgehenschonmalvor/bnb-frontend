@@ -29,12 +29,27 @@ class BnbInput extends Component<BnbInputProps, BnbInputState> {
 		disabled: false,
 	};
 
+	unfocusInput() {
+		const bodyElement = document.querySelector('body');
+		const inputElements = document.querySelectorAll('input');
+
+		bodyElement.addEventListener('click', () => {
+			inputElements.forEach(element => {
+				element.blur();
+			});
+		});
+	}
+
 	protected readonly defaultState: BnbInputState = {
 		error: 'Default Error Message',
 	};
 
 	public render(): HTMLFragment {
 		return template({ ...this.props, ...this.state });
+	}
+
+	public ready() {
+		this.unfocusInput();
 	}
 }
 
