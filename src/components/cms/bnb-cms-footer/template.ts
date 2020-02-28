@@ -50,7 +50,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 				</div>
 				<div class="footer-links--middle">
 					<bnb-paragraph class="headline"
-						>So erreichst Du uns:</bnb-paragraph
+						>So erreichst duuns:</bnb-paragraph
 					>
 					<bnb-paragraph class="contact">
 						Brand New Bundestag e.V. <br />

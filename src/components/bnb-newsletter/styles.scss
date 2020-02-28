@@ -4,6 +4,7 @@
 @include host('bnb-newsletter') {
 	display: flex;
 	flex-direction: column;
+	hyphens: auto;
 
 	.newsletter-form {
 		bnb-input,

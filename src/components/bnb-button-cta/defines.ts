@@ -10,6 +10,8 @@ interface BnbButtonCTAProps {
 	url: string;
 	target?: string;
 	tabIndex?: number;
+	disabled?: boolean;
+	version?: string;
 }
 
 export { BnbButtonCTAProps };

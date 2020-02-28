@@ -11,6 +11,7 @@ export const template = (data: BnbButtonCTAProps): HTMLFragment => {
 			href="${data.url}"
 			target="${data.target}"
 			tabindex="${data.tabIndex}"
+			disabled=${data.disabled}
 			>${data.value}</a
 		>
 		${createStyle(styles)}

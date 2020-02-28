@@ -8,31 +8,35 @@ const createStyles = ({
 	speed,
 }: BnbLoadingSpinnerProps) => `
     <style>
-        :host, :host .lds-dual-ring {
-          display: inline-block;
-          width: ${size}px;
-          height: ${size}px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-        }
-        :host .lds-dual-ring {
-          display: block;
-          transform-origin: center center;
-          animation: lds-dual-ring ${speed}s linear infinite;
-        }
+      :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
 
-        @keyframes lds-dual-ring {
-          0% {
-            transform: rotate(0deg);}
-            100% {
-          transform: rotate(360deg);}
-        }
+      :host .lds-dual-ring {
+        top: 50%;
+        position: absolute;
+        display: block;
+        width: ${size}px;
+        height: ${size}px;
+        transform-origin: center center;
+        animation: lds-dual-ring ${speed}s linear infinite;
+      }
+
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);}
+          100% {
+        transform: rotate(360deg);}
+      }
     </style>
 `;
 
 export const template = (data: BnbLoadingSpinnerProps): HTMLFragment => {
-  return html`
+	return html`
 		${{ html: createStyles(data) }}
 		<div class="lds-dual-ring">
 			<svg
@@ -48,5 +52,5 @@ export const template = (data: BnbLoadingSpinnerProps): HTMLFragment => {
 				/>
 			</svg>
 		</div>
-  `;
+	`;
 };
