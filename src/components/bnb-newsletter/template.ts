@@ -30,7 +30,7 @@ export const template = (): HTMLFragment => {
 				<bnb-paragraph
 					>Ich habe die
 					<bnb-link
-						value="AGB und Datenschutzbestimmungen"
+						value="Datenschutzbestimmungen"
 						url="data-protection.html"
 						target="_blank"
 					></bnb-link>
