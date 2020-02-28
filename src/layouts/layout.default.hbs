@@ -13,8 +13,13 @@
 	<!-- DEV-note: include page specific styles and scripts after this comment -->
 </head>
 <body role="document" class="{{bodyClass}}">
+
+    {{bioInclude 'layouts/includes/loading-spinner' }}
+
+	<main style="display: none;">
     {{!-- {{bioInclude 'components/XHeader/scaffolding/XHeader' }} --}}
     {{bioInclude (lookup . 'contentMain') }}
+	</main>
 
 
     {{!-- {{bioInclude 'components/XFooter/scaffolding/XFooter' }} --}}
