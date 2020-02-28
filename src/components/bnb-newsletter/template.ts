@@ -9,7 +9,7 @@ export const template = (): HTMLFragment => {
 				type="text"
 				label="email"
 				required
-				placeholder="Emailadresse"
+				placeholder="E-Mail"
 			></bnb-input>
 			<bnb-input
 				type="text"

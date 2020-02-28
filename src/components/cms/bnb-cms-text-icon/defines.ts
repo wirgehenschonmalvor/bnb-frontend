@@ -1,3 +1,5 @@
+import { BnbButtonCTAProps } from "../../bnb-button-cta/defines";
+
 /**
  *  ## DEFINE ALL INTERFACES FOR BnbCmsTextIcon
  **/
@@ -10,14 +12,7 @@ interface BnbCmsTextIconProps {
 	copyText?: boolean;
 	heading?: string;
 	color?: string;
-	button?: ButtonInfo;
+	button?: BnbButtonCTAProps;
 }
 
-interface ButtonInfo {
-	value: string;
-	url: string;
-	target?: string;
-	version?: string;
-}
-
-export { BnbCmsTextIconProps, ButtonInfo };
+export { BnbCmsTextIconProps, BnbButtonCTAProps };

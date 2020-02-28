@@ -23,8 +23,8 @@ export const template = (
 				></bnb-input>
 				<bnb-input
 					required
-					label="Email"
-					placeholder="Email (Bsp: kontakt@brandnewbundestag.de)"
+					label="email"
+					placeholder="E-Mail (Bsp: kontakt@brandnewbundestag.de)"
 					class="contact__inputs--email"
 				></bnb-input>
 				<bnb-input
@@ -35,8 +35,8 @@ export const template = (
 				></bnb-input>
 				<bnb-textarea
 					required
-					label="Ihre Nachricht"
-					placeholder="Ihre Nachricht"
+					label="Nachricht"
+					placeholder="Deine Nachricht"
 					class="contact__inputs--message"
 				></bnb-textarea>
 				<bnb-checkbox
