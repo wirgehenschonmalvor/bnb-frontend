@@ -48,7 +48,7 @@ export const template = (
 					<bnb-paragraph
 						>Ich habe die
 						<bnb-link
-							value="Datenschutzbestimmunge"
+							value="Datenschutzbestimmungen"
 							url="data-protection.html"
 							target="_blank"
 						></bnb-link>
