@@ -31,6 +31,7 @@ export const template = (data: BnbCmsTextIconProps): HTMLFragment => {
 								value="${data.button.value}"
 								url="${data.button.url}"
 								target="${data.button.target}"
+								disabled=${data.button.disabled}
 							>
 							</bnb-button-cta>
 					  `
