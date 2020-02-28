@@ -23,7 +23,7 @@ export const template = (
 				></bnb-input>
 				<bnb-input
 					required
-					label="email"
+					label="Email"
 					placeholder="E-Mail (Bsp: kontakt@brandnewbundestag.de)"
 					class="contact__inputs--email"
 				></bnb-input>

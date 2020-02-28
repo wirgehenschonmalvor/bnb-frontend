@@ -23,13 +23,13 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						value="Über uns"
 						url="about-us.html"
 					></bnb-link>
+					<bnb-link footer value="Unsere Forderungen" url="claims.html"></bnb-link>
 					<!-- <bnb-link footer value="" url="news.html"></bnb-link> -->
 					<bnb-link
 						footer
 						value="Häufige Fragen/FAQs"
 						url="faqs.html"
 					></bnb-link>
-					<bnb-link footer value="Unsere Forderungen" url="claims.html"></bnb-link>
 					<bnb-link
 						footer
 						value="Kontakt"
@@ -50,7 +50,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 				</div>
 				<div class="footer-links--middle">
 					<bnb-paragraph class="headline"
-						>So erreichst duuns:</bnb-paragraph
+						>So erreichst du uns:</bnb-paragraph
 					>
 					<bnb-paragraph class="contact">
 						Brand New Bundestag e.V. <br />
