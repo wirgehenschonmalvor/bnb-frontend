@@ -9,3 +9,27 @@
 <script src="resources/js/handlebars.templates.js"></script>
 <script src="resources/ts/main.js"></script>
 <!-- endbuild -->
+
+<script>
+    const allComponentsReady = function (components) {
+        return Promise.all(
+            components.map(
+                function (element) {
+                    return new Promise(res => element.addEventListener('ready', res))
+                },
+            ),
+        );
+    }
+
+    const htmlCollectionToArray = function (collection) { return [].slice.call(collection); }
+
+    allComponentsReady([
+        ...htmlCollectionToArray(
+            document.querySelectorAll('main [data-resources]'),
+
+        ),
+    ]).then(function () {
+        document.querySelector('main').style.display = 'block';
+        document.querySelector('bnb-loading-spinner').remove();
+    });
+</script>
