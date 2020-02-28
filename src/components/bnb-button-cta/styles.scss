@@ -145,3 +145,13 @@
 		}
 	}
 }
+
+@include addAttributeStyles('bnb-button-cta', 'disabled') {
+	a {
+		cursor: not-allowed;
+		color: $white;
+		border: 2px solid $grey-light;
+		background-color: $grey-light;
+		pointer-events: none;
+	}
+}
