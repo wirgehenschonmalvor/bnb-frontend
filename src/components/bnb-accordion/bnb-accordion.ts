@@ -24,8 +24,20 @@ class BnbAccordion extends Component<BnbAccordionProps, null> {
 		label: '',
 	};
 
+	openFirstAccordion() {
+		const firstAccordion = document.querySelector('bnb-accordion');
+		const firstInput = firstAccordion.shadowRoot.querySelector('input');
+		if (firstInput.checked !== true) {
+			firstInput.checked = true;
+		}
+	}
+
 	public render(): HTMLFragment {
 		return template({ ...this.props });
+	}
+
+	public ready() {
+		this.openFirstAccordion();
 	}
 }
 
