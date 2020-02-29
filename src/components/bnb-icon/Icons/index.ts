@@ -1,4 +1,3 @@
-import * as bildmarke from './svg/bildmarke.svg';
 import * as cross from './svg/cross.svg';
 import * as schriftzug from './svg/schriftzug.svg';
 import * as loading from './svg/loading.svg';
@@ -23,16 +22,21 @@ import * as quote from './svg/quote.svg';
 import * as logo from './svg/logo.svg';
 import * as bullet from './svg/bullet.svg';
 import * as arrow from './svg/arrow.svg';
-import * as iconsetNoSpacing from './svg/iconset-no-spacing.svg';
-import * as doubleIconset from './svg/2er-icon.svg';
-import * as tripleIconset from './svg/3er-icon.svg';
-import * as iconsetSpacingRight from './svg/iconset-spacing-right.svg';
+import * as iconsetBnbMedium from './svg/iconset-bnb-medium.svg';
+import * as iconsetHerausforderungBig from './svg/iconset-herausforderung-big.svg';
+import * as iconsetHerausforderungMedium from './svg/iconset-herausforderung-medium.svg';
+import * as iconsetLoesungBig from './svg/iconset-loesung-big.svg';
+import * as iconsetLoesungMedium from './svg/iconset-loesung-medium.svg';
+import * as iconsetPeopleMedium1 from './svg/iconset-people-medium-1.svg';
+import * as iconsetPeopleMedium2 from './svg/iconset-people-medium-2.svg';
+import * as iconsetPeopleSingle from './svg/iconset-people-single.svg';
+import * as iconsetPeopleSmall1 from './svg/iconset-people-small-1.svg';
+import * as iconsetPeopleSmall2 from './svg/iconset-people-small-2.svg';
 
 const icons = {
 	schriftzug,
 	loading,
 	cross,
-	bildmarke,
 	share,
 	email,
 	facebook,
@@ -54,10 +58,16 @@ const icons = {
 	logo,
 	bullet,
 	arrow,
-	iconsetNoSpacing,
-	doubleIconset,
-	tripleIconset,
-	iconsetSpacingRight,
+	iconsetBnbMedium,
+	iconsetHerausforderungBig,
+	iconsetHerausforderungMedium,
+	iconsetLoesungBig,
+	iconsetLoesungMedium,
+	iconsetPeopleMedium1,
+	iconsetPeopleMedium2,
+	iconsetPeopleSingle,
+	iconsetPeopleSmall1,
+	iconsetPeopleSmall2,
 };
 
 export default icons;
