@@ -10,16 +10,16 @@ export const template = (data: BnbCmsPartnerProps): HTMLFragment => {
 				${data.heading}
 			</bnb-headline>
 			<div class="partner-container-top">
-				<bnb-icon icon="bildmarke"></bnb-icon>
-				<bnb-icon icon="bildmarke"></bnb-icon>
-				<bnb-icon icon="bildmarke"></bnb-icon>
-				<bnb-icon icon="bildmarke"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
 			</div>
 			<div class="partner-container-bottom">
-				<bnb-icon icon="bildmarke"></bnb-icon>
-				<bnb-icon icon="bildmarke"></bnb-icon>
-				<bnb-icon icon="bildmarke"></bnb-icon>
-				<bnb-icon icon="bildmarke"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
+				<bnb-icon icon="logo"></bnb-icon>
 			</div>
 		</div>
 		${createStyle(styles)}
