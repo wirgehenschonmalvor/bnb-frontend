@@ -75,11 +75,21 @@ export const template = (): HTMLFragment => {
 					<div class="clear">
 						<input
 							type="submit"
-							value="Anmelden"
+							value="Anmelden*"
 							name="subscribe"
 							id="mc-embedded-subscribe"
 							class="button"
 						/>
+						<bnb-paragraph
+							>* mit der Anmeldung zum Newsletter bestätige ich die
+							Inkenntnisnahme der
+							<bnb-link
+								value="Datenschutzbestimmungen"
+								url="/data-protection.html"
+								target="_blank"
+							></bnb-link
+							>.</bnb-paragraph
+						>
 					</div>
 				</div>
 			</form>
