@@ -9,7 +9,8 @@ export const template = (data: BnbCmsPartnerProps): HTMLFragment => {
 			<bnb-headline level="3">
 				${data.heading}
 			</bnb-headline>
-			<div class="partner-container-top">
+			<slot />
+			<!-- <div class="partner-container-top">
 				<bnb-icon icon="logo"></bnb-icon>
 				<bnb-icon icon="logo"></bnb-icon>
 				<bnb-icon icon="logo"></bnb-icon>
@@ -20,7 +21,7 @@ export const template = (data: BnbCmsPartnerProps): HTMLFragment => {
 				<bnb-icon icon="logo"></bnb-icon>
 				<bnb-icon icon="logo"></bnb-icon>
 				<bnb-icon icon="logo"></bnb-icon>
-			</div>
+			</div> -->
 		</div>
 		${createStyle(styles)}
 	`;
