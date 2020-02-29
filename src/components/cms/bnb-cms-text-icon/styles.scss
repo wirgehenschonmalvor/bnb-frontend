@@ -145,3 +145,9 @@
 		}
 	}
 }
+
+@include addAttributeStyles('bnb-cms-text-icon', 'first') {
+	bnb-headline[level='3'] {
+		margin-top: 100px;
+	}
+}

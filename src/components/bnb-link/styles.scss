@@ -4,9 +4,11 @@
 @include host('bnb-link') {
 	display: inline-block;
 
-	:focus {
+	&:focus {
 		outline: none;
-		box-shadow: 0 0 15px 2px $grey;
+		@include hoverDevicesOnly {
+			box-shadow: 0 0 15px 2px $grey;
+		}
 	}
 
 	a {
@@ -17,6 +19,13 @@
 		color: $grey;
 		transition: all 0.6s ease;
 		cursor: pointer;
+
+		&:focus {
+			outline: none;
+			@include hoverDevicesOnly {
+				box-shadow: 0 0 15px 2px $grey;
+			}
+		}
 
 		@include hoverDevicesOnly {
 			&:hover {
@@ -45,7 +54,9 @@
 @include addAttributeStyles('bnb-link', 'header') {
 	:focus {
 		outline: none;
-		box-shadow: 0 0 15px 2px $grey-light;
+		@include hoverDevicesOnly {
+			box-shadow: 0 0 15px 2px $grey-light;
+		}
 	}
 	a {
 		color: $grey-light;
@@ -61,7 +72,9 @@
 @include addAttributeStyles('bnb-link', 'footer') {
 	:focus {
 		outline: none;
-		box-shadow: 0 0 15px 2px $grey-light;
+		@include hoverDevicesOnly {
+			box-shadow: 0 0 15px 2px $grey-light;
+		}
 	}
 	a {
 		color: $grey-light;

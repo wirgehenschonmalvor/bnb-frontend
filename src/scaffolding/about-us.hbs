@@ -4,27 +4,62 @@
         background-color: #f6f6f6;
     }
 </style>
-<bnb-cms-navigation page="about-us" data-resources="[{paths: ['components/cms/bnb-cms-navigation/index.js']}]"></bnb-cms-navigation>
-<bnb-cms-stage heading="sei dabei" image='{"src":"../_assets/img/stage.jpg", "title":"Stage Image", "objectFit":"cover", "objectPosition":"bottom", "srcset":[{"src":"../_assets/img/stage_300.jpeg", "width":300},
+<bnb-cms-navigation page="about-us" data-resources="[{paths: ['components/cms/bnb-cms-navigation/index.js']}]">
+</bnb-cms-navigation>
+<bnb-cms-stage heading="unsere vision" image='{"src":"../_assets/img/stage.jpg", "title":"Stage Image", "objectFit":"cover", "objectPosition":"bottom", "srcset":[{"src":"../_assets/img/stage_300.jpeg", "width":300},
             {"src":"../_assets/img/stage_600.jpeg", "width":600},
             {"src":"../_assets/img/stage_1024.jpeg", "width":1024},
             {"src":"../_assets/img/stage_1440.jpeg", "width":1440},
-            {"src":"../_assets/img/stage_1920.jpeg", "width":1920}]}' icon="tripleIconset"
-    button-left='{"version":"primary", "value":"Ich bin dabei!", "url":"get-started.html"}'
+            {"src":"../_assets/img/stage_1920.jpeg", "width":1920}]}' icon="iconsetPeopleMedium2"
+    button-left='{"version":"primary", "value":"Mach mit!", "url":"get-started.html"}'
     data-resources="[{paths: ['components/cms/bnb-cms-stage/index.js']}]">
-    <bnb-headline slot="headline">Engagiere dich bei uns!
-        Werde freiwillige*r Helfer*in bei Brand New Bundestag.</bnb-headline>
-    <bnb-paragraph slot="text">Je mehr wir sind, desto mehr Gewicht haben wir. Unterstütze uns aktiv ehrenamtlich bei
-        dir vor Ort oder als
-        Botschafter*in für unsere Bewegung.</bnb-paragraph>
+    <bnb-headline slot="headline">Wir kämpfen für eine Gesellschaft, in der Menschen gemeinsam und mutig ihre Zukunft
+        gestalten.
+    </bnb-headline>
+    <bnb-paragraph slot="text">Für eine Gesellschaft,
+        die alle Menschen einschließt. Wir kämpfen für ein Recht auf Chancengleichheit und individuelle Teilhabe. Für
+        eine
+        Gesellschaft, die das eigene Handeln reflektiert und sich ihrer globalen Bedeutung bewusst ist. Wir kämpfen für
+        eine
+        europäische Gesellschaft, die vielfältige Identitäten schützt und jedem Menschen offen steht. Für eine
+        europäische
+        Politik, die Nachhaltigkeit in allen Bereichen als Handlungsmaxime begreift. Die auf Augenhöhe mit anderen
+        Regionen eine
+        gerechte Welt vorantreibt und stetig neu definiert.</bnb-paragraph>
 </bnb-cms-stage>
-<bnb-cms-text-icon icon="tripleIconset" heading="Unsere forderungen"
+<bnb-cms-text-icon first icon="iconsetPeopleMedium2" heading="Unser team"
+    data-resources="[{paths: ['components/cms/bnb-cms-text-icon/index.js']}]">
+    {{!-- <bnb-headline slot="headline"></bnb-headline> --}}
+    <bnb-paragraph slot="text">
+        Wir sind eine wachsende Gruppe von Engagierten, die den Wunsch nach einer gerechteren Demokratie und echtem
+        politischen
+        Wandel haben. Gemeinsam wollen wir zu einer Bewegung werden, in der Tausende sich für eine gemeinsame Vision
+        einsetzen
+        und engagieren - überall in Deutschland.
+        <br>
+        Brand New Bundestag wurde 2019 von Eva-Maria Thurnhofer, Alisa Wieland, Maximilian Oehl und Daniel Veldhoen
+        initiiert.
+        Und unser Team wächst täglich. Die Aufgabe: Eine Plattform für politisches Engagement zu bieten, Freiwillige zu
+        mobilisieren, Bündnisse zu schmieden und die Finanzierung zu sichern. Wir sind genossenschaftlich organisiert,
+        politisch
+        unabhängig und alleinig der Mission verpflichtet, Politik zukunftsfähig machen.
+    </bnb-paragraph>
+</bnb-cms-text-icon>
+<bnb-cms-partner heading="Unsere Partner*innen" data-resources="[{paths: ['components/cms/bnb-cms-partner/index.js']}]">
+    <bnb-paragraph>Nur gemeinsam können wir ein Update unserer Politik erreichen. Daher bauen wir auf Kooperationen mit
+        Partner*innen aus
+        der Zivilgesellschaft, Wissenschaft und Politik. Du hast Interesse an einer Zusammenarbeit? Dann melde dich
+        unter
+        <a href="mailto:netzwerk@brandnewbundestag.de">netzwerk@brandnewbundestag.de</a>.
+    </bnb-paragraph>
+</bnb-cms-partner>
+<bnb-cms-text-icon icon="iconsetPeopleMedium2" heading="Unsere forderungen"
     button='{"value":"Unsere Forderungen im Detail", "url":"claims.html", "version":"primary"}'
     data-resources="[{paths: ['components/cms/bnb-cms-text-icon/index.js']}]">
     <bnb-headline slot="headline">
         Politik für die breite Gesellschaft – für dich und Mich!</bnb-headline>
     <bnb-paragraph slot="text">
-        Wir fordern, dass Politik wieder für die gemacht wird, für die sie bestimmt ist: Für dich und mich. Für uns
+        Wir fordern, dass Politik wieder für die gemacht wird, für die sie bestimmt ist: Für Dich und mich. Für uns
         alle. Wir
         streben dabei eine Gesellschaft an, die demokratisch und inklusiv ausgerichtet ist, die nachhaltig denkt und
         dabei lokal
@@ -44,33 +79,6 @@
         </bnb-list>
     </bnb-paragraph>
 </bnb-cms-text-icon>
-<bnb-cms-text-image light heading="Unsere Forderungen" image='{"src":"../_assets/img/testbild.jpg", "title":"Testbild 16:9", "copyright":"BNB 2020", "objectFit":"cover", "objectPosition":"center", "srcset":[{"src":"../_assets/img/testbild_300.jpeg", "width":300},
-		    {"src":"../_assets/img/testbild_600.jpeg", "width":600},
-		    {"src":"../_assets/img/testbild_1024.jpeg", "width":1024},
-		    {"src":"../_assets/img/testbild_1440.jpeg", "width":1440},
-		    {"src":"../_assets/img/testbild_1920.jpeg", "width":1920}]}'
-    data-resources="[{paths: ['components/cms/bnb-cms-text-image/index.js']}]">
-    Wir fordern dass Politik wieder für die gemacht wird, für die sie
-    bestimmt ist: für Dich, für mich, für alle.
-    <bnb-paragraph slot="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor.</bnb-paragraph>
-</bnb-cms-text-image>
-<bnb-cms-text-image light horizontal heading="Unsere Forderungen" image='{"src":"../_assets/img/stage.jpg", "title":"Testbild 16:9", "copyright":"BNB 2020", "objectFit":"cover", "objectPosition":"center", "srcset":[{"src":"../_assets/img/testbild_300.jpeg", "width":300},
-		    {"src":"../_assets/img/stage_600.jpeg", "width":600},
-		    {"src":"../_assets/img/stage_1024.jpeg", "width":1024},
-		    {"src":"../_assets/img/stage_1440.jpeg", "width":1440},
-		    {"src":"../_assets/img/stage_1920.jpeg", "width":1920}]}'
-    data-resources="[{paths: ['components/cms/bnb-cms-text-image/index.js']}]">
-    Test horizontales Bild, lorem ipsum
-    <bnb-paragraph slot="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor.</bnb-paragraph>
-</bnb-cms-text-image>
-<bnb-cms-partner heading="Unsere partner" data-resources="[{paths: ['components/cms/bnb-cms-partner/index.js']}]">
-</bnb-cms-partner>
 <bnb-cms-newsletter-form data-resources="[{paths: ['components/cms/bnb-cms-newsletter-form/index.js']}]">
 </bnb-cms-newsletter-form>
 <bnb-cms-footer data-resources="[{paths: ['components/cms/bnb-cms-footer/index.js']}]"></bnb-cms-footer>

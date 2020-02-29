@@ -18,6 +18,10 @@
 			padding-bottom: 0;
 		}
 
+		@include slotted ('bnb-paragraph') {
+			margin-bottom: 50px;
+		}
+
 		.partner-container-top,
 		.partner-container-bottom {
 			display: flex;

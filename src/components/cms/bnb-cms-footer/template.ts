@@ -27,7 +27,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<!-- <bnb-link footer value="" url="news.html"></bnb-link> -->
 					<bnb-link
 						footer
-						value="Häufige Fragen/FAQs"
+						value="Häufige Fragen/FAQ"
 						url="faqs.html"
 					></bnb-link>
 					<bnb-link
@@ -70,7 +70,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						value="Spenden"
 						url="#"
 					></bnb-button-cta>
-					<bnb-icon icon="bildmarke"></bnb-icon>
+					<bnb-icon icon="logo"></bnb-icon>
 				</div>
 			</div>
 		</footer>

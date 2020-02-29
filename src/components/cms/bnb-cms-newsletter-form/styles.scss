@@ -24,14 +24,14 @@
 		@include fromBreakpointMax {
 			flex-direction: row;
 			justify-content: space-between;
-			margin-right: $right-indentation-margin;
+			margin-right: 0;
 
 			&--left {
-				max-width: $section-left-width;
+				width: $section-left-width;
 			}
 
 			&--right {
-				max-width: $section-right-width;
+				width: $section-right-width;
 			}
 		}
 	}

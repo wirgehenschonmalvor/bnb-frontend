@@ -36,7 +36,9 @@ $input-padding-left: 10px;
 
 		&:focus {
 			outline: none;
-			box-shadow: 0 0 15px 2px $grey;
+			@include hoverDevicesOnly {
+				box-shadow: 0 0 15px 2px $grey;
+			}
 		}
 	}
 
