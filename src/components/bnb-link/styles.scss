@@ -6,7 +6,9 @@
 
 	:focus {
 		outline: none;
-		box-shadow: 0 0 15px 2px $grey;
+		@include hoverDevicesOnly {
+			box-shadow: 0 0 15px 2px $grey;
+		}
 	}
 
 	a {
@@ -45,7 +47,9 @@
 @include addAttributeStyles('bnb-link', 'header') {
 	:focus {
 		outline: none;
-		box-shadow: 0 0 15px 2px $grey-light;
+		@include hoverDevicesOnly {
+			box-shadow: 0 0 15px 2px $grey-light;
+		}
 	}
 	a {
 		color: $grey-light;
@@ -61,7 +65,9 @@
 @include addAttributeStyles('bnb-link', 'footer') {
 	:focus {
 		outline: none;
-		box-shadow: 0 0 15px 2px $grey-light;
+		@include hoverDevicesOnly {
+			box-shadow: 0 0 15px 2px $grey-light;
+		}
 	}
 	a {
 		color: $grey-light;

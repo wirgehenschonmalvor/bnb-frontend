@@ -18,18 +18,18 @@
 		flex-shrink: 0;
 		border: none;
 
-		@include hoverDevicesOnly {
-			&:focus {
-				outline: none;
-			}
+		&:focus,
+		&:focus + label::before,
+		&:checked:focus + label::before {
+			outline: none;
+		}
 
+		@include hoverDevicesOnly {
 			&:focus + label::before {
-				outline: none;
 				box-shadow: 0 0 3px 2px $grey;
 			}
 
 			&:checked:focus + label::before {
-				outline: none;
 				box-shadow: none;
 			}
 		}

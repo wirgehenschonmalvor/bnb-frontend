@@ -17,9 +17,12 @@
 		border-radius: 35px;
 		box-sizing: border-box;
 
+		&:focus {
+			outline: none;
+		}
+
 		@include hoverDevicesOnly() {
 			&:focus {
-				outline: none;
 				box-shadow: 0 0 3px 2px $grey;
 			}
 
@@ -67,9 +70,12 @@
 		background-color: $purple;
 		border: 2px solid $purple;
 
+		&:focus {
+			outline: none;
+		}
+
 		@include hoverDevicesOnly() {
 			&:focus {
-				outline: none;
 				box-shadow: 0 0 3px 2px $purple;
 			}
 
@@ -88,9 +94,12 @@
 		background-color: $white;
 		border: 2px solid $purple;
 
+		&:focus {
+			outline: none;
+		}
+
 		@include hoverDevicesOnly() {
 			&:focus {
-				outline: none;
 				box-shadow: 0 0 3px 2px $purple;
 			}
 
@@ -109,9 +118,12 @@
 		background-color: transparent;
 		border: 2px solid $grey-light;
 
+		&:focus {
+			outline: none;
+		}
+
 		@include hoverDevicesOnly() {
 			&:focus {
-				outline: none;
 				box-shadow: 0 0 3px 2px $grey-light;
 			}
 
@@ -131,9 +143,12 @@
 		background-color: transparent;
 		border: 2px solid $grey-light;
 
+		&:focus {
+			outline: none;
+		}
+
 		@include hoverDevicesOnly() {
 			&:focus {
-				outline: none;
 				box-shadow: 0 0 3px 2px $grey-light;
 			}
 
