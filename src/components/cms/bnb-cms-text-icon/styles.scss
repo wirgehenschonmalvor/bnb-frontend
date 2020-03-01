@@ -45,7 +45,7 @@
 			flex-direction: row;
 
 			&--left {
-				width: 50%;
+				width: 60%;
 			}
 			&--right {
 				margin: 0;
@@ -64,8 +64,8 @@
 			width: $component-container-indent-width;
 
 			&--right {
-				width: $section-right-icon;
 				height: $section-right-icon;
+				width: $section-right-icon;
 			}
 
 			&--left {
