@@ -41,6 +41,7 @@ import * as winner from './svg/winner.svg';
 import * as winnerStaircase from './svg/winner-staircase.svg';
 import * as nomination from './svg/nomination.svg';
 import * as checked from './svg/checked.svg';
+import * as external from './svg/external.svg';
 
 const icons = {
 	schriftzug,
@@ -86,6 +87,7 @@ const icons = {
 	winnerStaircase,
 	nomination,
 	checked,
+	external,
 };
 
 export default icons;
