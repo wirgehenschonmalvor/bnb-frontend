@@ -53,8 +53,12 @@ $line-height-font-copy-mobile: 26px;
 }
 @mixin fontMenu() {
 	@include fontCopy();
-	font-size: 28px;
-	line-height: 32px;
+	font-size: 18px;
+	line-height: 20px;
+
+	@media screen and (min-width: 1366px) {
+		font-size: 22px;
+	}
 }
 @mixin fontButton() {
 	@include fontCopy();
