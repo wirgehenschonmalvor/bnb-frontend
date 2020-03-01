@@ -50,11 +50,10 @@
 				.footer-links--left-small {
 					display: flex;
 					flex-direction: column;
-					@include fontCopy();
+					@include fontCopyInfo();
 				}
 
 				@include fromBreakpointL {
-					padding-bottom: 100px;
 					width: 410px;
 
 					.footer-links--left-small {
@@ -128,7 +127,7 @@
 					margin-top: 0;
 
 					bnb-icon {
-						margin-top: 220px;
+						margin-top: 120px;
 					}
 
 					bnb-button-cta {

@@ -38,20 +38,20 @@
 		}
 
 		&--right {
-			width: 50%;
-			margin: $margin-left-right-medium auto;
+			margin-top: $margin-left-right-medium;
 		}
 
 		@include fromBreakpointL {
 			flex-direction: row;
 
 			&--left {
-				width: 50%;
+				width: 60%;
 			}
 			&--right {
 				margin: 0;
 				width: 30%;
-				align-self: flex-end;
+				align-self: flex-start;
+				margin-top: -50px;
 			}
 		}
 
@@ -64,8 +64,8 @@
 			width: $component-container-indent-width;
 
 			&--right {
-				width: $section-right-icon;
 				height: $section-right-icon;
+				width: $section-right-icon;
 			}
 
 			&--left {

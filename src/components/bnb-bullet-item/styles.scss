@@ -1,6 +1,10 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
+$icon-size-mobile: calc(100% / 3);
+$icon-size-tablet: 90px;
+$icon-size-desktop: 102px;
+
 @include host('bnb-bullet-item') {
 	display: block;
 	width: 100%;
@@ -25,9 +29,14 @@
 	}
 
 	bnb-icon {
-		height: 150px;
-		width: 150px;
+		height: $icon-size-mobile;
+		width: $icon-size-mobile;
 		margin: 30px auto;
 		fill: $purple;
+
+		@include fromBreakpointMax {
+			height: $icon-size-desktop;
+			width: $icon-size-desktop;
+		}
 	}
 }

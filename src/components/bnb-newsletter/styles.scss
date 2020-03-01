@@ -9,6 +9,7 @@ $input-padding-left: 10px;
 	hyphens: auto;
 
 	.newsletter-form {
+		margin-top: 25px;
 		.input__wrapper {
 			min-width: $select-input-width;
 		}
@@ -29,12 +30,12 @@ $input-padding-left: 10px;
 			line-height: $min-height;
 			width: 100%;
 			transition: all 0.6s ease;
-			border: 1px solid $grey;
+			border: none;
 			margin-bottom: 25px;
 			-webkit-appearance: none;
 
 			&::placeholder {
-				color: $grey;
+				color: $grey-light;
 			}
 
 			&:focus {
@@ -52,7 +53,7 @@ $input-padding-left: 10px;
 		min-height: 48px;
 		width: 100%;
 		padding: 5px 40px;
-		line-height: 48px;
+		line-height: 34px;
 		text-align: center;
 		text-decoration: none;
 		transition: all 0.6s ease;
