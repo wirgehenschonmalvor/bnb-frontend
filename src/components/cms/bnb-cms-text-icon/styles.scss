@@ -59,8 +59,8 @@
 			background-color: white;
 			margin-right: $right-indentation;
 			margin-left: 0;
-			padding: 0 $margin-left-right-small $margin-left-right-small
-				$margin-left-right-small;
+			padding: 0 $margin-left-right-max $margin-left-right-max
+				$margin-left-right-max;
 			width: $component-container-indent-width;
 
 			&--right {
@@ -81,8 +81,8 @@
 			width: $component-container-indent-width;
 			margin-right: $right-indentation;
 			margin-left: 0;
-			padding-left: $margin-left-right-small;
-			padding-right: $margin-left-right-small;
+			padding-left: $margin-left-right-max;
+			padding-right: $margin-left-right-max;
 		}
 	}
 }

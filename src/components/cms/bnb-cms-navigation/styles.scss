@@ -31,7 +31,7 @@
 
 		@include fromBreakpointMax {
 			max-width: $max;
-			padding: 0 $margin-left-right-small;
+			padding: 0 $margin-left-right-max;
 			margin: 0 auto;
 		}
 	}

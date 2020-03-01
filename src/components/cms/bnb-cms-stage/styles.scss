@@ -79,10 +79,9 @@
 	}
 
 	@include fromBreakpointMax {
-
-	.stage-text-container {
-		background-color: transparent;
-	}
+		.stage-text-container {
+			background-color: transparent;
+		}
 		bnb-image {
 			margin-bottom: 600px;
 		}
@@ -127,6 +126,10 @@
 				padding-left: $margin-left-right-small;
 				bnb-paragraph {
 					height: 200px;
+				}
+
+				@include fromBreakpointMax {
+					padding-left: $margin-left-right-max;
 				}
 			}
 

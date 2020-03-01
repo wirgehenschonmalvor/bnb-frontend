@@ -55,7 +55,7 @@
 			flex-direction: row;
 			justify-content: space-between;
 			position: absolute;
-			padding: 0 $margin-left-right-small 0 0;
+			padding: 0 $margin-left-right-max 0 0;
 			top: 680px;
 			left: 0;
 			right: 0;
@@ -68,7 +68,7 @@
 			.stage-text-container-left {
 				background-color: white;
 				width: $component-container-indent-width;
-				padding: 0 $margin-left-right-small;
+				padding: 0 $margin-left-right-max;
 			}
 		}
 	}
