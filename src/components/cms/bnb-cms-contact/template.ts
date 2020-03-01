@@ -21,9 +21,9 @@ export const template = (
 					<br />
 					<b>Empfänger:</b> Wir für Zukunft eG
 					<br />
-					<b>IBAN:</b> 1234 5678 9012 3456 78
+					<b>IBAN:</b> DE16 4306 0967 1039 9676 00
 					<br />
-					<b>BIC:</b> ABCD12345
+					<b>BIC:</b> GENODEM1GLS
 					<br />
 					<b>Verwendungszweck:</b> Brand New Bundestag
 				</bnb-paragraph>
