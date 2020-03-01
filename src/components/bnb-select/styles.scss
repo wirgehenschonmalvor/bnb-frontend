@@ -22,9 +22,8 @@
 		padding: 0 20px;
 
 		&:focus {
-			outline: none;
 			@include hoverDevicesOnly {
-				box-shadow: 0 0 15px 2px $purple;
+				outline-color: $purple;
 			}
 		}
 	}
@@ -45,9 +44,8 @@
 
 	select {
 		&:focus {
-			outline: none;
 			@include hoverDevicesOnly {
-				box-shadow: 0 0 15px 2px $grey;
+				outline-color: $grey;
 			}
 		}
 	}

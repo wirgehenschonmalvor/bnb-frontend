@@ -6,23 +6,13 @@
 </style>
 <bnb-cms-navigation page="aktiv-werden" data-resources="[{paths: ['components/cms/bnb-cms-navigation/index.js']}]">
 </bnb-cms-navigation>
-<bnb-cms-stage heading="aktiv werden" image='{"src":"../_assets/img/stage.jpg", "title":"Stage Image", "objectFit":"cover", "objectPosition":"bottom", "srcset":[{"src":"../_assets/img/stage_300.jpeg", "width":300},
+<bnb-cms-sub-stage heading="aktiv werden" image='{"src":"../_assets/img/stage.jpg", "title":"Stage Image", "objectFit":"cover", "objectPosition":"bottom", "srcset":[{"src":"../_assets/img/stage_300.jpeg", "width":300},
             {"src":"../_assets/img/stage_600.jpeg", "width":600},
             {"src":"../_assets/img/stage_1024.jpeg", "width":1024},
             {"src":"../_assets/img/stage_1440.jpeg", "width":1440},
-            {"src":"../_assets/img/stage_1920.jpeg", "width":1920}]}' icon="iconsetPeopleMedium2"
-    data-resources="[{paths: ['components/cms/bnb-cms-stage/index.js']}]">
-    <bnb-headline slot="headline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia nam porro,
-        nisi asperiores ipsam corporis amet mollitia repudiandae aliquid!</bnb-headline>
-    <bnb-paragraph slot="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde veniam voluptatibus
-        accusamus quibusdam vero odit dolorem, dolore corporis aliquam nemo! Nobis voluptate itaque esse voluptatibus?
-        Quibusdam magnam odio cum quia voluptatibus tempora! Corporis aliquid ipsam itaque numquam nihil ad obcaecati
-        iste voluptate. Pariatur ex reprehenderit error incidunt rem omnis iste minus minima consequatur beatae,
-        architecto sequi est ipsa animi, at sed ab ut eligendi numquam quia neque a veniam facilis ipsum? Velit, maiores
-        vel est impedit deserunt veniam rerum officia quis, dicta sint, necessitatibus natus dolores. Sed a
-        reprehenderit quidem tempora repellendus accusamus, aliquid numquam. Earum aliquid rerum unde quibusdam.
-    </bnb-paragraph>
-</bnb-cms-stage>
+            {"src":"../_assets/img/stage_1920.jpeg", "width":1920}]}'
+    data-resources="[{paths: ['components/cms/bnb-cms-sub-stage/index.js']}]">
+</bnb-cms-sub-stage>
 <bnb-cms-text-icon first icon="iconsetPeopleMedium2" heading="wir brauchen dich!"
     data-resources="[{paths: ['components/cms/bnb-cms-text-icon/index.js']}]"
     button='{"value":"Ich bin dabei!", "url":"kontakt.html", "version":"primary"}'>
@@ -48,21 +38,30 @@
         Gruppen, die im Bundestag bisher unterrepräsentiert sind. Einzige Bedingung: Jede*r Kandidat*in muss für eine
         progressive Demokratie brennen und Lust auf Veränderung haben.
         <br><br>
-        <i>Am 12.03.2020 öffnen wir hier uns Nominierungsformular. Schlage dann deinen Kandidat*in vor.</i></bnb-paragraph>
+        <i>Am 12.03.2020 öffnen wir hier uns Nominierungsformular. Schlage dann deinen Kandidat*in vor.</i>
+    </bnb-paragraph>
 </bnb-cms-text-icon>
 <bnb-cms-text-icon icon="iconsetPeopleMedium2" heading="Rück deinen wahlkreis in den Fokus!"
     data-resources="[{paths: ['components/cms/bnb-cms-text-icon/index.js']}]"
-    button='{"value":"Lorem ipsum dolor sit amet", "url":"kontakt.html", "target":"_blank", "version":"primary"}'>
-    <bnb-headline slot="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim similique facere
-        corporis possimus? Possimus amet veritatis sint eos, mollitia odit!
+    {{!-- button='{"value":"Lorem ipsum dolor sit amet", "url":"kontakt.html", "target":"_blank", "version":"primary"}' --}}>
+    <bnb-headline slot="headline">Du hast das Gefühl, dein Heimatort oder dein Stadtviertel braucht endlich neue, mutige
+        Politiker*innen? Dann schlag uns
+        deinen Wahlkreis vor.
     </bnb-headline>
-    <bnb-paragraph slot="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat, fugiat ab
-        labore accusamus, officia id dignissimos veritatis rerum itaque debitis saepe sunt possimus. Obcaecati libero
-        dicta aliquam itaque quibusdam, ducimus ex at optio quo, rerum odit eveniet amet explicabo sit nihil? Tempora
-        totam officia quisquam impedit suscipit in iusto placeat sed. Sit natus vero ipsum nobis delectus eligendi
-        accusantium eaque tempora id quos, libero, quasi nisi voluptate ducimus, aspernatur error quam qui amet ad ullam
-        pariatur quis cum illum enim. Ipsa consequuntur quasi non nostrum laudantium nihil iusto? Rem vero dolores
-        laboriosam minus sed id velit delectus necessitatibus eligendi.</bnb-paragraph>
+    <bnb-paragraph slot="text">
+        Wir suchen nach Wahlkreisen, die besonderes Potenzial für einen politischen Neustart bieten. In diesen
+        aussichtsreichen
+        Wahlkreisen suchen wir dann direkt vor Ort nach den perfekten Kandidat*innen.
+        <br><br>
+        <i>Am 12.03.2020 öffnen wir hier uns Nominierungsformular. Schlage dann deinen Wahlkreis vor.</i>
+    </bnb-paragraph>
+</bnb-cms-text-icon>
+<bnb-cms-text-icon icon="iconsetPeopleMedium2" heading="Wir brauchen deine Spende!"
+    data-resources="[{paths: ['components/cms/bnb-cms-text-icon/index.js']}]"
+    button='{"value":"Hier spenden", "url":"", "target":"_blank", "version":"primary"}'>
+    <bnb-headline slot="headline">Wir wollen unabhängig bleiben und nicht durch Großspenden unsere Überparteilichkeit verlieren. Deine Spende ist für uns
+    entscheidend – auch der kleinste Betrag hilft.
+    </bnb-headline>
 </bnb-cms-text-icon>
 <bnb-cms-newsletter-form data-resources="[{paths: ['components/cms/bnb-cms-newsletter-form/index.js']}]">
 </bnb-cms-newsletter-form>

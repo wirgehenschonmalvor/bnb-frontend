@@ -39,8 +39,7 @@ $input-padding-left: 10px;
 			}
 
 			&:focus {
-				outline: none;
-				box-shadow: 0 0 15px 2px $grey;
+				outline-color: $grey;
 			}
 		}
 	}
@@ -64,13 +63,9 @@ $input-padding-left: 10px;
 		background-color: $grey;
 		border: 2px solid $grey;
 
-		&:focus {
-			outline: none;
-		}
-
 		@include hoverDevicesOnly() {
 			&:focus {
-				box-shadow: 0 0 3px 2px $grey;
+				outline-color: $grey;
 			}
 
 			&:hover {

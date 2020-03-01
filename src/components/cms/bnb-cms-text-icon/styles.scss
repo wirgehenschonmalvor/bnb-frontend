@@ -38,7 +38,15 @@
 		}
 
 		&--right {
-			margin-top: $margin-left-right-medium;
+			margin: $margin-left-right-medium 0 0;
+			width: $section-right-icon-small;
+		}
+
+		@include fromBreakpointM {
+			&--right {
+				width: $section-right-icon-medium;
+				margin: $margin-left-right-medium auto 0;
+			}
 		}
 
 		@include fromBreakpointL {
@@ -49,7 +57,7 @@
 			}
 			&--right {
 				margin: 0;
-				width: 30%;
+				width: $section-right-icon-large;
 				align-self: flex-start;
 				margin-top: -50px;
 			}
@@ -59,13 +67,13 @@
 			background-color: white;
 			margin-right: $right-indentation;
 			margin-left: 0;
-			padding: 0 $margin-left-right-small $margin-left-right-small
-				$margin-left-right-small;
+			padding: 0 $margin-left-right-max $margin-left-right-max
+				$margin-left-right-max;
 			width: $component-container-indent-width;
 
 			&--right {
-				height: $section-right-icon;
-				width: $section-right-icon;
+				height: $section-right-icon-max;
+				width: $section-right-icon-max;
 			}
 
 			&--left {
@@ -81,8 +89,8 @@
 			width: $component-container-indent-width;
 			margin-right: $right-indentation;
 			margin-left: 0;
-			padding-left: $margin-left-right-small;
-			padding-right: $margin-left-right-small;
+			padding-left: $margin-left-right-max;
+			padding-right: $margin-left-right-max;
 		}
 	}
 }
@@ -113,8 +121,7 @@
 			flex-direction: row;
 
 			&--right {
-				width: $section-right-icon;
-				height: $section-right-icon;
+				align-self: flex-end;
 			}
 
 			&--left {

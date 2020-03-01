@@ -24,6 +24,13 @@
 	.stage-text-container {
 		max-width: $max;
 		padding: 0 $margin-left-right-small;
+
+		&-right {
+			bnb-icon {
+				width: $section-right-icon-small;
+				height: $section-right-icon-small;
+			}
+		}
 	}
 
 	bnb-button-cta {
@@ -50,23 +57,25 @@
 		}
 
 		#icon-mobile {
-			margin: 30px 0 30px auto;
-			height: 70vw;
-			width: 50vw;
+			margin: 30px auto 30px;
+			width: $section-right-icon-medium;
+			height: $section-right-icon-medium;
 		}
 	}
+
 	@include fromBreakpointL {
 		bnb-image {
 			height: 500px;
 		}
+
 		.stage-text-container {
 			padding: 0 $margin-left-right-medium;
 		}
 
 		#icon-mobile {
 			margin: 30px 0 30px auto;
-			height: 50vw;
-			width: 40vw;
+			width: $section-right-icon-large;
+			height: $section-right-icon-large;
 		}
 
 		.stage-text-buttons-mobile {
@@ -79,10 +88,9 @@
 	}
 
 	@include fromBreakpointMax {
-
-	.stage-text-container {
-		background-color: transparent;
-	}
+		.stage-text-container {
+			background-color: transparent;
+		}
 		bnb-image {
 			margin-bottom: 600px;
 		}
@@ -101,7 +109,7 @@
 
 		.stage-text-container {
 			position: absolute;
-			padding: 0 $margin-left-right-small 0 0;
+			padding: 0;
 			top: 680px;
 			left: 0;
 			right: 0;
@@ -111,15 +119,17 @@
 			flex-direction: row;
 			max-width: $max;
 
+			.stage-text-container-left {
+				width: calc(#{$section-left-width} + #{$margin-left-right-max});
+			}
 			.stage-text-container-right {
 				align-self: flex-end;
 				margin-right: $right-indentation;
 				height: inherit;
 				bnb-icon {
-					height: $section-right-icon;
-					width: $section-right-icon;
-					margin: 40px;
-					margin-top: 295px;
+					height: $section-right-icon-max;
+					width: $section-right-icon-max;
+					margin: 295px 40px 40px 47px;
 				}
 			}
 
@@ -127,6 +137,10 @@
 				padding-left: $margin-left-right-small;
 				bnb-paragraph {
 					height: 200px;
+				}
+
+				@include fromBreakpointMax {
+					padding-left: $margin-left-right-max;
 				}
 			}
 

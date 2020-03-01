@@ -15,18 +15,18 @@
 		.footer-wrapper {
 			display: flex;
 			flex-direction: column;
-			padding: 40px 30px 30px 30px;
+			padding: 40px 15px 30px;
 
 			@include fromBreakpointL {
 				justify-content: space-between;
 				flex-direction: row;
-				padding: 40px 50px 30px 50px;
+				padding: 40px 50px 30px;
 			}
 
 			@include fromBreakpointMax {
 				max-width: $max;
 				width: 100%;
-				padding: 40px 30px 30px 30px;
+				padding: 40px 30px 30px;
 				margin: 0 auto;
 			}
 
@@ -35,8 +35,8 @@
 			.footer-links--right {
 				display: flex;
 				flex-direction: column;
-				font-size: 34px;
-				line-height: 50px;
+				font-size: 30px;
+				line-height: 35px;
 				color: $grey-light;
 
 				bnb-link {
@@ -51,6 +51,7 @@
 					display: flex;
 					flex-direction: column;
 					@include fontCopyInfo();
+					text-align: start;
 				}
 
 				@include fromBreakpointL {
@@ -58,7 +59,7 @@
 
 					.footer-links--left-small {
 						flex-direction: row;
-						margin-top: 80px;
+						margin-top: 147px;
 
 						bnb-link {
 							width: max-content;
@@ -70,8 +71,8 @@
 
 			.footer-links--middle {
 				.headline {
-					font-size: 34px;
-					line-height: 50px;
+					font-size: 30px;
+					line-height: 35px;
 					margin-top: 50px;
 					@include fromBreakpointL {
 						margin-top: 0;
@@ -94,8 +95,8 @@
 			.footer-links--right {
 				margin-top: 50px;
 				bnb-paragraph {
-					font-size: 34px;
-					line-height: 50px;
+					font-size: 30px;
+					line-height: 35px;
 				}
 
 				bnb-follow {

@@ -5,9 +5,8 @@
 	display: inline-block;
 
 	&:focus {
-		outline: none;
 		@include hoverDevicesOnly {
-			box-shadow: 0 0 15px 2px $grey;
+			outline-color: $grey;
 		}
 	}
 
@@ -21,9 +20,8 @@
 		cursor: pointer;
 
 		&:focus {
-			outline: none;
 			@include hoverDevicesOnly {
-				box-shadow: 0 0 15px 2px $grey;
+				outline-color: $grey;
 			}
 		}
 
@@ -53,9 +51,8 @@
 
 @include addAttributeStyles('bnb-link', 'header') {
 	:focus {
-		outline: none;
 		@include hoverDevicesOnly {
-			box-shadow: 0 0 15px 2px $grey-light;
+			outline-color: $grey-light;
 		}
 	}
 	a {
@@ -71,9 +68,8 @@
 
 @include addAttributeStyles('bnb-link', 'footer') {
 	:focus {
-		outline: none;
 		@include hoverDevicesOnly {
-			box-shadow: 0 0 15px 2px $grey-light;
+			outline-color: $grey-light;
 		}
 	}
 	a {
