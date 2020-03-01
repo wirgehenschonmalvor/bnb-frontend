@@ -7,7 +7,7 @@ export const template = (
 	data: BnbCmsContactProps & BnbCmsContactMethods,
 ): HTMLFragment => {
 	return html`
-		<bnb-headline level="3">Kontakt</bnb-headline>
+		<!-- <bnb-headline level="3">Kontakt</bnb-headline> -->
 		<div class="contact__wrapper">
 			<div class="contact__text">
 				<bnb-paragraph>
@@ -15,7 +15,19 @@ export const template = (
 				</bnb-paragraph>
 			</div>
 			<div class="contact__inputs">
-				<bnb-input
+				<bnb-paragraph>
+					<b>Spenden an:</b>
+					<br />
+					<br />
+					<b>Empfänger:</b> Wir für Zukunft eG
+					<br />
+					<b>IBAN:</b> 1234 5678 9012 3456 78
+					<br />
+					<b>BIC:</b> ABCD12345
+					<br />
+					<b>Verwendungszweck:</b> Brand New Bundestag
+				</bnb-paragraph>
+				<!-- <bnb-input
 					required
 					label="Name"
 					placeholder="Name (Bsp: Vorname Nachname)"
@@ -54,14 +66,14 @@ export const template = (
 						></bnb-link>
 						gelesen und akzeptiert.*</bnb-paragraph
 					>
-				</bnb-checkbox>
+				</bnb-checkbox> -->
 			</div>
 		</div>
-		<bnb-button-cta
+		<!-- <bnb-button-cta
 			value="Absenden"
 			version="primary"
 			tab-index="0"
-		></bnb-button-cta>
+		></bnb-button-cta> -->
 		${createStyle(styles)}
 	`;
 };
