@@ -11,7 +11,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Aktiv werden"
-						url="get-started.html"
+						url="aktiv-werden.html"
 					></bnb-link>
 					<!-- <bnb-link
 						footer
@@ -21,12 +21,12 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Über uns"
-						url="about-us.html"
+						url="ueber-uns.html"
 					></bnb-link>
 					<bnb-link
 						footer
 						value="Unsere Forderungen"
-						url="claims.html"
+						url="unsere-forderungen.html"
 					></bnb-link>
 					<!-- <bnb-link footer value="" url="news.html"></bnb-link> -->
 					<bnb-link
@@ -37,18 +37,18 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Kontakt"
-						url="contact.html"
+						url="kontakt.html"
 					></bnb-link>
 					<div class="footer-links--left-small">
 						<bnb-link
 							footer
 							value="Impressum"
-							url="imprint.html"
+							url="impressum.html"
 						></bnb-link>
 						<bnb-link
 							footer
 							value="Datenschutz"
-							url="data-protection.html"
+							url="datenschutz.html"
 						></bnb-link>
 					</div>
 				</div>
