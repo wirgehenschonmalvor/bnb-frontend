@@ -1,0 +1,8 @@
+@mixin ieAndEdgeOnly {
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@content;
+	}
+	@supports (-ms-ime-align: auto) {
+		@content;
+	}
+}

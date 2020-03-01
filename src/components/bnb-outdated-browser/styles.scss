@@ -1,0 +1,75 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-outdated-browser') {
+	/* Hide IE banner by default */
+	display: none;
+	/* Show IE banner on IE10/11 */
+	@include ieAndEdgeOnly() {
+		display: block;
+	}
+	#warning {
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background: $purple;
+		font-family: $font-family-regular;
+
+		a.closeThis {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			display: block;
+			width: 20px;
+			height: 20px;
+			font-size: 30px;
+			line-height: 20px;
+			text-align: center;
+			color: #fff;
+			text-decoration: none;
+		}
+		.warningContent {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -40px 0px 0px -170px;
+			display: block;
+			width: 500px;
+			height: 80px;
+			color: #f6e2dd;
+
+			span {
+				font-size: 81px;
+				font-weight: bold;
+				line-height: 93px;
+				display: block;
+				width: 20px;
+				float: left;
+				margin-right: 5px;
+			}
+			.wHeading {
+				font-size: 38px;
+				font-weight: bold;
+				line-height: 45px;
+				margin: 0px;
+				letter-spacing: -2px;
+			}
+			p {
+				font-size: 14px;
+				font-weight: $font-weight-normal;
+				line-height: 16px;
+				letter-spacing: 0px;
+				margin: 0px;
+				padding: 0px;
+				a {
+					font-size: 14px;
+					font-weight: $font-weight-normal;
+					color: $green;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
