@@ -84,11 +84,11 @@ export const template = (): HTMLFragment => {
 							>* mit der Anmeldung zum Newsletter bestätige ich die
 							Inkenntnisnahme der
 							<bnb-link
-								value="Datenschutzbestimmungen"
+								value="Datenschutzbestimmungen."
 								url="/data-protection.html"
 								target="_blank"
 							></bnb-link
-							>.</bnb-paragraph
+							></bnb-paragraph
 						>
 					</div>
 				</div>
