@@ -11,6 +11,10 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 
+		@include slotted ('bnb-bullet-item') {
+			margin-bottom: 30px;
+		}
+
 		@include fromBreakpointL {
 			flex-wrap: nowrap;
 		}
