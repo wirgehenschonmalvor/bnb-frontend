@@ -2,7 +2,8 @@
 @import '../../resources/scss/styles';
 
 $icon-size-mobile: calc(100% / 3);
-$icon-size-tablet: 90px;
+$icon-size-tablet: calc(50vw / 3);
+$icon-size-tablet-big: calc(30vw / 3);
 $icon-size-desktop: 102px;
 
 @include host('bnb-bullet-item') {
@@ -33,6 +34,16 @@ $icon-size-desktop: 102px;
 		width: $icon-size-mobile;
 		margin: 30px auto;
 		fill: $purple;
+
+		@include fromBreakpointM {
+			height: $icon-size-tablet;
+			width: $icon-size-tablet;
+		}
+
+		@include fromBreakpointL {
+			height: $icon-size-tablet-big;
+			width: $icon-size-tablet-big;
+		}
 
 		@include fromBreakpointMax {
 			height: $icon-size-desktop;

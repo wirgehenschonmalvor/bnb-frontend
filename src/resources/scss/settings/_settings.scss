@@ -63,7 +63,10 @@ $min-height: 48px;
 //SECTION SIZES
 $section-left-width: 800px;
 $section-right-width: 600px;
-$section-right-icon: 375px;
+$section-right-icon-small: 100%;
+$section-right-icon-medium: 50%;
+$section-right-icon-large: 30%;
+$section-right-icon-max: 375px;
 $component-container-indent-width: calc(
 	#{$max} - calc(#{$right-indentation} + #{$margin-left-right-max})
 );
