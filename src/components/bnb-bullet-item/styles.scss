@@ -27,7 +27,14 @@ $icon-size-desktop: 102px;
 		@include fontCopyInfo();
 		color: $purple;
 		margin-top: 7px;
+
+		#headline {
+			height: 55px;
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
 	}
+
 
 	bnb-icon {
 		height: $icon-size-mobile;
@@ -50,4 +57,5 @@ $icon-size-desktop: 102px;
 			width: $icon-size-desktop;
 		}
 	}
+
 }
