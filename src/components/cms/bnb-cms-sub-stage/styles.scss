@@ -20,6 +20,7 @@
 	}
 
 	.stage-text-container {
+		background-color: white;
 		max-width: $max;
 		padding: 0 $margin-left-right-small;
 	}
@@ -47,11 +48,12 @@
 
 	@include fromBreakpointMax {
 		bnb-image {
-			margin-bottom: 420px;
+			margin-bottom: 220px;
 			height: 600px;
 		}
 
 		.stage-text-container {
+			background-color: transparent;
 			flex-direction: row;
 			justify-content: space-between;
 			position: absolute;
@@ -61,7 +63,7 @@
 			right: 0;
 			bottom: 0;
 			margin: 0 auto;
-			height: 500px;
+			height: 300px;
 			flex-direction: row;
 			max-width: $max;
 

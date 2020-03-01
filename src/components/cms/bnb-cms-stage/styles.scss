@@ -109,7 +109,7 @@
 
 		.stage-text-container {
 			position: absolute;
-			padding: 0 $margin-left-right-small 0 0;
+			padding: 0;
 			top: 680px;
 			left: 0;
 			right: 0;
@@ -119,6 +119,9 @@
 			flex-direction: row;
 			max-width: $max;
 
+			.stage-text-container-left {
+				width: calc(#{$section-left-width} + #{$margin-left-right-max});
+			}
 			.stage-text-container-right {
 				align-self: flex-end;
 				margin-right: $right-indentation;
@@ -126,8 +129,7 @@
 				bnb-icon {
 					height: $section-right-icon-max;
 					width: $section-right-icon-max;
-					margin: 40px;
-					margin-top: 295px;
+					margin: 295px 40px 40px 47px;
 				}
 			}
 
