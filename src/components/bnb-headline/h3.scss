@@ -5,7 +5,7 @@
 	display: block;
 	h3 {
 		@include fontHeading();
-		margin: 40px 0 20px 0;
+		margin: 40px 0 0;
 	}
 }
 @include addAttributeStyles('bnb-headline', 'color=white') {
