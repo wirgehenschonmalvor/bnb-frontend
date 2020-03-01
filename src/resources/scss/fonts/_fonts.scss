@@ -30,8 +30,8 @@ $line-height-font-copy-mobile: 26px;
 
 @mixin fontHeadlineM() {
 	@include fontCopy();
-	font-size: 34px;
-	line-height: 44px;
+	font-size: 25px;
+	line-height: 32px;
 	font-weight: $font-weight-normal;
 	@include fromBreakpointMax {
 		font-size: 34px;
