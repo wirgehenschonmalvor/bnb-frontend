@@ -1,6 +1,9 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../../resources/scss/styles';
 
+$stage-image-height-max: 600px;
+$stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
+
 @include host('bnb-cms-stage') {
 	display: block;
 	background-color: $white;
@@ -104,13 +107,13 @@
 		}
 
 		bnb-image {
-			height: 600px;
+			height: $stage-image-height-max;
 		}
 
 		.stage-text-container {
 			position: absolute;
 			padding: 0;
-			top: 680px;
+			top: $stage-textbox-position-top-max;
 			left: 0;
 			right: 0;
 			bottom: 0;
@@ -129,7 +132,7 @@
 				bnb-icon {
 					height: $section-right-icon-max;
 					width: $section-right-icon-max;
-					margin: 295px 40px 40px 47px;
+					margin: 40px 40px 47px;
 				}
 			}
 

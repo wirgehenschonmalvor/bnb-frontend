@@ -36,10 +36,15 @@
 				fill: none;
 				margin-right: 25px;
 				stroke: $grey-medium;
-				margin: 17px;
+				margin: 10px;
+				margin-left: 0;
 				position: relative;
 				top: 8px;
 				flex-shrink: 0;
+				@include fromBreakpointMax {
+					margin: 17px;
+					margin-left: $margin-left-right-max;
+				}
 			}
 		}
 
