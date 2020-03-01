@@ -33,6 +33,10 @@ $line-height-font-copy-mobile: 26px;
 	font-size: 34px;
 	line-height: 44px;
 	font-weight: $font-weight-normal;
+	@include fromBreakpointMax {
+		font-size: 34px;
+		line-height: 44px;
+	}
 }
 
 @mixin fontHeading() {
