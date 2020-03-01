@@ -23,6 +23,10 @@ import * as logo from './svg/logo.svg';
 import * as bullet from './svg/bullet.svg';
 import * as arrow from './svg/arrow.svg';
 import * as iconsetBnbMedium from './svg/iconset-bnb-medium.svg';
+import * as iconsetEhrenamtBig from './svg/iconset-ehrenamt-big.svg';
+import * as iconsetSpendenBig from './svg/iconset-spenden-big.svg';
+import * as iconsetWahlkreiseBig from './svg/iconset-wahlkreise-big.svg';
+import * as iconsetKandidatinnenBig from './svg/iconset-kandidatinnen-big.svg';
 import * as iconsetHerausforderungBig from './svg/iconset-herausforderung-big.svg';
 import * as iconsetHerausforderungMedium from './svg/iconset-herausforderung-medium.svg';
 import * as iconsetLoesungBig from './svg/iconset-loesung-big.svg';
@@ -32,6 +36,12 @@ import * as iconsetPeopleMedium2 from './svg/iconset-people-medium-2.svg';
 import * as iconsetPeopleSingle from './svg/iconset-people-single.svg';
 import * as iconsetPeopleSmall1 from './svg/iconset-people-small-1.svg';
 import * as iconsetPeopleSmall2 from './svg/iconset-people-small-2.svg';
+import * as iconsetPeopleSmall3 from './svg/iconset-people-small-3.svg';
+import * as winner from './svg/winner.svg';
+import * as winnerStaircase from './svg/winner-staircase.svg';
+import * as nomination from './svg/nomination.svg';
+import * as checked from './svg/checked.svg';
+import * as external from './svg/external.svg';
 
 const icons = {
 	schriftzug,
@@ -59,6 +69,10 @@ const icons = {
 	bullet,
 	arrow,
 	iconsetBnbMedium,
+	iconsetEhrenamtBig,
+	iconsetSpendenBig,
+	iconsetWahlkreiseBig,
+	iconsetKandidatinnenBig,
 	iconsetHerausforderungBig,
 	iconsetHerausforderungMedium,
 	iconsetLoesungBig,
@@ -68,6 +82,12 @@ const icons = {
 	iconsetPeopleSingle,
 	iconsetPeopleSmall1,
 	iconsetPeopleSmall2,
+	iconsetPeopleSmall3,
+	winner,
+	winnerStaircase,
+	nomination,
+	checked,
+	external,
 };
 
 export default icons;
