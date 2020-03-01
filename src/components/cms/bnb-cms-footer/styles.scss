@@ -50,7 +50,7 @@
 				.footer-links--left-small {
 					display: flex;
 					flex-direction: column;
-					@include fontCopy();
+					@include fontCopyInfo();
 				}
 
 				@include fromBreakpointL {
