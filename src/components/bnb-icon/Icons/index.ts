@@ -32,6 +32,10 @@ import * as iconsetPeopleMedium2 from './svg/iconset-people-medium-2.svg';
 import * as iconsetPeopleSingle from './svg/iconset-people-single.svg';
 import * as iconsetPeopleSmall1 from './svg/iconset-people-small-1.svg';
 import * as iconsetPeopleSmall2 from './svg/iconset-people-small-2.svg';
+import * as winner from './svg/winner.svg';
+import * as winnerStaircase from './svg/winner-staircase.svg';
+import * as nomination from './svg/nomination.svg';
+import * as checked from './svg/checked.svg';
 
 const icons = {
 	schriftzug,
@@ -68,6 +72,10 @@ const icons = {
 	iconsetPeopleSingle,
 	iconsetPeopleSmall1,
 	iconsetPeopleSmall2,
+	winner,
+	winnerStaircase,
+	nomination,
+	checked,
 };
 
 export default icons;
