@@ -280,20 +280,20 @@
 	}
 }
 
-@include addAttributeStyles('bnb-cms-navigation', 'page=about-us') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #about-us {
+@include addAttributeStyles('bnb-cms-navigation', 'page=ueber-uns') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #ueber-uns {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles('bnb-cms-navigation', 'page=get-started') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #get-started {
+@include addAttributeStyles('bnb-cms-navigation', 'page=aktiv-werden') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #aktiv-werden {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles('bnb-cms-navigation', 'page=claims') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #claims {
+@include addAttributeStyles('bnb-cms-navigation', 'page=unsere-forderungen') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #unsere-forderungen {
 		text-decoration: underline;
 	}
 }

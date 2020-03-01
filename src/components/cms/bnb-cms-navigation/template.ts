@@ -29,27 +29,23 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 						<bnb-link
 							header
 							value="Aktiv werden"
-							url="get-started.html"
+							url="aktiv-werden.html"
 						></bnb-link>
 						<bnb-link
 							header
 							value="Über uns"
-							url="about-us.html"
+							url="ueber-uns.html"
 						></bnb-link>
 						<bnb-link
 							header
 							value="Unsere Forderungen"
-							url="claims.html"
+							url="unsere-forderungen.html"
 						></bnb-link>
-						<bnb-link
-							header
-							value="FAQ"
-							url="faqs.html"
-						></bnb-link>
+						<bnb-link header value="FAQ" url="faqs.html"></bnb-link>
 						<bnb-button-cta
 							version="header"
 							value="Mitmachen!"
-							url="get-started.html"
+							url="aktiv-werden.html"
 						></bnb-button-cta>
 						<bnb-follow color="light"></bnb-follow>
 					</div>
@@ -67,22 +63,22 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 					</a>
 					<div class="navigation-links">
 						<bnb-link
-							id="get-started"
+							id="aktiv-werden"
 							header
 							value="Aktiv werden"
-							url="get-started.html"
+							url="aktiv-werden.html"
 						></bnb-link>
 						<bnb-link
-							id="about-us"
+							id="ueber-uns"
 							header
 							value="Über uns"
-							url="about-us.html"
+							url="ueber-uns.html"
 						></bnb-link>
 						<bnb-link
-							id="claims"
+							id="unsere-forderungen"
 							header
 							value="Unsere Forderungen"
-							url="claims.html"
+							url="unsere-forderungen.html"
 						></bnb-link>
 						<bnb-link
 							id="faqs"
@@ -96,7 +92,7 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 						<bnb-button-cta
 							version="header"
 							value="Mitmachen!"
-							url="get-started.html"
+							url="aktiv-werden.html"
 						></bnb-button-cta>
 					</div>
 				</div>
