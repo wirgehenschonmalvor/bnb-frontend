@@ -54,13 +54,12 @@
 		position: absolute;
 		cursor: pointer;
 		-webkit-appearance: none;
-		outline: none;
 		z-index: 2;
 		border: none;
 
 		@include hoverDevicesOnly() {
 			&:focus {
-				box-shadow: 0 0 3px 2px $grey;
+				outline-color: $grey;
 			}
 		}
 
@@ -174,9 +173,8 @@
 	#navigation-icon-desktop-link:focus {
 		outline: none;
 		@include slotted('bnb-icon') {
-			outline: none;
 			@include hoverDevicesOnly {
-				box-shadow: 0 0 15px 2px $grey-light;
+				outline-color: $grey-light;
 			}
 		}
 	}
