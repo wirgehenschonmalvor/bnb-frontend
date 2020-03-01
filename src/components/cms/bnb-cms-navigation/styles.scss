@@ -7,9 +7,9 @@
 	@include fontMenu();
 
 	nav {
+		display: flex;
 		margin: 0 $margin-left-right-small;
 		height: 65px;
-		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 
@@ -31,7 +31,7 @@
 
 		@include fromBreakpointMax {
 			max-width: $max;
-			padding: 0 $margin-left-right-small;
+			padding: 0 $margin-left-right-max;
 			margin: 0 auto;
 		}
 	}
@@ -54,13 +54,12 @@
 		position: absolute;
 		cursor: pointer;
 		-webkit-appearance: none;
-		outline: none;
 		z-index: 2;
 		border: none;
 
 		@include hoverDevicesOnly() {
 			&:focus {
-				box-shadow: 0 0 3px 2px $grey;
+				outline-color: $grey;
 			}
 		}
 
@@ -174,9 +173,8 @@
 	#navigation-icon-desktop-link:focus {
 		outline: none;
 		@include slotted('bnb-icon') {
-			outline: none;
 			@include hoverDevicesOnly {
-				box-shadow: 0 0 15px 2px $grey-light;
+				outline-color: $grey-light;
 			}
 		}
 	}
@@ -212,17 +210,17 @@
 
 	a #navigation-icon-desktop {
 		@include fromBreakpointMax {
-			margin-left: -17px;
 			position: relative;
 			left: auto;
 			top: -50px;
+			margin-left: -17px;
 		}
 	}
 
 	a #overlay-icon {
 		display: none;
 		height: 100px;
-		left: 48px;
+		left: 32px;
 		top: 10px;
 		margin-left: -17px;
 
@@ -239,9 +237,9 @@
 
 		.navigation-links {
 			align-items: flex-end;
-			margin-bottom: 40px;
 			display: flex;
 			flex-grow: 1;
+			margin-bottom: 44px;
 			margin-left: 165px;
 
 			bnb-link {
@@ -260,6 +258,7 @@
 
 			bnb-button-cta {
 				margin: 0 auto 20px auto;
+				font-size: 18px;
 			}
 
 			bnb-follow {
@@ -281,20 +280,20 @@
 	}
 }
 
-@include addAttributeStyles('bnb-cms-navigation', 'page=about-us') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #about-us {
+@include addAttributeStyles('bnb-cms-navigation', 'page=ueber-uns') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #ueber-uns {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles('bnb-cms-navigation', 'page=get-started') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #get-started {
+@include addAttributeStyles('bnb-cms-navigation', 'page=aktiv-werden') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #aktiv-werden {
 		text-decoration: underline;
 	}
 }
 
-@include addAttributeStyles('bnb-cms-navigation', 'page=claims') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #claims {
+@include addAttributeStyles('bnb-cms-navigation', 'page=unsere-forderungen') {
+	.navigation-wrapper nav #menu-desktop .navigation-links #unsere-forderungen {
 		text-decoration: underline;
 	}
 }

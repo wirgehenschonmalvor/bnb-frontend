@@ -49,7 +49,7 @@ export const template = (
 						>Ich habe die
 						<bnb-link
 							value="Datenschutzbestimmungen"
-							url="data-protection.html"
+							url="datenschutz.html"
 							target="_blank"
 						></bnb-link>
 						gelesen und akzeptiert.*</bnb-paragraph

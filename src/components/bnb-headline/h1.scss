@@ -6,13 +6,8 @@
 
 	h1 {
 		@include fontHeadlineL();
-		font-size: 40px;
-		line-height: 50px;
+		line-height: 42px;
+		font-size: 35px;
 		word-break: break-word;
-
-		@media screen and (min-width: 426px) {
-			font-size: 52px;
-			line-height: 64px;
-		}
 	}
 }

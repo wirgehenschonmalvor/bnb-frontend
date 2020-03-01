@@ -11,7 +11,7 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Aktiv werden"
-						url="get-started.html"
+						url="aktiv-werden.html"
 					></bnb-link>
 					<!-- <bnb-link
 						footer
@@ -21,9 +21,13 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Über uns"
-						url="about-us.html"
+						url="ueber-uns.html"
 					></bnb-link>
-					<bnb-link footer value="Unsere Forderungen" url="claims.html"></bnb-link>
+					<bnb-link
+						footer
+						value="Unsere Forderungen"
+						url="unsere-forderungen.html"
+					></bnb-link>
 					<!-- <bnb-link footer value="" url="news.html"></bnb-link> -->
 					<bnb-link
 						footer
@@ -33,18 +37,18 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					<bnb-link
 						footer
 						value="Kontakt"
-						url="contact.html"
+						url="kontakt.html"
 					></bnb-link>
 					<div class="footer-links--left-small">
 						<bnb-link
 							footer
 							value="Impressum"
-							url="imprint.html"
+							url="impressum.html"
 						></bnb-link>
 						<bnb-link
 							footer
 							value="Datenschutz"
-							url="data-protection.html"
+							url="datenschutz.html"
 						></bnb-link>
 					</div>
 				</div>
@@ -53,8 +57,8 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						>So erreichst du uns:</bnb-paragraph
 					>
 					<bnb-paragraph class="contact">
-						Brand New Bundestag e.V. <br />
-						Musterstrasse 12 <br />1000 Berlin <br />
+						Wir für Zukunft eG i. Gr.<br />
+						Glindeweg 22<br />22303 Hamburg<br />
 						<bnb-link
 							footer
 							value="team@brandnewbundestag.de"

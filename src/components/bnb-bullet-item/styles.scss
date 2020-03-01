@@ -1,6 +1,11 @@
 @import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
+$icon-size-mobile: calc(100% / 3);
+$icon-size-tablet: calc(50vw / 3);
+$icon-size-tablet-big: calc(30vw / 3);
+$icon-size-desktop: 102px;
+
 @include host('bnb-bullet-item') {
 	display: block;
 	width: 100%;
@@ -22,12 +27,35 @@
 		@include fontCopyInfo();
 		color: $purple;
 		margin-top: 7px;
+
+		#headline {
+			height: 55px;
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
 	}
 
+
 	bnb-icon {
-		height: 150px;
-		width: 150px;
+		height: $icon-size-mobile;
+		width: $icon-size-mobile;
 		margin: 30px auto;
 		fill: $purple;
+
+		@include fromBreakpointM {
+			height: $icon-size-tablet;
+			width: $icon-size-tablet;
+		}
+
+		@include fromBreakpointL {
+			height: $icon-size-tablet-big;
+			width: $icon-size-tablet-big;
+		}
+
+		@include fromBreakpointMax {
+			height: $icon-size-desktop;
+			width: $icon-size-desktop;
+		}
 	}
+
 }
