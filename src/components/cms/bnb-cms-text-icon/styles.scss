@@ -38,8 +38,7 @@
 		}
 
 		&--right {
-			width: 50%;
-			margin: $margin-left-right-medium auto;
+			margin-top: $margin-left-right-medium;
 		}
 
 		@include fromBreakpointL {
