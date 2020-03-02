@@ -9,16 +9,7 @@ interface BnbLinkProps {
 	value: string;
 	url: string;
 	target: string;
+	external?: boolean;
 }
 
-/**
- * State
- */
-interface BnbLinkState {}
-
-/**
- * Methods
- */
-interface BnbLinkMethods {}
-
-export { BnbLinkProps, BnbLinkState, BnbLinkMethods };
+export { BnbLinkProps };
