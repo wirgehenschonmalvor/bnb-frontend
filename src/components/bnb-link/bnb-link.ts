@@ -1,10 +1,16 @@
 import Component, { HTMLFragment } from '@biotope/element';
 import { template } from './template';
-import { BnbLinkProps, BnbLinkState, BnbLinkMethods } from './defines';
+import { BnbLinkProps } from './defines';
+import BnbIcon from '../bnb-icon/bnb-icon';
 
-class BnbLink extends Component<BnbLinkProps, BnbLinkState> {
+class BnbLink extends Component<BnbLinkProps, null> {
 	public static componentName = 'bnb-link';
-	public static attributes = ['value', 'url', 'target'];
+	public static attributes = [
+		'value',
+		'url',
+		'target',
+		{ name: 'external', type: 'boolean' },
+	];
 
 	protected readonly defaultProps: BnbLinkProps = {
 		value: '',
@@ -12,12 +18,10 @@ class BnbLink extends Component<BnbLinkProps, BnbLinkState> {
 		target: '',
 	};
 
-	protected readonly defaultState: BnbLinkState = {};
-
-	public methods: BnbLinkMethods = {};
+	public static dependencies = [BnbIcon as typeof Component]
 
 	public render(): HTMLFragment {
-		return template({ ...this.props, ...this.state, ...this.methods });
+		return template({ ...this.props });
 	}
 }
 

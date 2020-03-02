@@ -86,7 +86,7 @@ export const template = (): HTMLFragment => {
 							<bnb-link
 								value="Datenschutzbestimmungen."
 								url="/datenschutz.html"
-								target="_blank"
+								target="_blank" external
 							></bnb-link
 							></bnb-paragraph
 						>

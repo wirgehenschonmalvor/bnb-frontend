@@ -27,13 +27,6 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 	.stage-text-container {
 		max-width: $max;
 		padding: 0 $margin-left-right-small;
-
-		&-right {
-			bnb-icon {
-				width: $section-right-icon-small;
-				height: $section-right-icon-small;
-			}
-		}
 	}
 
 	bnb-button-cta {
@@ -45,9 +38,8 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 	}
 
 	#icon-mobile {
-		margin: 20px auto;
-		width: 70vw;
-		height: 70vw;
+		width: $section-right-icon-small;
+		height: $section-right-icon-small;
 	}
 
 	@include fromBreakpointM {

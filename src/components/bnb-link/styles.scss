@@ -25,10 +25,23 @@
 			}
 		}
 
+		bnb-icon {
+			position: relative;
+			height: 7px;
+			width: 7px;
+			top: -5px;
+			left: -3px;
+			fill: $purple;
+		}
+
 		@include hoverDevicesOnly {
 			&:hover {
 				color: $grey-light;
 				transition: all 0.3s ease;
+				bnb-icon {
+					transition: all 0.3s ease;
+					fill: $grey-light;
+				}
 			}
 		}
 	}
@@ -36,14 +49,22 @@
 
 @include addAttributeStyles('bnb-link', 'purple') {
 	:focus {
-		outline-color: $grey;
+		outline-color: $purple;
 	}
 	a {
-		color: $purple;
+		color: $grey;
+
+		bnb-icon {
+			fill: $grey;
+		}
 
 		@include hoverDevicesOnly {
 			&:hover {
 				color: $purple;
+				bnb-icon {
+					transition: all 0.3s ease;
+					fill: $purple;
+				}
 			}
 		}
 	}

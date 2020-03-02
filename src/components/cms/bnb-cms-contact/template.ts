@@ -13,13 +13,27 @@ export const template = (
 				<bnb-paragraph>
 					<slot />
 				</bnb-paragraph>
+				<br />
+				<bnb-paragraph
+				><b>So erreichst du uns:</b></bnb-paragraph
+				>
+				<br />
+				<bnb-paragraph>
+					Wir für Zukunft eG i. Gr.<br />
+					Glindweg 22<br />22303 Hamburg<br />
+					<bnb-link
+						footer
+						value="team@brandnewbundestag.de"
+						url="mailto:team@brandnewbundestag.de"
+					></bnb-link>
+				</bnb-paragraph>
 			</div>
 			<div class="contact__inputs">
 				<bnb-paragraph>
 					<b>Spenden an:</b>
 					<br />
 					<br />
-					<b>Empfänger:</b> Wir für Zukunft eG
+					<b>Empfänger:</b> Brand New Bewegung e.V.
 					<br />
 					<b>IBAN:</b> DE16 4306 0967 1039 9676 00
 					<br />
@@ -62,7 +76,7 @@ export const template = (
 						<bnb-link
 							value="Datenschutzbestimmungen"
 							url="datenschutz.html"
-							target="_blank"
+							target="_blank" external
 						></bnb-link>
 						gelesen und akzeptiert.*</bnb-paragraph
 					>

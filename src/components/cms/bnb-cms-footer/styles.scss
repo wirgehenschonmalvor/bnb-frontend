@@ -78,10 +78,6 @@
 						margin-top: 0;
 					}
 				}
-				.contact {
-					@include fontCopy();
-					margin-top: 20px;
-				}
 
 				@include fromBreakpointL {
 					margin-left: 30px;
