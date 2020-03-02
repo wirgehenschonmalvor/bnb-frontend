@@ -19,7 +19,7 @@ export const template = (
 					<b>Spenden an:</b>
 					<br />
 					<br />
-					<b>Empfänger:</b> Wir für Zukunft eG
+					<b>Empfänger:</b> Brand New Bewegung e.V.
 					<br />
 					<b>IBAN:</b> DE16 4306 0967 1039 9676 00
 					<br />
