@@ -53,18 +53,6 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 					</div>
 				</div>
 				<div class="footer-links--middle">
-					<bnb-paragraph class="headline"
-						>So erreichst du uns:</bnb-paragraph
-					>
-					<bnb-paragraph class="contact">
-						Wir für Zukunft eG i. Gr.<br />
-						Glindweg 22<br />22303 Hamburg<br />
-						<bnb-link
-							footer
-							value="team@brandnewbundestag.de"
-							url="mailto:team@brandnewbundestag.de"
-						></bnb-link>
-					</bnb-paragraph>
 				</div>
 				<div class="footer-links--right">
 					<bnb-paragraph class="headline">Folge uns:</bnb-paragraph>

@@ -13,6 +13,20 @@ export const template = (
 				<bnb-paragraph>
 					<slot />
 				</bnb-paragraph>
+				<br />
+				<bnb-paragraph
+				><b>So erreichst du uns:</b></bnb-paragraph
+				>
+				<br />
+				<bnb-paragraph>
+					Wir für Zukunft eG i. Gr.<br />
+					Glindweg 22<br />22303 Hamburg<br />
+					<bnb-link
+						footer
+						value="team@brandnewbundestag.de"
+						url="mailto:team@brandnewbundestag.de"
+					></bnb-link>
+				</bnb-paragraph>
 			</div>
 			<div class="contact__inputs">
 				<bnb-paragraph>
