@@ -1,0 +1,155 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+$stage-image-height-max: 600px;
+$stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
+
+@include host('bnb-cms-stage') {
+	display: block;
+	background-color: $white;
+	margin: 0 auto;
+
+	bnb-image {
+		height: 300px;
+		width: 100vw;
+	}
+
+	.stage-text-container,
+	.stage-text-container-left,
+	.stage-text-container-right,
+	.stage-text-buttons-mobile,
+	.stage-text-buttons {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+	}
+
+	.stage-text-container {
+		max-width: $max;
+		padding: 0 $margin-left-right-small;
+	}
+
+	bnb-button-cta {
+		margin: 20px 0;
+	}
+
+	#icon-desktop {
+		display: none;
+	}
+
+	#icon-mobile {
+		width: $section-right-icon-small;
+		height: $section-right-icon-small;
+	}
+
+	@include fromBreakpointM {
+		bnb-image {
+			height: 400px;
+		}
+		bnb-button-cta {
+			width: 70vw;
+			margin: 30px auto;
+		}
+
+		#icon-mobile {
+			margin: 30px auto 30px;
+			width: $section-right-icon-medium;
+			height: $section-right-icon-medium;
+		}
+	}
+
+	@include fromBreakpointL {
+		bnb-image {
+			height: 500px;
+		}
+
+		.stage-text-container {
+			padding: 0 $margin-left-right-medium;
+		}
+
+		#icon-mobile {
+			margin: 30px 0 30px auto;
+			width: $section-right-icon-large;
+			height: $section-right-icon-large;
+		}
+
+		.stage-text-buttons-mobile {
+			flex-direction: row;
+			bnb-button-cta {
+				width: 40vw;
+				margin: 50px auto;
+			}
+		}
+	}
+
+	@include fromBreakpointMax {
+		.stage-text-container {
+			background-color: transparent;
+		}
+		bnb-image {
+			margin-bottom: 600px;
+		}
+
+		#icon-mobile {
+			display: none;
+		}
+
+		#icon-desktop {
+			display: flex;
+		}
+
+		bnb-image {
+			height: $stage-image-height-max;
+		}
+
+		.stage-text-container {
+			position: absolute;
+			padding: 0;
+			top: $stage-textbox-position-top-max;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 0 auto;
+			height: 700px;
+			flex-direction: row;
+			max-width: $max;
+
+			.stage-text-container-left {
+				width: calc(#{$section-left-width} + #{$margin-left-right-max});
+			}
+			.stage-text-container-right {
+				align-self: flex-end;
+				margin-right: $right-indentation;
+				height: inherit;
+				bnb-icon {
+					height: $section-right-icon-max;
+					width: $section-right-icon-max;
+					margin: 40px 40px 47px;
+				}
+			}
+
+			.stage-text-container-left {
+				padding-left: $margin-left-right-small;
+				bnb-paragraph {
+					height: 200px;
+				}
+
+				@include fromBreakpointMax {
+					padding-left: $margin-left-right-max;
+				}
+			}
+
+			.stage-text-buttons {
+				height: 112px;
+				justify-content: flex-start;
+				position: absolute;
+				bottom: 40px;
+
+				bnb-button-cta {
+					width: 215px;
+					margin: 50px 20px 0 0;
+				}
+			}
+		}
+	}
+}

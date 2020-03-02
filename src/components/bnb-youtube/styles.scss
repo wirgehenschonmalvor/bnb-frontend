@@ -1,0 +1,85 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+$icon-size-small: 50px;
+$icon-size-medium: 80px;
+$icon-size-large: 100px;
+$icon-size-max: 125px;
+
+$indentation-small: calc(50% - (#{$icon-size-small} / 2));
+$indentation-medium: calc(50% - (#{$icon-size-medium} / 2));
+$indentation-large: calc(50% - (#{$icon-size-large} / 2));
+$indentation-max: calc(50% - (#{$icon-size-max} / 2));
+
+@include host('bnb-youtube') {
+	display: block;
+
+	.youtube-wrapper {
+		height: 0;
+		overflow: hidden;
+		padding-top: 56.25%;
+		position: relative;
+		display: flex;
+		margin: 20px 0;
+		justify-content: center;
+	}
+
+	iframe,
+	.thumbnail-wrapper {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+			bnb-icon {
+				position: absolute;
+				top: $indentation-small;
+				left: $indentation-small;
+				height: $icon-size-small;
+				width: $icon-size-small;
+				z-index: 2;
+				fill: $purple;
+
+				@include fromBreakpointM {
+					top: $indentation-medium;
+					left: $indentation-medium;
+					height: $icon-size-medium;
+					width: $icon-size-medium;
+				}
+
+				@include fromBreakpointL {
+					top: $indentation-large;
+					left: $indentation-large;
+					height: $icon-size-large;
+					width: $icon-size-large;
+				}
+
+				@include fromBreakpointMax {
+					top: $indentation-max;
+					left: $indentation-max;
+					height: $icon-size-max;
+					width: $icon-size-max;
+				}
+			}
+	}
+
+	.thumbnail-wrapper {
+		z-index: 1;
+	}
+
+	.hidden {
+		display: none;
+	}
+}

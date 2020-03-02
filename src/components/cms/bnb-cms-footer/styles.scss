@@ -1,0 +1,152 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-footer') {
+	display: block;
+	width: 100%;
+	@include fontCopy();
+
+	.footer-background {
+		display: flex;
+		background-color: $grey;
+		justify-content: flex-end;
+		flex-direction: column;
+
+		.footer-wrapper {
+			display: flex;
+			flex-direction: column;
+			padding: 40px 15px 30px;
+
+			@include fromBreakpointL {
+				justify-content: space-between;
+				flex-direction: row;
+				padding: 40px 50px 30px;
+			}
+
+			@include fromBreakpointMax {
+				max-width: $max;
+				width: 100%;
+				padding: 40px 30px 30px;
+				margin: 0 auto;
+			}
+
+			.footer-links--left,
+			.footer-links--middle,
+			.footer-links--right {
+				display: flex;
+				flex-direction: column;
+				font-size: 30px;
+				line-height: 35px;
+				color: $grey-light;
+
+				bnb-link {
+					font-size: inherit;
+					line-height: inherit;
+					width: 100%;
+					margin-bottom: 15px;
+					text-decoration: none;
+				}
+
+				.footer-links--left-small {
+					display: flex;
+					flex-direction: column;
+					@include fontCopyInfo();
+					text-align: start;
+				}
+
+				@include fromBreakpointL {
+					width: 410px;
+
+					.footer-links--left-small {
+						flex-direction: row;
+						margin-top: 147px;
+
+						bnb-link {
+							width: max-content;
+							margin-right: 50px;
+						}
+					}
+				}
+			}
+
+			.footer-links--middle {
+				.headline {
+					font-size: 30px;
+					line-height: 35px;
+					margin-top: 50px;
+					@include fromBreakpointL {
+						margin-top: 0;
+					}
+				}
+
+				@include fromBreakpointL {
+					margin-left: 30px;
+				}
+
+				@include fromBreakpointMax {
+					margin-left: 0;
+				}
+			}
+
+			.footer-links--right {
+				margin-top: 50px;
+				bnb-paragraph {
+					font-size: 30px;
+					line-height: 35px;
+				}
+
+				bnb-follow {
+					margin-top: 27px;
+				}
+
+				bnb-button-cta {
+					margin-top: 50px;
+					@include buttonSizes();
+				}
+
+				bnb-icon {
+					align-self: flex-end;
+					margin-top: 120px;
+					fill: $grey-light;
+					width: 80px;
+					height: 80px;
+				}
+
+				@include fromBreakpointM {
+					bnb-icon {
+						width: 120px;
+						height: 120px;
+					}
+				}
+
+				@include fromBreakpointL {
+					width: 250px;
+					margin-top: 0;
+
+					bnb-icon {
+						margin-top: 120px;
+					}
+
+					bnb-button-cta {
+						width: max-content;
+						margin-right: 0;
+					}
+
+					bnb-follow,
+					bnb-paragraph {
+						align-self: flex-end;
+					}
+				}
+
+				@include fromBreakpointMax {
+					width: 410px;
+
+					bnb-follow,
+					bnb-paragraph {
+						align-self: flex-start;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+$input-padding-left: 10px;
+
+@include host('bnb-input') {
+	display: flex;
+	flex-direction: column;
+	@include fontCopy();
+
+	.input__wrapper {
+		min-width: $select-input-width;
+	}
+
+	label {
+		clip-path: inset(50%);
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	input {
+		padding-left: $input-padding-left;
+		@include fontCopy();
+		line-height: $min-height;
+		width: 100%;
+		transition: all 0.6s ease;
+		border: none;
+		-webkit-appearance: none;
+
+		&::placeholder {
+			color: $grey-light;
+		}
+
+		&:focus {
+			outline-color: $grey;
+		}
+	}
+
+	input:disabled {
+		&::placeholder {
+			color: $grey-light;
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-input', 'error') {
+	input {
+		border: 2px solid $red;
+	}
+}

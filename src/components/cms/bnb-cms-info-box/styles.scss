@@ -1,0 +1,19 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-info-box') {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	.list-container {
+		width: 100%;
+		@include cmsComponents();
+		flex-wrap: wrap;
+
+		bnb-headline {
+			display: block;
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-partner') {
+	display: block;
+	width: 100%;
+	margin: 0;
+	background-color: white;
+	margin-bottom: 100px;
+
+	.component-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		@include cmsComponents();
+
+		@include fromBreakpointMax {
+			padding-bottom: 0;
+		}
+
+		@include slotted ('bnb-paragraph') {
+			margin-bottom: 50px;
+		}
+
+		.partner-container-top,
+		.partner-container-bottom {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+
+			@include fromBreakpointL {
+				justify-content: space-between;
+			}
+
+			bnb-icon {
+				width: 260px;
+				height: 260px;
+				margin: 50px 15px auto;
+				width: max-content;
+
+				@include fromBreakpointL {
+					height: 180px;
+					width: 180px;
+					margin: 50px auto 40px;
+				}
+			}
+		}
+	}
+}

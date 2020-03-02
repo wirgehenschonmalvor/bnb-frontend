@@ -1,0 +1,35 @@
+@import '../settings/settings';
+
+@mixin cmsComponents() {
+	margin: 20px $margin-left-right-small 100px $margin-left-right-small;
+	box-sizing: border-box;
+
+	@include fromBreakpointL() {
+		margin: 20px $margin-left-right-medium 100px $margin-left-right-medium;
+	}
+
+	@include fromBreakpointMax() {
+		width: 100%;
+		max-width: $max;
+		margin: 0 auto;
+		padding: 0 $margin-left-right-max 100px $margin-left-right-max;
+	}
+}
+
+@mixin cmsComponentsLeftRight() {
+	margin-left: $margin-left-right-small;
+	margin-right: $margin-left-right-small;
+
+	@include fromBreakpointL() {
+		margin-left: $margin-left-right-medium;
+		margin-right: $margin-left-right-medium;
+	}
+
+	@include fromBreakpointMax() {
+		max-width: $max;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: $margin-left-right-max;
+		padding-right: $margin-left-right-max;
+	}
+}

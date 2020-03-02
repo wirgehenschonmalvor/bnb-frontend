@@ -1,0 +1,79 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-follow') {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 175px;
+
+	.link-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			position: absolute;
+			width: 42px;
+			height: 42px;
+			margin: 0;
+			transition: all 0.6s ease;
+		}
+		@include slotted('bnb-icon') {
+			fill: $grey;
+			height: 25px;
+			width: 25px;
+			transition: all 0.6s ease;
+		}
+		@include hoverDevicesOnly {
+			&:hover {
+				@include slotted('bnb-icon') {
+					transition: all 0.6s ease;
+					fill: $grey-light;
+				}
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-follow', 'color=light') {
+	.link-wrapper a:focus {
+		outline-color: $grey-light;
+	}
+	@include slotted('bnb-icon') {
+		fill: $grey-light;
+	}
+	@include hoverDevicesOnly {
+		.link-wrapper:hover {
+			@include slotted('bnb-icon') {
+				fill: $grey;
+			}
+		}
+	}
+}
+
+@include addAttributeStyles('bnb-follow', 'color=footer') {
+	.link-wrapper a:focus {
+		outline-color: $grey-light;
+	}
+	@include slotted('bnb-icon') {
+		fill: $grey-light;
+	}
+	@include hoverDevicesOnly {
+		.link-wrapper:hover {
+			@include slotted('bnb-icon') {
+				fill: $white;
+			}
+		}
+	}
+}

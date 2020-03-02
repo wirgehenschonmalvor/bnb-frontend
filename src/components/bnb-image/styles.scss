@@ -1,0 +1,46 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles.scss';
+
+@include host('bnb-image') {
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+
+	.img-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(24, 1fr);
+		height: 100%;
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		grid-row: 1/25;
+		grid-column: 1/1;
+		background-color: $grey-light;
+	}
+
+	span {
+		grid-row: 24/25;
+		grid-column: 1/1;
+		text-align: end;
+		margin-right: 15px;
+		@include fontCopy();
+		font-size: 12px;
+		opacity: 0.5;
+	}
+
+	footer {
+		@include fontCopy();
+		font-size: 16px;
+		line-height: 18px;
+		margin-top: 5px;
+	}
+}
+
+@include addAttributeStyles('bnb-image', 'light') {
+	span {
+		color: white;
+	}
+}
