@@ -14,15 +14,12 @@ export const template = (
 					<slot />
 				</bnb-paragraph>
 				<br />
-				<bnb-paragraph
-				><b>So erreichst du uns:</b></bnb-paragraph
-				>
+				<bnb-paragraph><b>So erreichst du uns:</b></bnb-paragraph>
 				<br />
 				<bnb-paragraph>
 					Wir für Zukunft eG i. Gr.<br />
 					Glindweg 22<br />22303 Hamburg<br />
 					<bnb-link
-						footer
 						value="team@brandnewbundestag.de"
 						url="mailto:team@brandnewbundestag.de"
 					></bnb-link>
@@ -40,6 +37,12 @@ export const template = (
 					<b>BIC:</b> GENODEM1GLS
 					<br />
 					<b>Verwendungszweck:</b> Brand New Bundestag
+					<br />
+					<br />
+					Unsere gemeinnützige politische Bildungsarbeit, mit der wir
+					Menschen dafür begeistern möchten, sich politisch zu
+					engagieren, betreiben wir über den BNB eV. Diese kannst du
+					mit einer Spende unterstützen. Vielen Dank!
 				</bnb-paragraph>
 				<!-- <bnb-input
 					required
