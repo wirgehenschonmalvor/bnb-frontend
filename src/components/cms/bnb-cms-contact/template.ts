@@ -20,7 +20,6 @@ export const template = (
 					Wir für Zukunft eG i. Gr.<br />
 					Glindweg 22<br />22303 Hamburg<br />
 					<bnb-link
-						footer
 						value="team@brandnewbundestag.de"
 						url="mailto:team@brandnewbundestag.de"
 					></bnb-link>
