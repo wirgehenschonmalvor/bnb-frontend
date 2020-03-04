@@ -118,6 +118,7 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 				width: calc(#{$section-left-width} + #{$margin-left-right-max});
 			}
 			.stage-text-container-right {
+				width: calc(#{$section-right-width} - #{$right-indentation});
 				align-self: flex-end;
 				margin-right: $right-indentation;
 				height: inherit;
@@ -129,13 +130,9 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 			}
 
 			.stage-text-container-left {
-				padding-left: $margin-left-right-small;
+				padding-left: $margin-left-right-max;
 				bnb-paragraph {
 					height: 200px;
-				}
-
-				@include fromBreakpointMax {
-					padding-left: $margin-left-right-max;
 				}
 			}
 
