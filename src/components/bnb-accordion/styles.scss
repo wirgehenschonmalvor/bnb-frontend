@@ -15,7 +15,10 @@
 			height: 0;
 			overflow: hidden;
 			transition: all 0.3s ease-in-out;
-			margin-left: 64px;
+			margin-left: 40px;
+			@include fromBreakpointL {
+				margin-left: 64px;
+			}
 		}
 
 		input[name='accordion-item']:checked ~ .text {
