@@ -1,0 +1,38 @@
+@mixin buttonStyles {
+	@include fontCopy();
+	display: block;
+	min-height: 48px;
+	width: 100%;
+	padding: 5px 40px;
+	line-height: 34px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.6s ease;
+	cursor: pointer;
+	border-radius: 35px;
+	box-sizing: border-box;
+	@include buttonSizes;
+	color: $white;
+    background: none;
+	background-color: $grey;
+    border: 2px solid $grey;
+    box-shadow: none;
+    text-shadow: none;
+
+	&:focus {
+		outline: none;
+	}
+
+	@include hoverDevicesOnly() {
+		&:focus {
+			box-shadow: 0 0 3px 2px $grey;
+		}
+
+		&:hover {
+			transition: all 0.6s ease;
+			color: $grey;
+			border: 2px solid $grey;
+			background-color: $white;
+		}
+	}
+}
