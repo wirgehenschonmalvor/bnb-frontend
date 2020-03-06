@@ -10,7 +10,7 @@
 }
 @include addAttributeStyles('bnb-headline', 'color=white') {
 	h3 {
-		color: white;
+		color: $white;
 	}
 }
 @include addAttributeStyles('bnb-headline', 'color=purple') {
