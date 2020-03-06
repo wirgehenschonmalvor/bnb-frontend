@@ -1,0 +1,12 @@
+@import '../fonts/fonts';
+@import '../settings/settings';
+
+@mixin labelStyles {
+	clip-path: inset(50%);
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+}

@@ -1,0 +1,28 @@
+@import '../fonts/fonts';
+@import '../settings/settings';
+@import '../base/margins';
+
+@mixin inputStyles {
+	padding-left: 10px;
+	@include fontCopy();
+	line-height: $min-height;
+	width: 100%;
+	transition: all 0.6s ease;
+	border: none;
+	-webkit-appearance: none;
+	height: 48px;
+
+	&::placeholder {
+		color: $grey-light;
+	}
+
+	&:focus {
+		outline-color: $grey;
+	}
+
+	&:disabled {
+		&::placeholder {
+			color: $grey-light;
+		}
+	}
+}

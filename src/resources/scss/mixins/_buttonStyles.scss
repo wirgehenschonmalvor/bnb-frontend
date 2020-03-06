@@ -1,3 +1,5 @@
+@import '../fonts/fonts';
+
 @mixin buttonStyles {
 	@include fontCopy();
 	display: block;
