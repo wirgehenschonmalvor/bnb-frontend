@@ -3,7 +3,6 @@
 
 @include host('bnb-teaser') {
 	display: block;
-	// min-height: 600px;
 	background-color: $purple;
 
 	.component-wrapper {
