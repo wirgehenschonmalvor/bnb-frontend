@@ -95,7 +95,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":null,"typ
           <textarea placeholder="Meine Nachricht*" id="input_6" class="form-textarea validate[required]" name="q6_meineNachricht" cols="40" rows="6" data-component="textarea" required="" aria-labelledby="label_6"></textarea>
         </div>
       </li>
-      <li class="form-line">
+      <li class="form-line" id="required-hint">
         Mit * gekennzeichnete Felder sind Pflichtfelder.
       </li>
       <li class="form-line jf-required" data-type="control_captcha" id="id_7">

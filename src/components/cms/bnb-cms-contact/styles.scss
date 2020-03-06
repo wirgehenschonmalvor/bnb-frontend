@@ -28,13 +28,13 @@
 				width: $section-left-width;
 				margin-right: $margin-left-right-max;
 				flex-shrink: 0;
+				bnb-paragraph:first-child {
+					padding-top: 40px;
+				}
 			}
 			&__inputs {
 				width: $section-right-width;
 
-				bnb-headline {
-					display: none;
-				}
 			}
 		}
 	}
