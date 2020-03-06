@@ -157,4 +157,12 @@
 	bnb-headline[level='3'] {
 		margin-top: 100px;
 	}
+
+	.text-icon {
+		@include fromBreakpointL {
+			&--right {
+				margin-top: 0;
+			}
+		}
+	}
 }
