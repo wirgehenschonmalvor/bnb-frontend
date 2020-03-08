@@ -259,6 +259,18 @@
 			}
 		}
 	}
+	.form-input-wide#cid_8 {
+		position: relative;
+		margin-left: 20px;
+		@include fontCopy;
+
+		div span {
+			@include checkboxStyles;
+			input {
+				left: -26px;
+			}
+		}
+	}
 
 	.form-all .form-pagebreak-back,
 	.form-all .form-pagebreak-next {
@@ -458,6 +470,10 @@
 			padding-left: 0;
 			padding-right: 0;
 			width: 100%;
+
+			&#id_8 {
+				width: calc(100% - 20px);
+			}
 		}
 	}
 	.form-header-group {

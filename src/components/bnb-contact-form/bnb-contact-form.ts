@@ -1,17 +1,18 @@
 import Component, { HTMLFragment } from '@biotope/element';
 import { template } from './template';
-import { BnbContactFormProps, BnbContactFormMethods } from './defines';
+import BnbLink from '../bnb-link/bnb-link';
+import BnbParagraph from '../bnb-paragraph/bnb-paragraph';
 
-class BnbContactForm extends Component< BnbContactFormProps, null > {
+class BnbContactForm extends Component< null, null > {
   public static componentName = 'bnb-contact-form';
-  public static attributes = [];
-  
-  protected readonly defaultProps: BnbContactFormProps = {};
 
-  public methods: BnbContactFormMethods = {};
+  public static dependencies = [
+    BnbLink as typeof Component,
+    BnbParagraph as typeof Component,
+  ]
 
   public render(): HTMLFragment {
-    return template( { ...this.props, ...this.methods });
+    return template();
   }
 }
 
