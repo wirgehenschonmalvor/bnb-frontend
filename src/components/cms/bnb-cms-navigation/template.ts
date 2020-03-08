@@ -3,7 +3,7 @@ import * as styles from './styles.scss';
 
 import { BnbCmsNavigationProps } from './defines';
 
-export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
+export const template = (data: BnbCmsNavigationProps, refs): HTMLFragment => {
 	return html`
 		<div class="navigation-wrapper">
 			<nav role="navigation">
@@ -15,11 +15,12 @@ export const template = (data: BnbCmsNavigationProps): HTMLFragment => {
 					<bnb-icon id="navigation-icon" icon="schriftzug"></bnb-icon>
 				</a>
 				<div id="menuToggle">
-					<input type="checkbox" />
+					<input ref="${refs.menuToggle}" type="checkbox" />
 					<span></span>
 					<span></span>
 					<span></span>
-					<div id="menu-mobile">
+					<div ref="${refs.menu}"
+					id="menu-mobile">
 						<a href="index.html">
 							<bnb-icon
 								id="overlay-icon"
