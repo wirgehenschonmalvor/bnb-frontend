@@ -11,3 +11,9 @@
 		word-break: break-word;
 	}
 }
+
+@include addAttributeStyles('bnb-headline', 'color=white') {
+	h1 {
+		color: $white;
+	}
+}

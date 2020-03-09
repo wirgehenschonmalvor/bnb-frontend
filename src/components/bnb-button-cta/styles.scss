@@ -111,6 +111,30 @@
 	}
 }
 
+@include addAttributeStyles('bnb-button-cta', 'version=teaser') {
+	a {
+		color: $purple;
+		background-color: $white;
+		border: 2px solid $white;
+
+		&:focus {
+			outline: none;
+		}
+
+		@include hoverDevicesOnly() {
+			&:focus {
+				box-shadow: 0 0 3px 2px $white;
+			}
+
+			&:hover {
+				color: $white;
+				background-color: $purple;
+				border: 2px solid $white;
+			}
+		}
+	}
+}
+
 @include addAttributeStyles('bnb-button-cta', 'version=header') {
 	a {
 		width: initial;

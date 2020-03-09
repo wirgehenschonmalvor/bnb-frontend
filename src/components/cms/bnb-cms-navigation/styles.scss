@@ -5,6 +5,13 @@
 	display: block;
 	background-color: $white;
 	@include fontMenu();
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	@media screen and (min-width: 1366px) {
+		position: initial;
+	}
 
 	nav {
 		display: flex;
@@ -221,10 +228,10 @@
 		display: none;
 		height: 100px;
 		left: 32px;
-		top: 10px;
+		top: 9px;
 		margin-left: -17px;
 
-		@media screen and (min-width: 321px) {
+		@include fromBreakpointM {
 			opacity: 0;
 		}
 	}
@@ -281,6 +288,18 @@
 	}
 }
 
+@include addAttributeStyles('bnb-cms-navigation', 'scrolled') {
+	top: -10px;
+	height: 55px;
+	box-shadow: 0 0 10px #85888c;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+	#menuToggle input:checked ~ #menu-mobile #overlay-icon,
+	a #navigation-icon {
+		width: 70px;
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+	}
+}
+
 @include addAttributeStyles('bnb-cms-navigation', 'page=ueber-uns') {
 	.navigation-wrapper nav #menu-desktop .navigation-links #ueber-uns {
 		text-decoration: underline;
@@ -294,7 +313,11 @@
 }
 
 @include addAttributeStyles('bnb-cms-navigation', 'page=unsere-forderungen') {
-	.navigation-wrapper nav #menu-desktop .navigation-links #unsere-forderungen {
+	.navigation-wrapper
+		nav
+		#menu-desktop
+		.navigation-links
+		#unsere-forderungen {
 		text-decoration: underline;
 	}
 }
