@@ -1,0 +1,76 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-supporter-slide') {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	@include fromBreakpointM {
+		flex-direction: row;
+	}
+
+	.quote-wrapper,
+	.image-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: relative;
+		height: 100vw;
+
+		@include fromBreakpointL {
+			height: 100%;
+			width: 50%;
+		}
+
+		.author-wrapper {
+			align-self: baseline;
+			margin-bottom: 100px;
+
+			bnb-paragraph {
+				@include fontHeading;
+				color: $white;
+
+				@include fromBreakpointL {
+					color: initial;
+				}
+			}
+		}
+
+		.quote {
+			margin-bottom: 40px;
+			color: $white;
+
+			@include fromBreakpointL {
+				width: 95%;
+				color: $grey;
+			}
+
+			@include fromBreakpointMax {
+				width: 85%;
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		margin: 0 -$margin-left-right-small;
+
+		@include fromBreakpointL {
+			position: relative;
+			margin: 0;
+			height: 100%;
+		}
+
+		bnb-image {
+			height: 100vw;
+
+			@include fromBreakpointL {
+				height: 100%;
+			}
+		}
+	}
+}
