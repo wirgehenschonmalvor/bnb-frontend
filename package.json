@@ -1,7 +1,7 @@
 {
   "name": "Biotope",
   "title": "Brand New Bundestag - The UI Components Ecosystem Framework",
-  "version": "7.2.3",
+  "version": "7.2.4",
   "description": "Start building your UI Components Ecosystem, based on pure Web Components, easy usable in all major JS frameworks.",
   "repository": {
     "type": "git",
