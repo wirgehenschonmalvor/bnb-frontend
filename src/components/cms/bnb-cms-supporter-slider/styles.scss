@@ -1,0 +1,18 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-supporter-slider') {
+	@include cmsComponents();
+	display: block;
+	height: 600px;
+	position: relative;
+
+	@include slotted('bnb-supporter-slide') {
+        position: absolute;
+		// height: 600px;
+		transform: translateX(100%);
+	}
+	@include slotted('bnb-supporter-slide.active') {
+		transform: translateX(0%);
+	}
+}
