@@ -23,7 +23,7 @@ class BnbCmsNavigation extends Component<BnbCmsNavigationProps, null> {
 	};
 
 	setMenuSize() {
-		window.innerWidth < 768 ? this.references.menu.current.style.width = window.innerWidth + 'px' : this.references.menu.current.style.width = 325 + 'px';
+		window.innerWidth < 768 ? this.references.menu.current.style.width = window.innerWidth + 'px' : this.references.menu.current.style.width = 320 + 'px';
 	}
 
 	shrinkMenu() {
@@ -41,7 +41,7 @@ class BnbCmsNavigation extends Component<BnbCmsNavigationProps, null> {
 	public rendered() {
 		this.setMenuSize();
 
-		if (window.innerWidth < 768) {
+		if (window.innerWidth < 1366) {
 			window.addEventListener('scroll', debounce(this.shrinkMenu.bind(this), 10));
 			window.addEventListener('resize', debounce(this.setMenuSize.bind(this), 250));
 			window.addEventListener('scroll', this.closeMenu.bind(this));

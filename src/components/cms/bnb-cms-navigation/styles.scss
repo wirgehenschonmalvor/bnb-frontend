@@ -8,15 +8,18 @@
 	position: sticky;
 	top: 0;
 	z-index: 1;
+	height: 65px;
+	transition: all 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
 
 	@media screen and (min-width: 1366px) {
+		height: 160px;
 		position: initial;
 	}
 
 	nav {
 		display: flex;
 		margin: 0 $margin-left-right-small;
-		height: 65px;
+		height: -webkit-fill-available;
 		justify-content: flex-end;
 		align-items: center;
 
@@ -25,7 +28,6 @@
 		}
 
 		@media screen and (min-width: 1366px) {
-			height: 160px;
 
 			#menu-mobile,
 			#menuToggle {
@@ -118,9 +120,11 @@
 		flex-direction: column;
 		position: absolute;
 		right: 0;
-		width: 0;
-		height: 0;
-
+		width: 320px;
+		height: 700px;
+		margin: -50px 0 0 -50px;
+		padding: 125px $margin-left-right-small $margin-left-right-small;
+		box-shadow: 0 0 10px #85888c;
 		background-color: $white;
 		-webkit-font-smoothing: antialiased;
 		transform-origin: 0% 0%;
@@ -129,47 +133,33 @@
 		-moz-transform: translateX(120%);
 		transform: translateX(120%);
 		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-	}
 
-	#menu-mobile bnb-link {
-		display: none;
-		padding: 10px 0;
-		transition-delay: 2s;
-	}
+		@include fromBreakpointM {
+			padding: 125px $margin-left-right-medium $margin-left-right-medium;
+		}
 
-	#menu-mobile bnb-button-cta,
-	#menu-mobile bnb-follow {
-		display: none;
-		margin: 50px 0;
+		a bnb-icon,
+		bnb-link {
+			display: block;
+			padding: 10px 0;
+			transition-delay: 2s;
+		}
+
+		bnb-follow,
+		bnb-button-cta {
+			display: flex;
+			margin: 50px 0;
+		}
 	}
 
 	#menuToggle input:checked ~ #menu-mobile {
-		width: 320px;
-		height: 700px;
-		box-shadow: 0 0 10px #85888c;
-		margin: -50px 0 0 -50px;
-		padding: $margin-left-right-small;
-		padding-top: 125px;
 		transform: translateX($margin-left-right-small);
 		-webkit-transform: translateX($margin-left-right-small);
 		-ms-transform: translateX($margin-left-right-small);
 		-moz-transform: translateX($margin-left-right-small);
 		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
-		a bnb-icon,
-		bnb-link {
-			display: block;
-		}
-
-		bnb-follow,
-		bnb-button-cta,
-		a #overlay-icon {
-			display: flex;
-		}
-
 		@include fromBreakpointM {
-			padding: $margin-left-right-medium;
-			padding-top: 125px;
 			transform: translateX($margin-left-right-medium);
 			-webkit-transform: translateX($margin-left-right-medium);
 			-ms-transform: translateX($margin-left-right-medium);
@@ -195,6 +185,7 @@
 		align-self: center;
 		left: $margin-left-right-small;
 		fill: $grey;
+		transition: all 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
 
 		@include fromBreakpointL {
 			left: $margin-left-right-medium;
@@ -292,11 +283,17 @@
 	top: -10px;
 	height: 55px;
 	box-shadow: 0 0 10px #85888c;
-	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+	transition: all 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+	#menuToggle span {
+		width: 23px;
+		margin-bottom: 3px;
+	}
+
 	#menuToggle input:checked ~ #menu-mobile #overlay-icon,
 	a #navigation-icon {
 		width: 70px;
-		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+		transition: all 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
 	}
 }
 
