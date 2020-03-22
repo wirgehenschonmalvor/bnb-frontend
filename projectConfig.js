@@ -25,13 +25,14 @@ module.exports = {
 
 	favicons: {
 		appName: 'Brand New Bundestag',
-		appShortName: 'BNB',
+		appShortName: 'Brand New Bundestag',
 		background: '#f6f6f6',
 		appleStatusBarStyle: "default",
 		appDescription: 'Brand New Bundestag | Unabhängig & Überparteilich',
 		lang: 'de',
 		path: 'favicons/',
 		display: 'browser',
+		start_url: '/',
 		orientation: 'any',
 		logging: false,
 		online: false,
