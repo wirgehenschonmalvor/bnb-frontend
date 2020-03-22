@@ -1,0 +1,16 @@
+---
+# These values are used for creating the index
+# It is also possible to use these inside the partials via {{ data.frontMatter.[your property] }}
+title: Brand New Bundestag | Fehler 500
+description: Leider ist ein Fehler auf dem Server aufgetreten. Bitte versuche es später noch einmal.
+url: fehler500.html
+---
+
+{{!-- DEV-Notes:
+	specify the layout as the main partial
+	inject the content via contentMain variable
+--}}
+
+{{> layouts/layout.default
+	contentMain="scaffolding/fehler500"
+}}
