@@ -32,7 +32,7 @@ module.exports = {
 		lang: 'de',
 		path: 'favicons/',
 		display: 'browser',
-		start_url: '/',
+		start_url: 'https://www.brandnewbundestag.de/index.html',
 		orientation: 'any',
 		logging: false,
 		online: false,
