@@ -48,6 +48,7 @@ import * as winnerStaircase from './svg/winner-staircase.svg';
 import * as nomination from './svg/nomination.svg';
 import * as checked from './svg/checked.svg';
 import * as external from './svg/external.svg';
+import * as error from './svg/fehler.svg';
 
 const icons = {
 	schriftzug,
@@ -100,6 +101,7 @@ const icons = {
 	nomination,
 	checked,
 	external,
+	error,
 };
 
 export default icons;
