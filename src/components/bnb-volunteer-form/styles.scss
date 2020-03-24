@@ -1,29 +1,23 @@
-@import "node_modules/@biotope/element/lib/host.mixin";
+@import 'node_modules/@biotope/element/lib/host.mixin';
 @import '../../resources/scss/styles';
 
 @include host('bnb-volunteer-form') {
-    display: block;
+	display: block;
 
-    iframe {
-        height: 7100px;
+	iframe {
+		height: 2400px;
 
-        @media screen and (min-width: 450px) {
-            height: 6800px;
-        }
-
-        @media screen and (min-width: 500px) {
-            height: 6700px;
-        }
-
-        @media screen and (min-width: 600px) {
-            height: 6000px;
-        }
-
-        @include fromBreakpointM {
-            height: 5600px
-        }
-        @include fromBreakpointMax {
-            height: 5450px
-        }
+		@media screen and (min-width: 500px) {
+			height: 2300px;
+		}
+		@media screen and (min-width: 600px) {
+			height: 2000px;
+		}
+		@include fromBreakpointM {
+			height: 1800px;
+		}
+		@include fromBreakpointMax {
+			height: 1800px;
+		}
 	}
 }
