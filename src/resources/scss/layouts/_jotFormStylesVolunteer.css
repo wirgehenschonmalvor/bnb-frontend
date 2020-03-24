@@ -1,4 +1,4 @@
-/* Styles for the nomiation form */
+/* Styles for the volunteer form */
 
 .form-label.form-label-auto {
 	display: none !important;
@@ -113,11 +113,8 @@
 
 #cid_4 div,
 #cid_6 div,
-#cid_11 div,
-#cid_36 div,
-#cid_38 div,
-#cid_40 div,
-#cid_46 div {
+#cid_50 div,
+#cid_51 div {
 	display: flex;
 	flex-direction: column;
 }
@@ -125,11 +122,8 @@
 @media screen and (min-width: 600px) {
 	#cid_4 div,
 	#cid_6 div,
-	#cid_11 div,
-	#cid_36 div,
-	#cid_38 div,
-	#cid_40 div,
-	#cid_46 div  {
+	#cid_50 div,
+	#cid_51 div {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -138,39 +132,30 @@
 
 #cid_4 div .form-sub-label-container,
 #cid_6 div .form-sub-label-container,
-#cid_11 div .form-sub-label-container,
-#cid_36 div .form-sub-label-container,
-#cid_38 div .form-sub-label-container,
-#cid_40 div .form-sub-label-container,
-#cid_46 div .form-sub-label-container {
+#cid_50 div .form-sub-label-container,
+#cid_51 div .form-sub-label-container {
 	width: 100%;
 }
 
 @media screen and (min-width: 600px) {
 	#cid_4 div .form-sub-label-container,
 	#cid_6 div .form-sub-label-container,
-	#cid_11 div .form-sub-label-container,
-	#cid_36 div .form-sub-label-container,
-	#cid_38 div .form-sub-label-container,
-	#cid_40 div .form-sub-label-container,
-	#cid_46 div .form-sub-label-container {
+	#cid_50 div .form-sub-label-container,
+	#cid_51 div .form-sub-label-container {
 		width: 48% !important;
 	}
 }
 
-#cid_14 div .form-checkbox-item,
-#cid_30 div .form-checkbox-item {
+#cid_14 div .form-checkbox-item {
 	margin-bottom: 25px;
 }
 
-#cid_14 div .form-checkbox-item:last-child,
-#cid_30 div .form-checkbox-item:last-child {
+#cid_14 div .form-checkbox-item:last-child {
 	margin-top: -15px;
-	width:100%;
+	width: 100%;
 }
 
-#other_14,
-#other_30 {
+#other_14 {
 	margin-top: 27px;
 }
 
@@ -182,11 +167,7 @@
 	display: none;
 }
 
-#input_5_confirm,
-#input_13_confirm,
-#input_37_confirm,
-#input_39_confirm,
-#input_41_confirm {
+#input_5_confirm {
 	margin-top: -10px !important;
 }
 
@@ -271,7 +252,7 @@ form {
 		line-height: 44px;
 	}
 }
-
+/* ?? */
 .form-html p {
 	font-size: 18px !important;
 	line-height: 30px;
@@ -283,4 +264,3 @@ form {
 		font-size: 22px !important;
 	}
 }
-
