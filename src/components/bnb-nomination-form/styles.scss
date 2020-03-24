@@ -1,0 +1,17 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-nomination-form') {
+	display: block;
+
+	iframe {
+        height: 6700px;
+
+        @include fromBreakpointM {
+            height: 5500px
+        }
+        @include fromBreakpointMax {
+            height: 5150px
+        }
+	}
+}
