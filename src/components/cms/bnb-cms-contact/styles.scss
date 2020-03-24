@@ -4,42 +4,18 @@
 @include host('bnb-cms-contact') {
 	display: flex;
 	flex-direction: column;
-	background-color: $white;
-
-	bnb-headline {
-		@include cmsComponents();
-		margin-bottom: 0;
-
-		@include fromBreakpointL {
-			margin-bottom: 0;
-		}
-
-		@include fromBreakpointMax {
-			padding-bottom: 0;
-		}
-	}
-
-	bnb-button-cta {
-		@include cmsComponents();
-		@include buttonSizes();
-	}
 
 	.contact {
 		&__wrapper {
 			@include cmsComponents();
 		}
 
-		&__text {
-			margin: $margin-top-bottom-regular 0;
-		}
-
+		&__text,
 		&__inputs {
-			&--name,
-			&--email,
-			&--telefon,
-			&--message,
-			bnb-checkbox {
-				margin: 20px auto;
+			margin: $margin-top-bottom-regular 0;
+			bnb-headline {
+				display: block;
+				margin-bottom: 30px;
 			}
 		}
 
@@ -49,14 +25,16 @@
 				justify-content: space-between;
 			}
 			&__text {
-				width: 45%;
+				width: $section-left-width;
+				margin-right: $margin-left-right-max;
+				flex-shrink: 0;
+				bnb-paragraph:first-child {
+					padding-top: 40px;
+				}
 			}
 			&__inputs {
-				width: 45%;
+				width: $section-right-width;
 
-				bnb-paragraph {
-					margin-top: 52px;
-				}
 			}
 		}
 	}

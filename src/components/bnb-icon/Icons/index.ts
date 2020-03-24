@@ -39,6 +39,7 @@ import * as iconsetLoesungMedium from './svg/iconset-loesung-medium.svg';
 import * as iconsetPeopleMedium1 from './svg/iconset-people-medium-1.svg';
 import * as iconsetPeopleMedium2 from './svg/iconset-people-medium-2.svg';
 import * as iconsetPeopleSingle from './svg/iconset-people-single.svg';
+import * as iconsetCheckedSingle from './svg/iconset-checked-single.svg';
 import * as iconsetPeopleSmall1 from './svg/iconset-people-small-1.svg';
 import * as iconsetPeopleSmall2 from './svg/iconset-people-small-2.svg';
 import * as iconsetPeopleSmall3 from './svg/iconset-people-small-3.svg';
@@ -92,6 +93,7 @@ const icons = {
 	iconsetPeopleMedium1,
 	iconsetPeopleMedium2,
 	iconsetPeopleSingle,
+	iconsetCheckedSingle,
 	iconsetPeopleSmall1,
 	iconsetPeopleSmall2,
 	iconsetPeopleSmall3,
