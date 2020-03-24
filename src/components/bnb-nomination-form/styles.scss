@@ -5,13 +5,25 @@
 	display: block;
 
 	iframe {
-        height: 6700px;
+        height: 7100px;
+
+        @media screen and (min-width: 450px) {
+            height: 6800px;
+        }
+
+        @media screen and (min-width: 500px) {
+            height: 6700px;
+        }
+
+        @media screen and (min-width: 600px) {
+            height: 6000px;
+        }
 
         @include fromBreakpointM {
-            height: 5500px
+            height: 5600px
         }
         @include fromBreakpointMax {
-            height: 5250px
+            height: 5450px
         }
 	}
 }
