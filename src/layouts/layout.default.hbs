@@ -14,12 +14,12 @@
 	<!-- DEV-note: include page specific styles and scripts after this comment -->
 </head>
 
-<body role="document" class="{{bodyClass}}">
+<body role="document" class="{{bodyClass}}" style="margin: 0;background-color: #f6f6f6;">
 
 	{{bioInclude 'layouts/includes/loading-spinner' }}
 	{{bioInclude 'layouts/includes/outdated-browser' }}
 
-	<main style="display: none;">
+	<main style="display: none;overflow: hidden;">
 		{{!-- {{bioInclude 'components/XHeader/scaffolding/XHeader' }} --}}
 		{{bioInclude (lookup . 'contentMain') }}
 	</main>
