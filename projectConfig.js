@@ -6,17 +6,13 @@
 module.exports = {
 	project: 'Biotope - The Frontend Ecosystem Framework',
 	global: {
-		tasks: {
-		},
+		tasks: {},
 		externalResources: {
 			'sanitize.css': 'sanitize.css',
 			'@virtualidentity/css-helper': ['base.css'],
-			'handlebars': 'dist/handlebars.runtime.js'
+			handlebars: 'dist/handlebars.runtime.js',
 		},
-		tsEntryPoints: [
-			'resources/ts/**/*.ts',
-			'components/**/*.ts'
-		]
+		tsEntryPoints: ['resources/ts/**/*.ts', 'components/**/*.ts'],
 	},
 
 	connect: {
@@ -24,6 +20,33 @@ module.exports = {
 	},
 
 	webpack: {
-		watchScss: true
-	}
+		watchScss: true,
+	},
+
+	favicons: {
+		appName: 'Brand New Bundestag',
+		appShortName: 'Brand New Bundestag',
+		background: '#f6f6f6',
+		appleStatusBarStyle: "default",
+		appDescription: 'Brand New Bundestag | Unabhängig & Überparteilich',
+		lang: 'de',
+		path: 'favicons/',
+		display: 'browser',
+		start_url: 'https://www.brandnewbundestag.de/index.html',
+		orientation: 'any',
+		logging: false,
+		online: false,
+		html: 'htmlhead.favicons.html',
+		pipeHTML: true,
+		replace: true,
+		icons: {
+			android: true,
+			appleIcon: true,
+			appleStartup: true,
+			coast: true,
+			favicons: true,
+			firefox: true,
+			windows: true,
+		},
+	},
 };

@@ -26,10 +26,15 @@ import * as iconsetBnbMedium from './svg/iconset-bnb-medium.svg';
 import * as iconsetEhrenamtBig from './svg/iconset-ehrenamt-big.svg';
 import * as iconsetSpendenBig from './svg/iconset-spenden-big.svg';
 import * as iconsetWahlkreiseBig from './svg/iconset-wahlkreise-big.svg';
+import * as iconsetWahlkreiseSmall from './svg/iconset-wahlkreise-small.svg';
+import * as iconsetForderungenMedium from './svg/iconset-forderungen-medium.svg';
 import * as iconsetKandidatinnenBig from './svg/iconset-kandidatinnen-big.svg';
+import * as iconsetKandidatinnenSmall from './svg/iconset-kandidatinnen-small.svg';
 import * as iconsetHerausforderungBig from './svg/iconset-herausforderung-big.svg';
+import * as iconsetHerausforderungBigUnordered from './svg/iconset-herausforderung-big-unordered.svg';
 import * as iconsetHerausforderungMedium from './svg/iconset-herausforderung-medium.svg';
 import * as iconsetLoesungBig from './svg/iconset-loesung-big.svg';
+import * as iconsetLoesungBigUnordered from './svg/iconset-loesungen-big-unordered.svg';
 import * as iconsetLoesungMedium from './svg/iconset-loesung-medium.svg';
 import * as iconsetPeopleMedium1 from './svg/iconset-people-medium-1.svg';
 import * as iconsetPeopleMedium2 from './svg/iconset-people-medium-2.svg';
@@ -38,11 +43,13 @@ import * as iconsetCheckedSingle from './svg/iconset-checked-single.svg';
 import * as iconsetPeopleSmall1 from './svg/iconset-people-small-1.svg';
 import * as iconsetPeopleSmall2 from './svg/iconset-people-small-2.svg';
 import * as iconsetPeopleSmall3 from './svg/iconset-people-small-3.svg';
+import * as iconsetTeamSmall from './svg/iconset-team-small.svg';
 import * as winner from './svg/winner.svg';
 import * as winnerStaircase from './svg/winner-staircase.svg';
 import * as nomination from './svg/nomination.svg';
 import * as checked from './svg/checked.svg';
 import * as external from './svg/external.svg';
+import * as error from './svg/fehler.svg';
 
 const icons = {
 	schriftzug,
@@ -73,10 +80,15 @@ const icons = {
 	iconsetEhrenamtBig,
 	iconsetSpendenBig,
 	iconsetWahlkreiseBig,
+	iconsetWahlkreiseSmall,
+	iconsetForderungenMedium,
 	iconsetKandidatinnenBig,
+	iconsetKandidatinnenSmall,
 	iconsetHerausforderungBig,
+	iconsetHerausforderungBigUnordered,
 	iconsetHerausforderungMedium,
 	iconsetLoesungBig,
+	iconsetLoesungBigUnordered,
 	iconsetLoesungMedium,
 	iconsetPeopleMedium1,
 	iconsetPeopleMedium2,
@@ -85,11 +97,13 @@ const icons = {
 	iconsetPeopleSmall1,
 	iconsetPeopleSmall2,
 	iconsetPeopleSmall3,
+	iconsetTeamSmall,
 	winner,
 	winnerStaircase,
 	nomination,
 	checked,
 	external,
+	error,
 };
 
 export default icons;
