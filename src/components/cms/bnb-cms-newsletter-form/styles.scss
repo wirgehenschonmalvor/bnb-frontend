@@ -29,6 +29,7 @@
 			&--left {
 				width: $section-left-width;
 				margin-right: 30px;
+				flex-shrink: 0;
 			}
 
 			&--right {

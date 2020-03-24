@@ -15,32 +15,12 @@ $input-padding-left: 10px;
 		}
 
 		label {
-			clip-path: inset(50%);
-			position: absolute;
-			height: 1px;
-			width: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
+			@include labelStyles;
 		}
 
 		input {
-			padding-left: $input-padding-left;
-			@include fontCopy();
-			line-height: $min-height;
-			width: 100%;
-			transition: all 0.6s ease;
-			border: none;
+			@include inputStyles;
 			margin-bottom: 25px;
-			-webkit-appearance: none;
-
-			&::placeholder {
-				color: $grey-light;
-			}
-
-			&:focus {
-				outline-color: $grey;
-			}
 		}
 	}
 

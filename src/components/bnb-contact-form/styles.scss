@@ -1,0 +1,10 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-contact-form') {
+	display: block;
+
+	iframe {
+		height: 1050px;
+	}
+}

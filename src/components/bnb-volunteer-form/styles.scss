@@ -1,0 +1,23 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-volunteer-form') {
+	display: block;
+
+	iframe {
+		height: 2400px;
+
+		@media screen and (min-width: 500px) {
+			height: 2300px;
+		}
+		@media screen and (min-width: 600px) {
+			height: 2000px;
+		}
+		@include fromBreakpointM {
+			height: 1800px;
+		}
+		@include fromBreakpointMax {
+			height: 1800px;
+		}
+	}
+}
