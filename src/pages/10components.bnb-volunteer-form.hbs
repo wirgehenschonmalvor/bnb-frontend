@@ -1,0 +1,15 @@
+---
+# These values are used for creating the index
+# It is also possible to use these inside the partials via {{ data.frontMatter.[your property] }}
+title: BnbVolunteerForm
+description: A simple demo of BnbVolunteerForm
+---
+
+{{!-- DEV-Notes:
+	specify the layout as the main partial
+	inject the content via contentMain variable
+--}}
+
+{{> layouts/layout.default
+	contentMain="components/bnb-volunteer-form/scaffolding/bnb-volunteer-form"
+}}
