@@ -1,0 +1,11 @@
+@import "node_modules/@biotope/element/lib/host.mixin";
+@import '../../../resources/scss/styles';
+
+@include host('bnb-cms-teaser') {
+    display: block;
+    background-color: $purple;
+
+    .teaser-wrapper {
+        @include cmsComponents;
+    }
+}
