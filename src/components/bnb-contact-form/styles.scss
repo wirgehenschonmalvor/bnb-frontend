@@ -5,6 +5,10 @@
 	display: block;
 
 	iframe {
-		height: 1050px;
+        height: 1150px;
+
+        @include fromBreakpointM {
+            height: 1100px
+        }
 	}
 }
