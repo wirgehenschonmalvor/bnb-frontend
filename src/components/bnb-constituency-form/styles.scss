@@ -1,0 +1,23 @@
+@import 'node_modules/@biotope/element/lib/host.mixin';
+@import '../../resources/scss/styles';
+
+@include host('bnb-constituency-form') {
+	display: block;
+
+	iframe {
+		height: 5100px;
+
+		@media screen and (min-width: 500px) {
+			height: 4700px;
+		}
+		@media screen and (min-width: 600px) {
+			height: 4300px;
+		}
+		@include fromBreakpointM {
+			height: 4000px;
+		}
+		@include fromBreakpointMax {
+			height: 3900px;
+		}
+	}
+}

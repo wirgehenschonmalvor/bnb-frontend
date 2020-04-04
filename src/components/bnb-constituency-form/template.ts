@@ -1,19 +1,17 @@
 import { html, createStyle, HTMLFragment } from '@biotope/element';
 import * as styles from './styles.scss';
-import BnbNominationFormMethods from './defines';
 
 
-export const template = (
-	data: BnbNominationFormMethods,): HTMLFragment => {
+export const template = (): HTMLFragment => {
   return html`
 
     <iframe
-      id="JotFormIFrame-200835639908060"
-      title="Heading"
+      id="JotFormIFrame-200942228658358"
+      title="Wahlkreis"
       onload="window.parent.scrollTo(0,0)"
       allowtransparency="true"
       allowfullscreen="true"
-      src="https://form.jotform.com/200835639908060"
+      src="https://form.jotform.com/200942228658358"
       frameborder="0"
       style="
       width: 100%;
@@ -22,7 +20,7 @@ export const template = (
     >
     </iframe>
     <script type="text/javascript">
-      var ifr = document.getElementById("JotFormIFrame-200835639908060");
+      var ifr = document.getElementById("JotFormIFrame-200942228658358");
       if(window.location.href && window.location.href.indexOf("?") > -1) {
         var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
         if(ifr && get.length > 0) {
