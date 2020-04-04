@@ -13,11 +13,10 @@ export const template = (
       onload="window.parent.scrollTo(0,0)"
       allowtransparency="true"
       allowfullscreen="true"
-      allow="geolocation; microphone; camera"
       src="https://form.jotform.com/200835639908060"
       frameborder="0"
       style="
-      min-width: 100%;
+      width: 100%;
       border:none;"
       scrolling="no"
     >
