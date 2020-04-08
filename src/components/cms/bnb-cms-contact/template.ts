@@ -25,22 +25,22 @@ export const template = (
 				<br />
 				<br />
 				<bnb-paragraph>
-					<b>Spenden an:</b>
+					<b>Finanzielle Unterstützung (nicht gemeinnützig) an:</b>
 					<br />
 					<br />
 					<b>Empfänger:</b> Brand New Bewegung e.V.
 					<br />
-					<b>IBAN:</b> DE16 4306 0967 1039 9676 00
+					<b>IBAN:</b> DE17 4306 0967 1059 7453 00
 					<br />
 					<b>BIC:</b> GENODEM1GLS
 					<br />
 					<b>Verwendungszweck:</b> Brand New Bundestag
-					<br />
+					<!-- <br />
 					<br />
 					Unsere gemeinnützige politische Bildungsarbeit, mit der wir
 					Menschen dafür begeistern möchten, sich politisch zu
 					engagieren, betreiben wir über den BNB eV. Diese kannst du
-					mit einer Spende unterstützen. Vielen Dank!
+					mit einer Spende unterstützen. Vielen Dank! -->
 				</bnb-paragraph>
 			</div>
 			<div class="contact__inputs">
