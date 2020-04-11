@@ -18,8 +18,8 @@ export const template = (
 					Wir für Zukunft eG i. Gr.<br />
 					Glindweg 22<br />22303 Hamburg<br />
 					<bnb-link
-					value="team@brandnewbundestag.de"
-					url="mailto:team@brandnewbundestag.de"
+						value="team@brandnewbundestag.de"
+						url="mailto:team@brandnewbundestag.de"
 					></bnb-link>
 				</bnb-paragraph>
 				<br />
@@ -42,6 +42,13 @@ export const template = (
 					engagieren, betreiben wir über den BNB eV. Diese kannst du
 					mit einer Spende unterstützen. Vielen Dank! -->
 				</bnb-paragraph>
+				<bnb-button-cta
+					version="primary"
+					value="Jetzt mit Paypal Unterstützen"
+					url="https://form.jotform.com/200975921001043"
+					target="_blank"
+					data-resources="[{paths: ['components/bnb-button-cta/index.js']}]"
+				></bnb-button-cta>
 			</div>
 			<div class="contact__inputs">
 				<bnb-headline level="3">Kontaktformular</bnb-headline>

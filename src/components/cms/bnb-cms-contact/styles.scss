@@ -17,6 +17,11 @@
 				display: block;
 				margin-bottom: 30px;
 			}
+			bnb-button-cta {
+				margin: 50px auto;
+				@include buttonSizes;
+
+			}
 		}
 
 		@include fromBreakpointMax {
