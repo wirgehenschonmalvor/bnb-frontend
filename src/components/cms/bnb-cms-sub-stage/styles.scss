@@ -71,6 +71,10 @@
 				background-color: white;
 				width: $component-container-indent-width;
 				padding: 0 $margin-left-right-max;
+				height: fit-content;
+				.h1 {
+					margin-bottom: 20px;
+				}
 			}
 		}
 	}
