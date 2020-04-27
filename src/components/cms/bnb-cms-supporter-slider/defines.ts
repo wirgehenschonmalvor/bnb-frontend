@@ -8,6 +8,7 @@
 interface BnbCmsSupporterSliderProps {
   heading: string;
   index: number;
+  slidecount: number;
 }
 
 interface BnbCmsSupporterSliderMethods {
