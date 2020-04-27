@@ -16,8 +16,11 @@
 		@include fromBreakpointM {
 			height: 1800px;
 		}
-		@include fromBreakpointMax {
-			height: 1800px;
+		@include fromBreakpointL {
+			height: 2000px;
 		}
+		// @include fromBreakpointMax {
+		// 	height: 100px;
+		// }
 	}
 }
