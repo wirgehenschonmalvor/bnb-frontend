@@ -47,13 +47,18 @@ export const template = (data: BnbCmsFooterProps): HTMLFragment => {
 						></bnb-link>
 						<bnb-link
 							footer
+							value="Transparenz"
+							url="transparenz.html"
+						></bnb-link>
+						<bnb-link
+							footer
 							value="Datenschutz"
 							url="datenschutz.html"
 						></bnb-link>
 					</div>
 				</div>
-				<div class="footer-links--middle">
-				</div>
+				<!-- <div class="footer-links--middle">
+				</div> -->
 				<div class="footer-links--right">
 					<bnb-paragraph class="headline">Folge uns:</bnb-paragraph>
 					<bnb-follow color="footer"></bnb-follow>

@@ -31,7 +31,7 @@
 			}
 
 			.footer-links--left,
-			.footer-links--middle,
+			// .footer-links--middle,
 			.footer-links--right {
 				display: flex;
 				flex-direction: column;
@@ -55,7 +55,7 @@
 				}
 
 				@include fromBreakpointL {
-					width: 410px;
+					width: 50%;
 
 					.footer-links--left-small {
 						flex-direction: row;
@@ -69,24 +69,24 @@
 				}
 			}
 
-			.footer-links--middle {
-				.headline {
-					font-size: 30px;
-					line-height: 35px;
-					margin-top: 50px;
-					@include fromBreakpointL {
-						margin-top: 0;
-					}
-				}
+			// .footer-links--middle {
+			// 	.headline {
+			// 		font-size: 30px;
+			// 		line-height: 35px;
+			// 		margin-top: 50px;
+			// 		@include fromBreakpointL {
+			// 			margin-top: 0;
+			// 		}
+			// 	}
 
-				@include fromBreakpointL {
-					margin-left: 30px;
-				}
+			// 	@include fromBreakpointL {
+			// 		margin-left: 30px;
+			// 	}
 
-				@include fromBreakpointMax {
-					margin-left: 0;
-				}
-			}
+			// 	@include fromBreakpointMax {
+			// 		margin-left: 0;
+			// 	}
+			// }
 
 			.footer-links--right {
 				margin-top: 50px;
@@ -120,7 +120,7 @@
 				}
 
 				@include fromBreakpointL {
-					width: 250px;
+					width: 11%;
 					margin-top: 0;
 
 					bnb-icon {
@@ -139,7 +139,7 @@
 				}
 
 				@include fromBreakpointMax {
-					width: 410px;
+					// width: 410px;
 
 					bnb-follow,
 					bnb-paragraph {

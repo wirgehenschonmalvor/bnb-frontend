@@ -35,6 +35,12 @@
 				margin-top: 50px;
 				@include buttonSizes();
 			}
+
+			bnb-paragraph {
+				@include slotted('bnb-headline') {
+					margin-bottom: 30px;
+				}
+			}
 		}
 
 		&--right {
