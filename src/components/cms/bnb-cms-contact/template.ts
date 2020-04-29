@@ -15,7 +15,7 @@ export const template = (
 				<br />
 				<bnb-paragraph><b>So erreichst du uns:</b></bnb-paragraph>
 				<bnb-paragraph>
-					Wir für Zukunft eG i. Gr.<br />
+					Wir für Zukunft eG<br />
 					Glindweg 22<br />22303 Hamburg<br />
 					<bnb-link
 					value="team@brandnewbundestag.de"
@@ -28,7 +28,7 @@ export const template = (
 					<b>Finanzielle Unterstützung (nicht gemeinnützig) an:</b>
 					<br />
 					<br />
-					<b>Empfänger:</b> Brand New Bewegung e.V.
+					<b>Empfänger:</b> Wir für Zukunft eG
 					<br />
 					<b>IBAN:</b> DE17 4306 0967 1059 7453 00
 					<br />
