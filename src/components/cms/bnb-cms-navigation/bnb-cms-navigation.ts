@@ -19,19 +19,27 @@ class BnbCmsNavigation extends Component<BnbCmsNavigationProps, null> {
 
 	references = {
 		menu: createRef<HTMLElement>(),
+		nav: createRef<HTMLElement>(),
 		menuToggle: createRef<HTMLInputElement>(),
 	};
 
 	setMenuSize() {
-		window.innerWidth < 768 ? this.references.menu.current.style.width = window.innerWidth + 'px' : this.references.menu.current.style.width = 320 + 'px';
+		window.innerWidth < 768
+			? (this.references.menu.current.style.width =
+					window.innerWidth + 'px')
+			: (this.references.menu.current.style.width = 320 + 'px');
 	}
 
 	shrinkMenu() {
-		window.scrollY > 65 ? this.setAttribute('scrolled', '') : this.removeAttribute('scrolled');
+		window.scrollY > 65
+			? this.setAttribute('scrolled', '')
+			: this.removeAttribute('scrolled');
 	}
 
 	closeMenu() {
-	this.references.menuToggle.current.scroll ? this.references.menuToggle.current.checked = false : '';
+		if (this.references.menuToggle.current.scroll) {
+			this.references.menuToggle.current.checked = false;
+		}
 	}
 
 	public render(): HTMLFragment {
@@ -40,12 +48,15 @@ class BnbCmsNavigation extends Component<BnbCmsNavigationProps, null> {
 
 	public rendered() {
 		this.setMenuSize();
-
-		if (window.innerWidth < 1366) {
-			window.addEventListener('scroll', debounce(this.shrinkMenu.bind(this), 10));
-			window.addEventListener('resize', debounce(this.setMenuSize.bind(this), 250));
-			window.addEventListener('scroll', this.closeMenu.bind(this));
-		}
+		window.addEventListener(
+			'scroll',
+			debounce(this.shrinkMenu.bind(this), 10),
+		);
+		window.addEventListener(
+			'resize',
+			debounce(this.setMenuSize.bind(this), 250),
+		);
+		window.addEventListener('scroll', this.closeMenu.bind(this));
 	}
 }
 
