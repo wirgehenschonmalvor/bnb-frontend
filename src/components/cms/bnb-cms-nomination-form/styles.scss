@@ -4,8 +4,4 @@
 @include host('bnb-cms-nomination-form') {
 	display: block;
 	@include cmsComponents;
-
-	@include fromBreakpointMax {
-		margin-top: 750px;
-	}
 }

@@ -5,7 +5,7 @@ import { BnbCmsNavigationProps } from './defines';
 
 export const template = (data: BnbCmsNavigationProps, refs): HTMLFragment => {
 	return html`
-		<div class="navigation-wrapper">
+		<div class="navigation-wrapper" ref="${refs.nav}">
 			<nav role="navigation">
 				<a
 					href="index.html"

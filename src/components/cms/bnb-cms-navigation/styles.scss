@@ -5,7 +5,8 @@
 	display: block;
 	background-color: $white;
 	@include fontMenu();
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	top: 0;
 	z-index: 1;
 	height: 65px;
@@ -13,7 +14,10 @@
 
 	@media screen and (min-width: 1366px) {
 		height: 160px;
-		position: initial;
+	}
+
+	.navigation-wrapper {
+		transition: background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 	}
 
 	nav {
@@ -294,6 +298,16 @@
 	a #navigation-icon {
 		width: 70px;
 		transition: all 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+	}
+
+	@media screen and (min-width: 1366px) {
+		height: 140px;
+		top: -20px
+	}
+
+	@include fromBreakpointMax {
+		height: 130px;
+		top: -10px;
 	}
 }
 

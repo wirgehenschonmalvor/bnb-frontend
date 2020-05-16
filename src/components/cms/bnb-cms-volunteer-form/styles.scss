@@ -6,7 +6,6 @@
 	@include cmsComponents;
 
 	@include fromBreakpointMax {
-        margin-top: 750px;
         bnb-volunteer-form {
             margin-right: $right-indentation-margin;
         }
