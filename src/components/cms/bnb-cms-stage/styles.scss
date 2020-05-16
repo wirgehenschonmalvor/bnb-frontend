@@ -2,12 +2,12 @@
 @import '../../../resources/scss/styles';
 
 $stage-image-height-max: 600px;
-$stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 
 @include host('bnb-cms-stage') {
 	display: block;
 	background-color: $white;
 	margin: 0 auto;
+	margin-bottom: 100px;
 
 	bnb-image {
 		height: 300px;
@@ -38,6 +38,7 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 	}
 
 	#icon-mobile {
+		margin-top: 50px;
 		width: $section-right-icon-small;
 		height: $section-right-icon-small;
 	}
@@ -86,9 +87,6 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 		.stage-text-container {
 			background-color: transparent;
 		}
-		bnb-image {
-			margin-bottom: 600px;
-		}
 
 		#icon-mobile {
 			display: none;
@@ -103,23 +101,23 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 		}
 
 		.stage-text-container {
-			position: absolute;
 			padding: 0;
-			top: $stage-textbox-position-top-max;
 			left: 0;
 			right: 0;
 			bottom: 0;
 			margin: 0 auto;
-			height: 800px;
+			margin-top: -80px;
 			flex-direction: row;
 			max-width: $max;
 
 			.stage-text-container-left {
 				width: calc(#{$section-left-width} + #{$margin-left-right-max});
+				@include slotted('bnb-paragraph') {
+					margin-bottom: 50px;
+				}
 			}
 			.stage-text-container-right {
 				width: calc(#{$section-right-width} - #{$right-indentation});
-				align-self: flex-end;
 				margin-right: $right-indentation;
 				height: inherit;
 				bnb-icon {
@@ -131,20 +129,14 @@ $stage-textbox-position-top-max: calc(#{$stage-image-height-max} + 80px);
 
 			.stage-text-container-left {
 				padding-left: $margin-left-right-max;
-				bnb-paragraph {
-					height: 200px;
-				}
 			}
 
 			.stage-text-buttons {
-				height: 112px;
 				justify-content: flex-start;
-				position: absolute;
-				bottom: 40px;
 
 				bnb-button-cta {
 					width: 215px;
-					margin: 50px 20px 0 0;
+					margin: 50px 20px 50px 0;
 				}
 			}
 		}

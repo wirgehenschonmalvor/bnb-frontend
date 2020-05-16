@@ -23,11 +23,12 @@
 		background-color: white;
 		max-width: $max;
 		padding: 0 $margin-left-right-small;
+		padding-bottom: 50px;
 	}
 
 	.stage-text-paragraph {
 		@include slotted('bnb-paragraph') {
-			padding-bottom: 230px;
+			padding-bottom: 100px;
 		}
 	}
 
@@ -43,27 +44,23 @@
 		}
 		.stage-text-container {
 			padding: 0 $margin-left-right-medium;
+			padding-bottom: 100px;
 		}
 	}
 
 	@include fromBreakpointMax {
-		bnb-image {
-			margin-bottom: 220px;
-			height: 600px;
-		}
+		margin-bottom: 100px;
 
 		.stage-text-container {
 			background-color: transparent;
 			flex-direction: row;
 			justify-content: space-between;
-			position: absolute;
-			padding: 0 $margin-left-right-max 0 0;
-			top: 680px;
+			padding: 0 $margin-left-right-max 50px 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
 			margin: 0 auto;
-			height: 300px;
+			margin-top: -80px;
 			flex-direction: row;
 			max-width: $max;
 
@@ -71,7 +68,6 @@
 				background-color: white;
 				width: $component-container-indent-width;
 				padding: 0 $margin-left-right-max;
-				height: fit-content;
 				.h1 {
 					margin-bottom: 20px;
 				}
