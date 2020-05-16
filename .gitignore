@@ -6,5 +6,4 @@ npm-debug.log
 .DS-Store
 *iml
 .idea
-package-lock.json
 .DS_Store
